@@ -1,4 +1,4 @@
-#Reverse the contents of an input file
+# Reverse the contents of an input file
 For example: 
 
 “hello world 
