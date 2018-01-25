@@ -2,9 +2,9 @@
 For example: 
 
 > “hello world 
-> I am krishagni”
+I am krishagni”
 
-> Should be :
+Should be :
 
 > “ingahsirk ma i
 > dlrow olleh”.
