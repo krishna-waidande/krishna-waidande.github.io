@@ -1,13 +1,13 @@
 # Reverse the contents of an input file
 For example: 
 
-“hello world 
-I am krishagni”\n
+> “hello world 
+> I am krishagni”
 
-Should be :
+> Should be :
 
-“ingahsirk ma i
-dlrow olleh”.
+> “ingahsirk ma i
+> dlrow olleh”.
 
 
 our first approach for this was reading file from backwords by using fseek function in c.
