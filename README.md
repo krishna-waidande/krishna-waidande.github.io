@@ -2,7 +2,7 @@
 For example: 
 
 “hello world 
-I am krishagni”
+I am krishagni”\n
 
 Should be :
 
