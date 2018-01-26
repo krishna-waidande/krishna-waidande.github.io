@@ -35,12 +35,12 @@ int main()
    	FILE *fp,*fp1;
  	char c;
 	
-  	if ((fp = fopen("1gb.txt","r")) == NULL){
+  	if ((fp = fopen("input.txt","r")) == NULL){
        printf("Error! opening file");
 
      }
 
-	fp1= fopen("demo11.txt","w");
+	fp1= fopen("output.txt","w");
 
 	fseek(fp, -2, SEEK_END);
 	size=ftell(fp);
