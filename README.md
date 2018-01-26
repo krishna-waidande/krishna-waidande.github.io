@@ -33,7 +33,7 @@ I tried that logic on smaller file size . It works faster so I thought that my a
 
 > Version 1.0
 
-```C
+```c
 
 #include<stdio.h>
 #include<stdlib.h>
@@ -91,7 +91,8 @@ My second approach was using 2 file pointers. **One file pointer at starting of 
 > Version 1.1
 
 
-```C
+```c
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
@@ -166,7 +167,7 @@ Then third approach came to my mind was reversing file order by using 2 files.fo
 
 > Version 1.3
 
-```C
+```c
 
 #include<stdio.h>
 #include<stdlib.h>
@@ -280,7 +281,7 @@ So another approach came to my mind was we can solve this problem by using **Tow
 
 > Version 1.4
 
-```C
+```c
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
@@ -491,7 +492,7 @@ so in this way i started coding for this approach.
 
 > version 1.5
 
-```C
+```c
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
@@ -508,13 +509,13 @@ void rev(char c[])
 	int n=0,n1=0;
 	int i=0,j=0;
 	char t='\0';
-	char f[11]={NULL};
+	char f[15]={NULL};
 
-	
 	n=strlen(c);
+	n=n-2;
 	c[n]='\0';
 	n=n-1;
-
+	
 	while(i<n)
 	{
 		t=c[i];
@@ -525,19 +526,24 @@ void rev(char c[])
 		n--;
 	}
 
-	sprintf(f,"file%03d.txt",k++);
-    	fp=fopen(f,"w");
+
+	sprintf(f,"%d.txt",k++);
+	fp=fopen(f,"w");
 	fputs(c,fp);
 	fclose(fp);
+
+			
+	
 }
+
 void append(int k)
 {
 	FILE *fp=NULL,*fp2=NULL;
 	char f[11]={NULL};
-	char c[1999990]={NULL};
+	char c[2999990]={NULL};
 	int size=0;
 	
-	sprintf(f,"%d.txt",k);
+	sprintf(f,"file%d.txt",k);
 	
 	fp2=fopen("demo1.txt","a");
 	
@@ -545,22 +551,24 @@ void append(int k)
 
 	stat(f, &st);
   	size=st.st_size;
-	printf("%d",size);	
+	//printf("%d",size);	
 	
 
 	fp=fopen(f,"r");
-	if(size<1999990)
+	if(size<2999990)
 	{
-	
 	fread(c,size,1,fp);
+	c[size]='\0';
 	fputs(c,fp2);
 	}
 	else
 	{
-		fread(c,1999990,1,fp);
+		
+		fread(c,2999990,1,fp);
+		c[2999990]='\0';
 		fputs(c,fp2);
 	}
-
+	
 	fclose(fp);
 	fclose(fp2);
 
@@ -568,30 +576,39 @@ void append(int k)
 void delete(int k)
 {
 	char f[11];
-	sprintf(f,"%d.txt",k);
+	sprintf(f,"file%d.txt",k);
 	unlink(f);
+
 }
 
 int main()
 {
 
-	long n=0,n1=0,i=0;
+	long n=0,n1=0,i=0,n2=0;
   	 FILE *fp=NULL,*fp2=NULL;
 
- 	char c[1999990]={NULL};
+ 	char c[2999990]={NULL};
 	
-	if ((fp = fopen("input.txt","r")) == NULL)
+
+	
+  	if ((fp = fopen("5gb.txt","r")) == NULL)
 	{
-       		printf("Error! opening file");
+       		printf("Erro! opening file");
 
      	}
 
+	
+
 	struct stat st;
-	stat("input.txt", &st);
+
+	stat("5gb.txt", &st);
   	n=st.st_size;
 	printf("%d",n);
 	
-	if(n<1999990)
+	
+	
+
+	if(n<2999990)
 	{
 		fread(c,n,1,fp);
 		rev(c);
@@ -599,25 +616,19 @@ int main()
 	}
 	else
 	{
-		n1=1999990;
-		while(n>0)
+		n1=2999990;
+		n2=n1-1;
+		while(n>n2)
 		{
-			if(n/1999990)
-			{
-				fread(c,n1,1,fp);
-				rev(c);
-				
-			}
-			else
-			{
-				n1=n%1999990;
-				fgets(c,n1,fp);
-				rev(c);
-				break;
-			}
-			n=n-1999990;
+			fread(c,n1,1,fp);
+			rev(c);
+			n=n-2999990;
+			
 			
 		}
+			c[n]='\0';
+			fread(c,n,1,fp);
+			rev(c);
 	}
 	
 	fp2=fopen("demo1.txt","w");
@@ -628,6 +639,7 @@ int main()
 	for(i=k-1;i>=0;i--)
 	delete(i);
 
+	
 	fclose(fp);
 	return 0;	
 }
