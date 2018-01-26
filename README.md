@@ -82,7 +82,7 @@ int main()
 
 
 
-## Second Approach
++ ## Second Approach
 
 My second approach was using 2 file pointers. **One file pointer at starting of file and another file pointer at end of the file and by swapping the first character with last. & again reading next character and reading second last character and swapping them with each other**.in this way also we can solve the problem . for smaller size files program was running in less time. but when i tested for larger file size. This was taking hours to execute.
 
@@ -155,7 +155,7 @@ void main()
 
 > Taking too much time for reversing large files.
 
-## Third Approach
++ ## Third Approach
 
 
 Then I started to think about another approach to solve this problem.
@@ -272,7 +272,7 @@ anhsirk si eman ym
 so **while inserting 2nd line I was looking for how can I place my new data at the beginning of my file. this was not possible to add data to starting of the output file. Because when I tried to do that old data was getting overwritten. so my this approach also failed.**
 
 
-## Fourth Approach
++ ## Fourth Approach
 
 
 So another approach came to my mind was we can solve this problem by using **Tower of Hanoi algorithm.** By using that algorithm we were getting right output,but for larger files that algorithm was taking too much time to execute. This approach was also not correct to solve this problem.
