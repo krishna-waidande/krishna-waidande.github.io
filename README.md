@@ -16,14 +16,16 @@ Should be :
 
 dlrow olleh”.
 
+**test your code with larger file size too.**
+
 ## First Approach
 
-My first approach for this problem  was reading file from backwards by using fseek function in c.
+My first approach for this problem  was reading file from ```backwards``` by using ```fseek()``` function in c.
 put file pointer to end of input file and read one one character and print into output file.
 
 
 
-I tried that logic on smaller file size . It works faster so I thought that my approach is coreect.and I got the solution very easyly but when I tested that code for larger file size (eg 500MB, 1GB) then  it took too much time to exeute. It was taking 5 mins to execute 1gb file . than I realise that my code is correct but not efficient one. 
+I tried that logic on smaller file size . It works faster so I thought that my approach is coreect.and I got the solution very easyly but when I tested that code for larger file size (eg 500MB, 1GB) then  it took too much time to exeute. It was taking ```5 mins to execute 1gb file.``` than I realise that my code is correct but not efficient one. 
 
 
 > ### Logic: Reading file Backwards.
@@ -77,9 +79,11 @@ int main()
 
 > Not efficient for larger file size.
 
+
+
 ## Second Approach
 
-My second approach was using 2 file pointers. **One file pointer at starting of file and another file pointer at end of the file and by swapping the first character with last. & again reading next character and reading second last character and swapping them with each other**.in this way also we can solve the problem . for smaller size files program was running in no time. again for larger file size. this was taking hours to execute.
+My second approach was using 2 file pointers. **One file pointer at starting of file and another file pointer at end of the file and by swapping the first character with last. & again reading next character and reading second last character and swapping them with each other**.in this way also we can solve the problem . for smaller size files program was running in less time. but when i tested for larger file size. This was taking hours to execute.
 
 > ### Logic : Swapping between starting and ending characters.
 
@@ -155,7 +159,7 @@ void main()
 Then I started to think about another approach to solve this problem.
 
 
-Then third approach came to my mind was reversing file order by using 2 files.for that I decide to read file chunk by chunk. reverse chunk data and store that data into another file. this approach was just reversing the file data line by lines. this was not my required output so tried to find  how I can prepend new data before old data.
+Then third approach came to my mind was reversing file order by using 2 files.for that I decide to **read file chunk by chunk. reverse chunk data and store that data into another file. this approach was just reversing the file data line by lines. this was not my required output so tried to find  how I can prepend new data before old data.**
 
 > ### Logic : Read 1024 bytes of data and reverse that data and write it to output file.
 
@@ -263,13 +267,13 @@ anhsirk si eman ym
 
 
 
-so while inserting 2nd line I was looking for how can I place my new data at the beginning of my file. this was not possible to add data to starting of the output file. Because when I tried to do that old data was getting overwritten. so my this approach also failed.
+so **while inserting 2nd line I was looking for how can I place my new data at the beginning of my file. this was not possible to add data to starting of the output file. Because when I tried to do that old data was getting overwritten. so my this approach also failed.**
 
 
 ## Fourth Approach
 
 
-So another approach came to my mind was we can solve this problem by using Tower of Hanoi algorithm.by using that algorithm we were getting write output.but for larger files that algorithm was taking too much time to execute. this approach was also not correct to solve this problem.
+So another approach came to my mind was we can solve this problem by using **Tower of Hanoi algorithm.** By using that algorithm we were getting write output,but for larger files that algorithm was taking too much time to execute. This approach was also not correct to solve this problem.
 
 > ### Logic : Tower of hanoi.
 
@@ -480,7 +484,7 @@ We can **create n temp files and store 1 chunk in one temp file. In this way, we
 by using this approach I get required output.
 
 
-so while coding for this approach my first thought was how can i create temp files in c . 2nd pronblem was how can i generate unique n no of file names. so after reading on blogs i found that using ``` **sprintf()** ``` in c we can generate n no of filenames so this function help me to to give filenames at runtime.
+so while coding for this approach my first thought was how can i create temp files in c . 2nd pronblem was how can I generate unique n no of file names. so after reading on blogs i found that using ``` sprintf() ``` in c we can generate n no of filenames so this function help me to to give filenames at runtime.
 
 so in this way i started coding for this approach.
 
@@ -555,8 +559,7 @@ void append(int k)
 		fread(c,1999990,1,fp);
 		fputs(c,fp2);
 	}
-	
-	//unlink(f);
+
 	fclose(fp);
 	fclose(fp2);
 
@@ -564,25 +567,21 @@ void append(int k)
 void delete(int k)
 {
 	char f[11];
-	//memset(f,'',sizeof(f));
-
 	sprintf(f,"%d.txt",k);
-	
 	unlink(f);
-
 }
 
 int main()
 {
 
-	long n=0,n1=0,s=0,i=0;
+	long n=0,n1=0,i=0;
   	 FILE *fp=NULL,*fp2=NULL;
 
  	char c[1999990]={NULL};
 	
 	if ((fp = fopen("input.txt","r")) == NULL)
 	{
-       		printf("Erro! opening file");
+       		printf("Error! opening file");
 
      	}
 
@@ -615,8 +614,6 @@ int main()
 				rev(c);
 				break;
 			}
-			
-			printf("\n %d \n",s++);
 			n=n-1999990;
 			
 		}
@@ -636,9 +633,9 @@ int main()
 
 ```
 
-after i finished the code. i saw that my code is so unreadable. so again i tried to give proper names to my variables. do commentting in code. so that any other person can identify what each line is doing in my code.
+after i finished the code. i saw that my code is unreadable. so again i tried to **give proper names to my variables. do commentting in code.** so that any other person can identify what each line is doing in my code.
 
-Afterwards I tested this code for different file size. It was efficient upto some extent.but again i realise that code can become more effecient if i reduce the no of variables used and if statments from  my code. My mentor suggested me that less no of variables and condition statements makes code more clean and chances of any bugs reduces. 
+Afterwards I tested this code for different file size. It was efficient upto some extent.but again i realise that code can become more effecient if i reduce the no of variables used and if statments from  my code. **My mentor suggested me that less no of variables and condition statements makes code more clean and chances of any bugs reduces.**
 
 so tried to modified my code in such a way that it won't contain more no of variables and if statements it took me some time to think logic in that way. but in some time I got the answer for my problem.
 in this way i made a more effecient and much more readable code.
@@ -761,5 +758,7 @@ int main()
 	return 0;	
 }
 ```
+
+so this was my final code for this assignment. I learned so many new things from this assignment. :)
 
 
