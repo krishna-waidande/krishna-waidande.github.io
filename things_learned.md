@@ -20,4 +20,12 @@
 
 
 
-> fread() :-fwrite,fseek.
+> fread() :-
+
+
+
+> fwrite() :- 
+
+
+
+> fseek() :-
