@@ -18,7 +18,7 @@ dlrow olleh”.
 
 **test your code with larger file size too.**
 
-## First Approach
++ ## First Approach
 
 My first approach for this problem  was reading file from ```backwards``` by using ```fseek()``` function in c.
 put file pointer to end of input file and read one one character and print into output file.
@@ -521,21 +521,14 @@ void rev(char c[])
 		t=c[i];
 		c[i]=c[n];
 		c[n]=t;
-
 		i++;
 		n--;
 	}
-
-
 	sprintf(f,"%d.txt",k++);
 	fp=fopen(f,"w");
 	fputs(c,fp);
 	fclose(fp);
-
-			
-	
 }
-
 void append(int k)
 {
 	FILE *fp=NULL,*fp2=NULL;
@@ -585,13 +578,10 @@ int main()
 {
 
 	long n=0,n1=0,i=0,n2=0;
-  	 FILE *fp=NULL,*fp2=NULL;
-
- 	char c[2999990]={NULL};
+  	FILE *fp=NULL,*fp2=NULL;
+	char c[2999990]={NULL};
 	
-
-	
-  	if ((fp = fopen("5gb.txt","r")) == NULL)
+	if ((fp = fopen("5gb.txt","r")) == NULL)
 	{
        		printf("Erro! opening file");
 
@@ -639,9 +629,9 @@ int main()
 
 ```
 
-after i finished the code. i saw that my code is not readable. so again i tried to **give proper names to my variables. do commentting in code.** so that any other person can identify what each line is doing in my code.
+after i finished the code. i saw that ```my code is not readable.``` so again i tried to **give proper names to my variables. do commentting in code.** so that anyone can identify what each line is doing in my code.
 
-Afterwards I tested this code for different file size. It was efficient upto some extent.but again i realise that code can become more effecient if i reduce the no of variables used and if statments from  my code. **My mentor suggested me that less no of variables and condition statements makes code more clean and chances of any bugs reduces.**
+Afterwards I tested this code for different file size. It was efficient upto some extent.but again i realise that , code can become more effecient if i reduce the no of variables used and if statments from  my code. **My mentor suggested me that less no of variables and condition statements makes code more clean and chances of any bugs reduces.**
 
 so tried to modified my code in such a way that it won't contain more no of variables and if statements it took me some time to think logic in that way. but in some time I got the answer for my problem.
 in this way i made a more effecient and much more readable code.
@@ -765,6 +755,6 @@ int main()
 }
 ```
 
-# _so this was my final code for this assignment. I learned so many new things from this assignment._ :)
+### _so this was my final code for this assignment. I learned so many new things from this assignment._ :)
 
 
