@@ -57,4 +57,33 @@ My second appoach was using 2 file pointers . One file pointer at starting of fi
 
 > Taking too much time for reversing large files.
 
+## Third Approach
+
+
+Then i started to think about another approach for this problem.
+
+
+Then third approach come to my mind was reversing file order by using 2 files.for that I decide to read file chunk by chunk . reverse chunk data and store that data into another file. this approach was just reversing the file data line by lines. this was not my required output  so tried to find about how i can prepend new data before old data.
+
+
+For example :
+
+
+my name is krishna.
+
+
+my name is gautham.
+
+
+Output 
+
+
+anhsirk si eman ym
+
+
+mahtuag si eman ym
+
+
+so while inserting 2nd line i was looking for how can i place my new data at the begining of my file. this was not possible to add data to starting of output file . Because when I tried to do that old data was getting overwritten. so my this approach also failed.
+
 
