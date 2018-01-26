@@ -1,4 +1,4 @@
-# ASSIGNMENT 1 [THINGS LEARNED](https://krishna-waidande.github.io/krishna.github.io/things_learned)
+# ASSIGNMENT 1 [THINGS LEARNED](https://krishna-waidande.github.io//things_learned)
 
 
 
