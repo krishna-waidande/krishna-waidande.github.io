@@ -263,7 +263,196 @@ so while inserting 2nd line I was looking for how can I place my new data at the
 
 So another approach came to my mind was we can solve this problem by using Tower of Hanoi algorithm.by using that algorithm we were getting write output.but for larger files that algorithm was taking too much time to execute. this approach was also not correct to solve this problem.
 
-**Version 1.4**
+> Version 1.4
+
+```C
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <unistd.h>
+
+int flag=0;
+
+void append()
+{
+	int n,n1;
+  	 FILE *fp1,*fp2;
+ 	char c[1024];
+
+  	if ((fp1 = fopen("demo11.txt","r")) == NULL)
+	{
+       		printf("Erro! opening file");
+
+     	}
+	
+	fp2=fopen("demo7.txt","a");
+
+	struct stat st;
+	stat("demo11.txt", &st);
+  	n=st.st_size;
+	
+	if(n<1024)
+	{
+		fread(c,1,n,fp1);
+		fwrite(c,1,n,fp2);
+	}
+	else
+	{
+		n1=1024;
+		while(n>0)
+		{
+			if(n/1024)
+			fread(c,n1,1,fp1);
+			else
+			{
+				n1=n%1024;
+				fread(c,n1,1,fp1);
+
+			}
+			fwrite(c,n1,1,fp2);
+			n=n-1024;
+		}
+	}
+	fclose(fp1);
+	fclose(fp2);
+
+}
+
+void moveto1()
+{
+	int n,n1;
+  	 FILE *fp1,*fp2;
+ 	char c[1024];
+
+  	if ((fp1 = fopen("demo7.txt","r")) == NULL)
+	{
+       		printf("Erro! opening file");
+
+     	}
+	fp2=fopen("demo11.txt","w");
+
+	struct stat st;
+	stat("demo7.txt", &st);
+  	n=st.st_size;
+	
+	if(n<1024)
+	{
+		fread(c,1,n,fp1);
+		fwrite(c,1,n,fp2);
+	}
+	else
+	{
+		n1=1024;
+		while(n>0)
+		{
+			if(n/1024)
+			fread(c,n1,1,fp1);
+			else
+			{
+				n1=n%1024;
+				fread(c,n1,1,fp1);
+
+			}
+			fwrite(c,n1,1,fp2);
+			n=n-1024;
+		}
+	}
+	fclose(fp1);
+	fclose(fp2);
+
+}
+void rev(char c[])
+{
+	FILE *fp1,*fp2;	
+	int n,n1;
+	int i=0,j;
+	char t;
+	
+	n=strlen(c);
+	n=n-6;
+	c[n]='\0';
+	n=n-1;
+	
+	while(i<n)
+	{
+		t=c[i];
+		c[i]=c[n];
+		c[n]=t;
+
+		i++;
+		n--;
+	}
+
+	if(flag==0)
+	{
+		fp1=fopen("demo11.txt","w");
+		fputs(c,fp1);
+		fclose(fp1);
+		flag=1;
+	}
+	if(flag==1)
+	{
+		fp2=fopen("demo7.txt","w");
+		fputs(c,fp2);
+		fclose(fp2);
+		append();
+		moveto1();
+	}	
+}
+int main()
+{
+
+	int n,n1;
+  	 FILE *fp;
+ 	char c[1024];
+
+  	if ((fp = fopen("input.txt","r")) == NULL)
+	{
+       		printf("Erro! opening file");
+
+     	}
+
+	struct stat st;
+	stat("input.txt", &st);
+  	n=st.st_size;
+	printf("%d",n);
+	
+	if(n<1024)
+	{
+		fread(c,1,n,fp);
+		rev(c);
+
+	}
+	else
+	{
+		n1=1024;
+		while(n>0)
+		{
+			if(n/1024)
+			{
+				fread(c,n1,1,fp);
+				
+			}
+			else
+			{
+				n1=n%1024;
+				fread(c,n1,1,fp);
+
+			}
+			rev(c);
+			n=n-1024;
+		}
+	}
+	
+	fclose(fp);
+	
+	return 0;	
+}
+
+
+```
 
 
 
