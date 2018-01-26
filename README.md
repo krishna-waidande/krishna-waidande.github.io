@@ -24,12 +24,16 @@ I tried that logic on smaller file size . It works faster so I thought that my a
 
 
 
-Advantage :- Faster for smaller file size. 
+Advantage 
 
-	      Memory requirement was less. 
+Faster for smaller file size.
+
+Memory requirement was less. 
 	      
 	      
 
-disadvantege :- Not efficient for larger file size.
+Disadvantege 
+
+Not efficient for larger file size.
 
 
