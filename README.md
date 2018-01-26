@@ -166,6 +166,92 @@ Then I started to think about another approach to solve this problem.
 Then third approach came to my mind was reversing file order by using 2 files.for that I decide to read file chunk by chunk. reverse chunk data and store that data into another file. this approach was just reversing the file data line by lines. this was not my required output so tried to find  how I can prepend new data before old data.
 
 
+```C
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <unistd.h>
+
+void rev(char c[])
+{
+	int n,n1;
+	int i,j;
+	char t,k;
+	FILE *f,*fp;
+	
+	i=0;
+	
+	n=strlen(c);
+	n=n-1;
+	n1=n;
+	printf("%d",n);
+	
+			
+	while(i<n)
+	{
+		t=c[i];
+		c[i]=c[n];
+		c[n]=t;
+
+		i++;
+		n--;
+	}
+
+	
+	f=fopen("demo7.txt","a");
+	fwrite(c,1,n1+1,f);
+	fclose(f);
+}
+
+int main()
+{
+
+	int n,n1,k;
+  	 FILE *fp,*fp1;
+ 	char c[1024];
+
+  	if ((fp = fopen("input.txt","r")) == NULL)
+	{
+       		printf("Error! opening file");
+     	}
+
+	
+	
+	struct stat st;
+	stat("input.txt", &st);
+  	n=st.st_size;
+	printf("%d",n);
+
+
+	if(n<=1024)
+	{
+		fread(c, 1, n, fp);
+		rev(c);
+	}
+	else
+	{
+		n1=1024;
+		while(n>0)
+		{
+			fread(c, 1, n1, fp);
+			rev(c);
+			n1=n%1024;
+			n=n/1024;
+		}
+	}
+	
+	
+	fclose(fp);
+	
+	return 0;	
+}
+
+```
+
+
 > For example :
 
 
@@ -182,6 +268,14 @@ anhsirk si eman ym
 
 
 mahtuag si eman ym
+
+> Required Output
+
+mahtuag si eman ym
+
+
+anhsirk si eman ym
+
 
 
 so while inserting 2nd line I was looking for how can I place my new data at the beginning of my file. this was not possible to add data to starting of the output file. Because when I tried to do that old data was getting overwritten. so my this approach also failed.
