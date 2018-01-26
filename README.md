@@ -1,5 +1,6 @@
 # ASSIGNMENT 1
 
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
 
 # Reverse the contents of an input file
 For example:
