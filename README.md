@@ -672,13 +672,10 @@ void file_append(int temp_file_num)
 	sprintf(temp_file,"%d.txt",temp_file_num);
 	
 	write_file_pointer = fopen("output1.txt","a");			//opening output file in append mode
-	
-
 	read_file_pointer = fopen(temp_file,"r");			//opening temp file to read data
 
-	   
-	fread(buffer, 3999990 , 1 , read_file_pointer);			//reading chunk 
-	buffer[3999990]='\0';
+	 fread(buffer, 3999990 , 1 , read_file_pointer);		//reading chunk 
+	 buffer[3999990]='\0';
 	   
 	fputs(buffer,write_file_pointer);				//appending to ouput file.
 		
@@ -694,7 +691,6 @@ void file_delete(int temp_file_num)
 	sprintf(temp_file,"%d.txt",temp_file_num);
 	
 	unlink(temp_file);
-
 }
 
 int main()
@@ -706,21 +702,16 @@ int main()
 	char buffer[3999990]={NULL};
 	char temp_file[15]={NULL};
 	
-
-  	file_pointer = fopen("1gb.txt","r");
+	file_pointer = fopen("1gb.txt","r");
 	
 	struct stat file_info;
-
 	stat("1gb.txt", &file_info);
   	file_size=file_info.st_size;
 	printf("Size of input file: %ld\n",file_size);		//retriving input file size.
 
 	n= 3999990 % file_size;
 	
-
-	
-	
-        do			//reading input file chunk by chunk file.
+	do							//reading input file chunk by chunk file.
 	{
              fread(buffer,n,1,file_pointer);
 	     reverse_buffer(buffer);
@@ -745,7 +736,7 @@ int main()
 
 	fread(buffer, file_size , 1 , read_file_pointer);	//read in buffer
   	buffer[file_size]='\0';
-
+	
 	fputs(buffer, file_pointer);				//write to ouput file.
 	
 	fclose(file_pointer);
