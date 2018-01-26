@@ -66,7 +66,7 @@ Then i started to think about another approach for this problem.
 Then third approach come to my mind was reversing file order by using 2 files.for that I decide to read file chunk by chunk . reverse chunk data and store that data into another file. this approach was just reversing the file data line by lines. this was not my required output  so tried to find about how i can prepend new data before old data.
 
 
-For example :
+> For example :
 
 
 my name is krishna.
@@ -75,7 +75,7 @@ my name is krishna.
 my name is gautham.
 
 
-Output 
+> Output 
 
 
 anhsirk si eman ym
@@ -97,6 +97,12 @@ DISADVANTAGES
 > More read write operations.
 
 > More execution time.
+
+## Fifth Approach
+
+
+We can create n temp files and store 1 chunk in one temp file. In this way we will read whole file and store that all data in temp files in reverse order so that while reading from temp files we can read the data from last file into output file. In this way we can read k,k-1,k-2th & so on files into our output file.and after reading all temp files i deleted those files dynamically.
+by using this approach I get required ouput.
 
 
 
