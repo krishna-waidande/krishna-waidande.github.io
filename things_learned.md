@@ -1,6 +1,8 @@
 # Things  Learned 
 
 
+## FUNCTIONS :
+
 
 > ## fgets() :-
 
@@ -35,6 +37,9 @@
 
 
 > ## fseek() :-
+
+
+> ## sprintf();
 
 
 + ### In some versions of my code i was getting some garbage data into my output so one my collegue suggested me that. after declaration of every variable initialize that variable with some value. if i dont do so than there are much more chances of getting garbage in output. 
