@@ -16,7 +16,7 @@ Should be :
 
 dlrow olleh”.
 
-**test your code with larger file size too.**
+**test your code with larger file size too. eg- 1GB , 5GB etc **
 
 + ## First Approach
 
@@ -28,7 +28,7 @@ put file pointer to end of input file and read one one character and print into 
 I tried that logic on smaller file size . It works faster so I thought that my approach is coreect.and I got the solution very easyly but when I tested that code for larger file size (eg 500MB, 1GB) then  it took too much time to exeute. It was taking ```5 mins to execute 1gb file.``` than I realise that my code is correct but not efficient one. 
 
 
-> ### Logic: Reading file Backwards.
+
 
 
 > Version 1.0
@@ -163,7 +163,6 @@ Then I started to think about another approach to solve this problem.
 
 Then third approach came to my mind was reversing file order by using 2 files.for that I decide to **read file chunk by chunk. reverse chunk data and store that data into another file. this approach was just reversing the file data line by lines. this was not my required output so tried to find  how I can prepend new data before old data.**
 
-> ### Logic : Read 1024 bytes of data and reverse that data and write it to output file.
 
 > Version 1.3
 
@@ -277,9 +276,7 @@ so **while inserting 2nd line I was looking for how can I place my new data at t
 
 So another approach came to my mind was we can solve this problem by using **Tower of Hanoi algorithm.** By using that algorithm we were getting right output,but for larger files that algorithm was taking too much time to execute. This approach was also not correct to solve this problem.
 
-> ### Logic : Tower of hanoi.
 
-> Version 1.4
 
 ```c
 #include<stdio.h>
@@ -490,7 +487,7 @@ so while coding for this approach my first thought was how can i create temp fil
 
 so in this way i started coding for this approach.
 
-> version 1.5
+
 
 ```c
 #include<stdio.h>
@@ -637,7 +634,7 @@ so tried to modified my code in such a way that it won't contain more no of vari
 in this way i made a more effecient and much more readable code.
 
 
-> version 1.6
+
 
 ```c
 
