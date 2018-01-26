@@ -273,7 +273,7 @@ so **while inserting 2nd line I was looking for how can I place my new data at t
 ## Fourth Approach
 
 
-So another approach came to my mind was we can solve this problem by using **Tower of Hanoi algorithm.** By using that algorithm we were getting write output,but for larger files that algorithm was taking too much time to execute. This approach was also not correct to solve this problem.
+So another approach came to my mind was we can solve this problem by using **Tower of Hanoi algorithm.** By using that algorithm we were getting right output,but for larger files that algorithm was taking too much time to execute. This approach was also not correct to solve this problem.
 
 > ### Logic : Tower of hanoi.
 
@@ -480,7 +480,7 @@ DISADVANTAGES
 ## Fifth Approach
 
 
-We can **create n temp files and store 1 chunk in one temp file. In this way, we will read the whole file and store that all data in temp files in reverse order so that while reading from temp files we can read the data from the last file into an output file. In this way, we can read k,k-1,k-2th & so on files into our output file.and after reading all temp files I deleted those files dynamically.**
+We can **create n temp files and store 1 chunk in one temp file. In this way, we will read the whole file chunk by chunk and store that all data in temp files in reverse order so that while reading from temp files we can read the data from the last file into an output file. In this way, we can read k,k-1,k-2th & so on files into our output file.and after reading all temp files I deleted those files dynamically.**
 by using this approach I get required output.
 
 
