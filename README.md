@@ -39,4 +39,22 @@ Memory requirement was less.
 
 Not efficient for larger file size.
 
+## Second Approach
+
+my second appoach was using 2 file pointers . one file pointer at starting of file and another file pointer at end of the file and by swapping first character with last . & again reading next character and reading second last chracter and swapping them with each other.in this way also we can solve the problem . for smaller size files program was running in no time. again for larger file size . this was taking hours to execute. 
+
+
+
+Advantage 
+
+Faster for smaller size.
+
+
+Memory requirement was less.
+
+Disadvantege 
+
+
+Taking too much time for reversing large files.
+
 
