@@ -25,6 +25,44 @@ put file pointer to end of input file and read one one character and print into 
 
 I tried that logic on smaller file size . It works faster so I thought that my approach is coreect.and I got the solution very easyly but when I tested that code for larger file size (eg 500MB, 1GB)then  it took too much time to exeute. It was taking 5 mins to execute 1gb file . than I realise that my code is correct but not efficient one. 
 
+```C
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+
+	int size,n;
+   	FILE *fp,*fp1;
+ 	char c;
+	
+  	if ((fp = fopen("1gb.txt","r")) == NULL){
+       printf("Error! opening file");
+
+     }
+
+	fp1= fopen("demo11.txt","w");
+
+	fseek(fp, -2, SEEK_END);
+	size=ftell(fp);
+
+	printf("%d\n",size);
+
+	while(n!=0)
+	{
+		c=fgetc(fp);
+		fputc(c,fp1);
+		fseek(fp,-2,SEEK_CUR);
+		n=ftell(fp);
+	}
+	
+	
+
+	fclose(fp);
+	fclose(fp1);
+	return 0;	
+}
+
+```
 
 
 ### Advantage
