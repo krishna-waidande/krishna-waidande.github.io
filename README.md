@@ -241,7 +241,7 @@ int main()
 ```
 
 
-> For example :
+> **For example :**
 
 
 my name is krishna.
@@ -250,7 +250,7 @@ my name is krishna.
 my name is gautham.
 
 
-> Output
+> **Output**
 
 
 anhsirk si eman ym
@@ -260,7 +260,7 @@ mahtuag si eman ym
 
 **i am getting wrong output**
 
-> Required Output is
+> **Required Output is**
 
 mahtuag si eman ym
 
@@ -597,17 +597,11 @@ int main()
 
      	}
 
-	
-
 	struct stat st;
-
 	stat("5gb.txt", &st);
   	n=st.st_size;
 	printf("%d",n);
 	
-	
-	
-
 	if(n<2999990)
 	{
 		fread(c,n,1,fp);
@@ -639,14 +633,13 @@ int main()
 	for(i=k-1;i>=0;i--)
 	delete(i);
 
-	
 	fclose(fp);
 	return 0;	
 }
 
 ```
 
-after i finished the code. i saw that my code is unreadable. so again i tried to **give proper names to my variables. do commentting in code.** so that any other person can identify what each line is doing in my code.
+after i finished the code. i saw that my code is not readable. so again i tried to **give proper names to my variables. do commentting in code.** so that any other person can identify what each line is doing in my code.
 
 Afterwards I tested this code for different file size. It was efficient upto some extent.but again i realise that code can become more effecient if i reduce the no of variables used and if statments from  my code. **My mentor suggested me that less no of variables and condition statements makes code more clean and chances of any bugs reduces.**
 
@@ -656,7 +649,7 @@ in this way i made a more effecient and much more readable code.
 
 > version 1.6
 
-```C
+```c
 
 #include<stdio.h>
 #include<string.h>
