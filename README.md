@@ -1,3 +1,6 @@
+# ASSIGNMENT 1
+
+
 # Reverse the contents of an input file
 For example: 
 
@@ -24,7 +27,7 @@ I tried that logic on smaller file size . It works faster so I thought that my a
 
 
 
-Advantage 
+### Advantage 
 
 Faster for smaller file size.
 
@@ -32,7 +35,7 @@ Memory requirement was less.
 	      
 	      
 
-Disadvantege 
+### Disadvantege 
 
 Not efficient for larger file size.
 
