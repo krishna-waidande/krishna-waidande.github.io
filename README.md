@@ -86,6 +86,18 @@ mahtuag si eman ym
 
 so while inserting 2nd line i was looking for how can i place my new data at the begining of my file. this was not possible to add data to starting of output file . Because when I tried to do that old data was getting overwritten. so my this approach also failed.
 
+## Fourth Approach
+
+
+So another approach come to my was we can solve this problem by using tower of honoi algorithm.by using that algorithm we were getting write output.but for larger files that algorithm was taking too much time to execute. this approach was also not correct to solve this problem.
+
+
+DISADVANTAGES 
+
+> More read write operations.
+
+> More execution time.
+
 
 
 
