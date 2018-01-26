@@ -671,13 +671,13 @@ void file_append(int temp_file_num)
 	
 	sprintf(temp_file,"%d.txt",temp_file_num);
 	
-	write_file_pointer = fopen("output1.txt","a");			//opening output file in append mode
-	read_file_pointer = fopen(temp_file,"r");			//opening temp file to read data
+	write_file_pointer = fopen("output1.txt","a");		//opening output file in append mode
+	read_file_pointer = fopen(temp_file,"r");		//opening temp file to read data
 
-	 fread(buffer, 3999990 , 1 , read_file_pointer);		//reading chunk 
+	 fread(buffer, 3999990 , 1 , read_file_pointer);	//reading chunk 
 	 buffer[3999990]='\0';
 	   
-	fputs(buffer,write_file_pointer);				//appending to ouput file.
+	fputs(buffer,write_file_pointer);			//appending to ouput file.
 		
 	fclose(read_file_pointer);
 
@@ -720,7 +720,6 @@ int main()
 
 	 }while(file_size>0);
 
-	
 	fclose(file_pointer);
 	
 	file_pointer = NULL;
@@ -749,13 +748,8 @@ int main()
 	for(index = temp_file_num - 1 ; index >=0 ; index--)	//for deleting files
 	file_delete(index);
 
-	
-
 	return 0;	
 }
-
-
-
 ```
 
 
