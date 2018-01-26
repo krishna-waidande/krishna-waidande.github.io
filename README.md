@@ -520,11 +520,7 @@ void append(int k)
 	char c[1999990]={NULL};
 	int size=0;
 	
-	
-
-	
-	
-	sprintf(f,"file%03d.txt",k);
+	sprintf(f,"%d.txt",k);
 	
 	fp2=fopen("demo1.txt","a");
 	
@@ -558,7 +554,7 @@ void delete(int k)
 	char f[11];
 	//memset(f,'',sizeof(f));
 
-	sprintf(f,"file%03d.txt",k);
+	sprintf(f,"%d.txt",k);
 	
 	unlink(f);
 
