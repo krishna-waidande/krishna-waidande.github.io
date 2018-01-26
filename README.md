@@ -277,6 +277,8 @@ so **while inserting 2nd line I was looking for how can I place my new data at t
 So another approach came to my mind was we can solve this problem by using **Tower of Hanoi algorithm.** By using that algorithm we were getting right output,but for larger files that algorithm was taking too much time to execute. This approach was also not correct to solve this problem.
 
 
+> Version 1.4
+
 
 ```c
 #include<stdio.h>
@@ -488,6 +490,7 @@ so while coding for this approach my first thought was how can i create temp fil
 so in this way i started coding for this approach.
 
 
+> Version 1.5
 
 ```c
 #include<stdio.h>
@@ -634,6 +637,8 @@ so tried to modified my code in such a way that it won't contain more no of vari
 in this way i made a more effecient and much more readable code.
 
 
+
+> Version 1.6
 
 
 ```c
