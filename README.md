@@ -81,6 +81,68 @@ int main()
 
 My second approach was using 2 file pointers. One file pointer at starting of file and another file pointer at end of the file and by swapping the first character with last . & again reading next character and reading second last character and swapping them with each other.in this way also we can solve the problem . for smaller size files program was running in no time. again for larger file size. this was taking hours to execute.
 
+```C
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <unistd.h>
+
+void main()
+{
+
+	int s,n,p;
+  	 FILE *fp,*fp2;
+ 	char c,d,t;
+
+	
+
+  	if ((fp = fopen("input.txt","r+")) == NULL)
+	{
+       		printf("Error! opening file");
+
+     	}
+	
+	fp2=fopen("output.txt","r+");
+		
+	
+	struct stat st;
+	stat("demo2.txt", &st);
+  	n=st.st_size;
+
+	fseek(fp2,-2,SEEK_END);
+
+	p=n/2;
+	s=0;
+
+	while(s<p)
+	{
+		
+		c=fgetc(fp);
+		d=fgetc(fp2);
+		
+		t=c;
+		c=d;
+		d=t;
+
+		fseek(fp,-1,SEEK_CUR);
+		fseek(fp2,-1,SEEK_CUR);
+
+		fputc(c,fp);
+		fputc(d,fp2);
+
+		fseek(fp2,-2,SEEK_CUR);
+
+		s++;
+	}
+	
+	fclose(fp);
+	fclose(fp2);
+	
+}
+```
+
 
 
 ### Advantage
