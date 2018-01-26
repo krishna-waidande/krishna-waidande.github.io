@@ -39,15 +39,12 @@ int main()
 	
   	if ((fp = fopen("input.txt","r")) == NULL){
        printf("Error! opening file");
-
-     }
+	}
 
 	fp1= fopen("output.txt","w");
 
 	fseek(fp, -2, SEEK_END);
 	size=ftell(fp);
-
-	printf("%d\n",size);
 
 	while(n!=0)
 	{
@@ -56,9 +53,6 @@ int main()
 		fseek(fp,-2,SEEK_CUR);
 		n=ftell(fp);
 	}
-	
-	
-
 	fclose(fp);
 	fclose(fp1);
 	return 0;	
@@ -93,7 +87,6 @@ My second approach was using 2 file pointers. One file pointer at starting of fi
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <unistd.h>
-
 void main()
 {
 
@@ -101,17 +94,12 @@ void main()
   	 FILE *fp,*fp2;
  	char c,d,t;
 
-	
-
-  	if ((fp = fopen("input.txt","r+")) == NULL)
+	if ((fp = fopen("input.txt","r+")) == NULL)
 	{
        		printf("Error! opening file");
-
-     	}
-	
+	}
 	fp2=fopen("output.txt","r+");
 		
-	
 	struct stat st;
 	stat("demo2.txt", &st);
   	n=st.st_size;
@@ -120,25 +108,18 @@ void main()
 
 	p=n/2;
 	s=0;
-
 	while(s<p)
 	{
-		
 		c=fgetc(fp);
 		d=fgetc(fp2);
-		
 		t=c;
 		c=d;
 		d=t;
-
 		fseek(fp,-1,SEEK_CUR);
 		fseek(fp2,-1,SEEK_CUR);
-
 		fputc(c,fp);
 		fputc(d,fp2);
-
 		fseek(fp2,-2,SEEK_CUR);
-
 		s++;
 	}
 	
@@ -184,34 +165,27 @@ Then third approach came to my mind was reversing file order by using 2 files.fo
 void rev(char c[])
 {
 	int n,n1;
-	int i,j;
+	int i=0,j;
 	char t,k;
 	FILE *f,*fp;
-	
-	i=0;
 	
 	n=strlen(c);
 	n=n-1;
 	n1=n;
-	printf("%d",n);
 	
-			
 	while(i<n)
 	{
 		t=c[i];
 		c[i]=c[n];
 		c[n]=t;
-
 		i++;
 		n--;
 	}
 
-	
-	f=fopen("demo7.txt","a");
+	f=fopen("output.txt","a");
 	fwrite(c,1,n1+1,f);
 	fclose(f);
 }
-
 int main()
 {
 
@@ -224,13 +198,10 @@ int main()
        		printf("Error! opening file");
      	}
 
-	
-	
 	struct stat st;
 	stat("input.txt", &st);
   	n=st.st_size;
 	printf("%d",n);
-
 
 	if(n<=1024)
 	{
@@ -249,9 +220,7 @@ int main()
 		}
 	}
 	
-	
 	fclose(fp);
-	
 	return 0;	
 }
 
@@ -275,7 +244,9 @@ anhsirk si eman ym
 
 mahtuag si eman ym
 
-> Required Output
+**i am getting wrong output**
+
+> Required Output is
 
 mahtuag si eman ym
 
