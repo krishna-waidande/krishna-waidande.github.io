@@ -29,15 +29,15 @@ I tried that logic on smaller file size . It works faster so I thought that my a
 
 ### Advantage 
 
-Faster for smaller file size.
+> Faster for smaller file size.
 
-Memory requirement was less. 
+> Memory requirement was less. 
 	      
 	      
 
 ### Disadvantege 
 
-Not efficient for larger file size.
+> Not efficient for larger file size.
 
 ## Second Approach
 
@@ -47,14 +47,14 @@ My second appoach was using 2 file pointers . One file pointer at starting of fi
 
 ### Advantage 
 
-Faster for smaller size.
+> Faster for smaller size.
 
 
-Memory requirement was less.
+> Memory requirement was less.
 
 ### Disadvantege 
 
 
-Taking too much time for reversing large files.
+> Taking too much time for reversing large files.
 
 
