@@ -1,35 +1,35 @@
 # Things  Learned 
 
-> fgets() :-
+> # fgets() :-
 
           this function is used to read string from a file.
           
-          if '\n' char is appeared while reading with fgets(). fgets() fails to read further data. so this is disadvatage of fgets().
+          if '\n' char is appeared while reading with fgets(). fgets() fails to read further data. so this is disadvatage of 
           
           
-> fputs() :- 
+> # fputs() :- 
 
           this function is used to write our passed string onto destination file.
         
 
 
-> fgetc() :-
+> # fgetc() :-
 
-        this function is used to get perticuler a char from file.
+        this function reads one character from source file.
 
 
-> fputc() :- 
+> # fputc() :- 
 
-        this function is used to print particuler character onto destination file.
+        this function writes one character to destination file.
         
         
 
-> fread() :-
+> # fread() :-
 
 
 
-> fwrite() :- 
+> # fwrite() :- 
 
 
 
-> fseek() :-
+> # fseek() :-
