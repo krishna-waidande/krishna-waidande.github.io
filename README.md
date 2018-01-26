@@ -470,6 +470,162 @@ We can create n temp files and store 1 chunk in one temp file. In this way, we w
 by using this approach I get required output.
 
 
+so while coding for this approach my first thought was how can i create temp files in c . 2nd pronblem was how can i generate unique n no of file names. so after reading on blogs i found that using sprintf() in c we can generate n no of filenames so this function help me to to give filenames at runtime.
 
+so in this way i started coding for this approach.
+
+```C
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <unistd.h>
+#include<errno.h>
+
+int k=0;
+
+void rev(char c[])
+{
+	FILE *fp=NULL;	
+	int n=0,n1=0;
+	int i=0,j=0;
+	char t='\0';
+	char f[11]={NULL};
+
+	
+	n=strlen(c);
+	c[n]='\0';
+	n=n-1;
+
+	while(i<n)
+	{
+		t=c[i];
+		c[i]=c[n];
+		c[n]=t;
+
+		i++;
+		n--;
+	}
+
+	sprintf(f,"file%03d.txt",k++);
+    	fp=fopen(f,"w");
+	fputs(c,fp);
+	fclose(fp);
+}
+void append(int k)
+{
+	FILE *fp=NULL,*fp2=NULL;
+	char f[11]={NULL};
+	char c[1999990]={NULL};
+	int size=0;
+	
+	
+
+	
+	
+	sprintf(f,"file%03d.txt",k);
+	
+	fp2=fopen("demo1.txt","a");
+	
+	struct stat st;
+
+	stat(f, &st);
+  	size=st.st_size;
+	printf("%d",size);	
+	
+
+	fp=fopen(f,"r");
+	if(size<1999990)
+	{
+	
+	fread(c,size,1,fp);
+	fputs(c,fp2);
+	}
+	else
+	{
+		fread(c,1999990,1,fp);
+		fputs(c,fp2);
+	}
+	
+	//unlink(f);
+	fclose(fp);
+	fclose(fp2);
+
+}
+void delete(int k)
+{
+	char f[11];
+	//memset(f,'',sizeof(f));
+
+	sprintf(f,"file%03d.txt",k);
+	
+	unlink(f);
+
+}
+
+int main()
+{
+
+	long n=0,n1=0,s=0,i=0;
+  	 FILE *fp=NULL,*fp2=NULL;
+
+ 	char c[1999990]={NULL};
+	
+	if ((fp = fopen("input.txt","r")) == NULL)
+	{
+       		printf("Erro! opening file");
+
+     	}
+
+	struct stat st;
+	stat("input.txt", &st);
+  	n=st.st_size;
+	printf("%d",n);
+	
+	if(n<1999990)
+	{
+		fread(c,n,1,fp);
+		rev(c);
+
+	}
+	else
+	{
+		n1=1999990;
+		while(n>0)
+		{
+			if(n/1999990)
+			{
+				fread(c,n1,1,fp);
+				rev(c);
+				
+			}
+			else
+			{
+				n1=n%1999990;
+				fgets(c,n1,fp);
+				rev(c);
+				break;
+			}
+			
+			printf("\n %d \n",s++);
+			n=n-1999990;
+			
+		}
+	}
+	
+	fp2=fopen("demo1.txt","w");
+
+	for(i=k-1;i>=0;i--)
+	append(i);
+
+	for(i=k-1;i>=0;i--)
+	delete(i);
+
+	fclose(fp);
+	return 0;	
+}
+
+```
 
 
