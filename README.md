@@ -1,6 +1,6 @@
 # ASSIGNMENT 1
 
-[ASSIGNMENT2](https://krishna-waidande.github.io/krishna.github.io/)
+[ASSIGNMENT2](https://krishna-waidande.github.io/krishna.github.io/Assignment1.md)
 
 # Reverse the contents of an input file
 For example:
