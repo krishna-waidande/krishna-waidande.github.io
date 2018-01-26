@@ -33,3 +33,16 @@
 
 
 > # fseek() :-
+
+
++ #### In some versions of my code i was getting some garbage data into my output so one my collegue suggested me that. after declaration of every variable initialize that variable with some value. if i dont do so than there are much more chances of getting garbage in output. 
+
+
++ #### Give proper names to every variable. so that our code can be more readable.
+
++ #### How to debug . In the sense if we are getting some wrong output in that case try to put proper messages in our code & see what values we are getting.
+
+
+
+
+
