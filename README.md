@@ -87,3 +87,5 @@ mahtuag si eman ym
 so while inserting 2nd line i was looking for how can i place my new data at the begining of my file. this was not possible to add data to starting of output file . Because when I tried to do that old data was getting overwritten. so my this approach also failed.
 
 
+
+
