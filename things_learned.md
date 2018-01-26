@@ -30,16 +30,44 @@
 
 > ## fread() :-
 
+          this function reads a chunk of data from source file.
 
 
 > ## fwrite() :- 
 
-
+          this function writes a chunk of data to destination file.
 
 > ## fseek() :-
 
+          this function moves the file pointer to desired  position.
+          
 
-> ## sprintf();
+> ## sprintf() :-
+
+          sprintf stands for “String print”. Instead of printing on console, it store output on char buffer which are specified in sprintf. 
+          eg :-
+          
+          ```c
+          #include<stdio.h>
+          int main()
+          {
+                    char buffer[50];
+                    int a = 10, b = 20, c;
+                    c = a + b;
+                    
+                    sprintf(buffer, "Sum of %d and %d is %d", a, b, c);
+ 
+                    printf("%s", buffer);
+ 
+                    return 0;
+          }
+          
+          o/p :- Sum of 10 and 20 is 30.
+          
+          
+          ```
+          
+          **this above function helped me to generate n no of temp file names dynamically.**
 
 
 + ### In some versions of my code i was getting some garbage data into my output so one my collegue suggested me that. after declaration of every variable initialize that variable with some value. if i dont do so than there are much more chances of getting garbage in output. 
