@@ -1,5 +1,7 @@
 # Things  Learned 
 
+
+
 > ## fgets() :-
 
           this function is used to read string from a file.
