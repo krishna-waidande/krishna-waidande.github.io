@@ -14,7 +14,7 @@ For example,
 > Apple: 1 , is: 2 , healthy: 1 , junk: 1 , food: 2
 
 
-By Looking at this problem, First approach come to my mind was we can use collection of java.In map interface there is facility to store objects in key value pair.
+By Looking at this problem, First approach come to my mind was we can use ``collection of java.`` Map interface there is facility to store objects in key value pair.
 
 so I thought, I can put a word as a key and count as a value.
 
