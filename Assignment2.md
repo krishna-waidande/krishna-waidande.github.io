@@ -252,10 +252,10 @@ FUNCTION UPDATE_DB()
 END UPDATE_DB.
  ```
 
-##### NOTE:
+### NOTE:
 
 
-##### COLLECTION OBJECT WILL BE STORED IN <KEY,VALUE> PAIR WHERE KEY = WORD AND VALUE = COUNT.
+### COLLECTION OBJECT WILL BE STORED IN <KEY,VALUE> PAIR WHERE KEY = WORD AND VALUE = COUNT.
 
 
 #### above solution was correct for this problem but our mentor told us to come with some different solution.
