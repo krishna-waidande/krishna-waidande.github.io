@@ -264,6 +264,11 @@ so i start to think on a different solution . but nothing come to my mind. becau
 so later my mentor gave me suggestion try to solve this problem using cacheing (EHCACHE).
 
 so I started to read about how we can implement caching mechanism in our code.
-so in java there are so many APIs available to implement caching mechanism in java.
+In java there are many APIs available to implement caching mechanism in java.
 
-So I choose to 
+I read documentation of ehcache available on their official site
+
+[EHCACHE](http://www.ehcache.org/)
+
+
+
