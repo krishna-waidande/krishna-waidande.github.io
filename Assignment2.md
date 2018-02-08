@@ -277,7 +277,7 @@ I read documentation of ehcache available on their official site [EHCACHE](http:
 ## so read learn things section in my blog to get more information about ehcache.
 
 > before running this code please read [learned things](https://krishna-waidande.github.io//things_learned) to configure ehcache.
-without configuration code won't work.
+without configuration of ehcache code won't work.
 
 ```java
 
