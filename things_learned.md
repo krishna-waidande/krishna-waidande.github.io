@@ -150,3 +150,34 @@ Disk :- The object in Disk Storage needs to be Serialized else they stored as Nu
  
  + to know more about ehcache file elements open ehcache.xml file which is present in that extracted folder.
 
+This was my ehcache.xml file.
+
+```
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ehcache xsi:noNamespaceSchemaLocation="ehcache.xsd" updateCheck="true" monitoring="autodetect" dynamicConfig="true">
+<diskStore path="java.io.tmpdir"/>
+
+	 <defaultCache
+            maxElementsInMemory="10000"
+            eternal="false"
+            timeToIdleSeconds="120"
+            timeToLiveSeconds="120"
+            maxElementsOnDisk="10000000"
+            diskExpiryThreadIntervalSeconds="120"
+            memoryStoreEvictionPolicy="LRU">
+        <persistence strategy="localTempSwap"/>
+    </defaultCache>
+
+	<cache name="mycache1"
+		maxEntriesLocalHeap="10000"
+		maxEntriesLocalDisk="100000"
+		overflowToDisk="false"
+		eternal="true"
+		diskSpoolBufferSizeMB="20">
+	</cache>
+
+</ehcache>
+
+```
