@@ -331,6 +331,7 @@ public class word {
 		
 		
 				CacheManager cachemanager = CacheManager.newInstance("src/ehcache.xml");
+				//give path where you will keep ehcache.xml file I put this file in src folder.
 		
 				Cache cache = cachemanager.getCache("mycache1");
 				
