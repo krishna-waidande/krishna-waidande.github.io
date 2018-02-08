@@ -1,10 +1,10 @@
 # Assignment 2
 
-So My second assignment was about count no of words from given text file.
+# So My second assignment was about count no of words from given text file.
 
-Again i have to test that code with larger file size.
+> Again i have to test that code with larger file size.
  
- Count the occurrences of every word in an input file
+# Count the occurrences of every word in an input file
 
 For example, 
 
