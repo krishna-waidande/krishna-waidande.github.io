@@ -92,17 +92,41 @@
 EHCAHE :-
 
 Its an open source library for implementing caching that is completely developed in java.
-Ehcache usually stores the hottest data i.e the data that is most frequently needed and we need to retrive it faster.
-Its basic structure is using LinkedHashMap.
-It stores the data in <key,value> pair of datatype Element
-It has 4 tier storage structure which are as follows -
-On-Heap
-Off-Heap
-Disk
-Clustered
 
-Prominetly On-Heap storage is used;  
-On-Heap has limited storage as it is stored on JVM's heap memory
-Off-Heap is stored in RAM and the size of Off-Heap is limited by the availability of RAM it needs to be Serialized
-The object in Disk Storage needs to be Serialized else they stored as Null.
+
++ Cache usually stores the hottest data i.e the data that is most frequently needed and we need to retrive it faster.
+
+
++ Its basic structure is using LinkedHashMap.
+
+
++ It stores the data in <key,value> pair of datatype Element
++ It has 4 tier storage structure which are as follows -
+
+
+On-Heap :- On-Heap has limited storage as it is stored on JVM's heap memory
+
+
+Off-Heap :- Off-Heap is stored in RAM and the size of Off-Heap is limited by the availability of RAM it needs to be Serialized
+
+
+Disk :- The object in Disk Storage needs to be Serialized else they stored as Null.
+
+ ADVANTAGES OF EHCACHE OVER COLLECTION OBJECT :- 
+ 
+ 
+ > In Ehcache we can limit the maximum element a cache can have as well as how much memory a cache can consume.
+  
+ > If it reaches the limit then Ehcache has the algorithms such as LRU,LFU etc to clean itself. (Which is not possible in Map or HashMap interfaces, We have to add those functionality explicitly)
+ 
+ 
+ > Ehcache provides the functionality of when the memory cache exceeds a certain limit then overflowing to the disk is possible.
+  
+ > In Ehcache suppose the system crashes or goes into unplanned shutdowm then the data will stay persistant.
+ 
+ > Persistence :-
+ 
+ 
+ To get more info about how to implement persistence click here.[persistence](http://www.ehcache.org/generated/2.10.4/html/ehc-all/#page/Ehcache_Documentation_Set%2Fto-persist_configuring_persistance_and_restart.html%23)
+  
 
