@@ -212,13 +212,12 @@ END MAKE_SERIALIZE().
 
 + ### THIRD APPROACH
 
-o later after thinking we come up with solution that we will read the file in chunk by chunk and split that chunk into words and start storing each word into database.
+So later after thinking we come up with solution that we will read the file in chunk by chunk and split that chunk into words and start storing each word into database.
 and while inserting word only check whether that word is present there or not. if a word is present increment the count of word in database.
 
 
 
 ```
-
 MAIN()
 
 WHILE 
