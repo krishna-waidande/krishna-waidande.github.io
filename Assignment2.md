@@ -13,7 +13,7 @@ For example,
 
 > Apple: 1 , is: 2 , healthy: 1 , junk: 1 , food: 2
 
-### First Approach
++ ### First Approach
 
 
 By Looking at this problem, First approach come to my mind was we can use ```collection of java.``` Map interface there is facility to store objects in key value pair.
@@ -152,7 +152,7 @@ public class word {
 
 ```
 
-# SECOND APPROACH
++ ### SECOND APPROACH
 
 
 so then after i strted to think for another approach.
