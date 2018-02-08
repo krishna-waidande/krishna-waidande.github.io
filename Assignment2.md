@@ -41,3 +41,55 @@ So this was ```disadvantage of our approach that we cant restrict size of collec
 # SECOND APPROACH
 
 
+so then after i strted to think for another approach.
+
+then afterwords. next approach come to my mind was we can serialise the collection object.
+
+serialization means storing the current state of object into file . and vise varsa means retriving orignal object from file is called as deserialization.
+
+but it was very difficult to implement. so these approach also failed .
+
+PSUDO CODE 
+
+> Approach 2 using SERIALIZATION CONCEPT
+
+```
+MAIN()
+
+CREATE OUTPUT FILE.
+WHILE 
+	READ THE INPUT FILE BY FIXED CHUNK SIZE.
+	SPLIT THE CHUNK WORD BY WORD.
+	PUT THE WORDS IN THE ARRAY OF COLLECTION OBJECT TEMP_COLL.
+	
+	FUNCTION CALL TO MAKE_SERIALIZE()
+
+LOOP UNTIL END OF FILE. 
+READ THE NEXT CHUNK(REPEAT WHILE).
+
+
+FUNCTION MAKE_SERIALIZE()
+
+WHILE
+
+	DECLARE  COLLECTION OBJECT MASTER_COLL.
+	READ THE ARRAY OF COLLECTION OBJECT TEMP_COLL.
+
+	RETRIVE THE CONTENTS OF MASTER_COLL FROM THE OUTPUT FILE.
+
+	CHECK WHETHER THE WORD(COLLECTION OBJECT TEMP_COLL) IS PRESENT IN THE MASTER_COLL.
+
+	IF PRESENT
+	  UPDATE THE COUNT IN MASTER_COLL.
+	ELSE
+	  INSERT THE WORD IN MASTER_COLL.
+
+	WRITE THE MASTER_COLL OBJECT INTO THE OUTPUT FILE.(SERIALIZTION OF OBJECTS)
+	CLEAR MASTER_COLL DATA.
+
+	END WHILE.	
+
+	RETURN TO MAIN().
+
+END MAKE_SERIALIZE().
+```
