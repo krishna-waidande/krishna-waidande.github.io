@@ -1,5 +1,6 @@
-# ASSIGNMENT 1  [ASSIGNMENT2](https://krishna-waidande.github.io//Assignment2) [THINGS LEARNED](https://krishna-waidande.github.io//things_learned)     
+### [ASSIGNMENT2](https://krishna-waidande.github.io//Assignment2) | [THINGS LEARNED](https://krishna-waidande.github.io//things_learned)     
 
+# ASSIGNMENT 1
 
 # Reverse the contents of an input file
 For example:
