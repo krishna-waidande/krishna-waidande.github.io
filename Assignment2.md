@@ -16,7 +16,7 @@ For example,
 ### First Approach
 
 
-By Looking at this problem, First approach come to my mind was we can use ``collection of java.`` Map interface there is facility to store objects in key value pair.
+By Looking at this problem, First approach come to my mind was we can use ```collection of java.``` Map interface there is facility to store objects in key value pair.
 
 so I thought, I can put a word as a key and count as a value.
 
@@ -36,3 +36,8 @@ I can write a marathi word in english so there is possibility of my object can e
 My mentor suggested us that a think a appraoch for that file which will contain 4-5gb of words. so our object will occupy the space of all RAM. so in this condition our code wont be able to run .
 
 So this was ```disadvantage of our approach that we cant restrict size of collection object.```
+
+
+# SECOND APPROACH
+
+
