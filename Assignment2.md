@@ -26,11 +26,11 @@ but later one thought come to my mind. i.e I googled english dictionry word coun
 
 ``` Oxford English Dictionary contains full entries for 171,476 words in current use, and 47,156 obsolete words. To this may be added around 9,500 derivative words included as subentries.```
 
-So after reading this  I feel that all those words can fit into collection object. because that was a finite number . So at most our collection object will go upto 10-15 mb.
+So after reading this  I feel that all those words can fit into collection object. because that was a finite number . So at most our ```collection object will go upto 10-15 MB.```
 
 but the problem with that solution was what if my text file will contain words other than english words. for exmple 
-i can write a marathi word in english so there is posiblity of my object can exceed the 10-15 mb size.
+I can write a marathi word in english so there is possibility of my object can exceed the 10-15 MB size.
 
-my mentor suggested us that a think a appraoch for that file which will contain 4-5gb of words. so our object will occupy the space of all RAM. so in this condition our code wont be able to run .
+My mentor suggested us that a think a appraoch for that file which will contain 4-5gb of words. so our object will occupy the space of all RAM. so in this condition our code wont be able to run .
 
-so this was disadvantage of our approach that we cant restrict size of collection object.
+So this was ```disadvantage of our approach that we cant restrict size of collection object.```
