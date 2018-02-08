@@ -37,6 +37,8 @@ My mentor suggested us that a think a appraoch for that file which will contain 
 
 So this was ```disadvantage of our approach that we cant restrict size of collection object.```
 
+But if you know collection object wont exceed size limit. means it will take less memory you can go for this approach.
+
 
 # SECOND APPROACH
 
