@@ -89,5 +89,20 @@
 
 ## Assignment 2
 
+EHCAHE :-
 
+Its an open source library for implementing caching that is completely developed in java.
+Ehcache usually stores the hottest data i.e the data that is most frequently needed and we need to retrive it faster.
+Its basic structure is using LinkedHashMap.
+It stores the data in <key,value> pair of datatype Element
+It has 4 tier storage structure which are as follows -
+On-Heap
+Off-Heap
+Disk
+Clustered
+
+Prominetly On-Heap storage is used;  
+On-Heap has limited storage as it is stored on JVM's heap memory
+Off-Heap is stored in RAM and the size of Off-Heap is limited by the availability of RAM it needs to be Serialized
+The object in Disk Storage needs to be Serialized else they stored as Null.
 
