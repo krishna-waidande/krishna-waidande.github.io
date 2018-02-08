@@ -271,4 +271,147 @@ I read documentation of ehcache available on their official site [EHCACHE](http:
 ## so read learn things section in my blog to get more information about ehcache.
 
 
+```java
+
+package Assisn;
+import net.sf.ehcache.Cache;
+import net.sf.ehcache.CacheManager;
+import net.sf.ehcache.Element;
+import java.util.*;
+import java.io.*;
+
+public class word {
+
+	public word() {
+	}
+
+	
+	public static void storeToCache(String str,Cache cache)
+	{
+		StringTokenizer string_token = new StringTokenizer(str," ");									//split chunk by space to get individual words.
+		
+		
+		while (string_token.hasMoreTokens()) {  
+         
+		 String str_word = string_token.nextToken();
+		
+		if(cache.isKeyInCache(str_word))	//if word is in cache just increment word count.
+		{
+			Element el = cache.get(str_word);
+			
+			cache.put(new Element(str_word ,Integer.parseInt(el.getObjectValue().toString())+1));						
+			
+		}
+		else
+		{
+		
+			cache.put(new Element(str_word,1));	//New word is inserted in cache and word count is 1
+		
+		}
+		
+		}//while
+		
+		
+	}
+	
+	public static void main(String[] args) throws IOException{
+		
+		long startTime = System.nanoTime();
+		
+		File file= new File("demo1.txt");
+		
+		FileReader filereader = new FileReader("demo1.txt");
+		FileWriter filewriter = new FileWriter("output.txt");
+		
+		
+
+		BufferedReader buffreader = new BufferedReader(filereader);
+		BufferedWriter buffwriter = new BufferedWriter(filewriter);
+		
+		
+		
+				CacheManager cachemanager = CacheManager.newInstance("src/ehcache.xml");
+		
+				Cache cache = cachemanager.getCache("mycache1");
+				
+				cachemanager.clearAll();
+				
+			
+				
+				long filesize = file.length();
+				
+				char cbuf[] = new char[4999990];	//to store chunk
+				
+				long remainder= filesize % 4999990;
+				
+				String temp_str;
+				
+				int index;
+			
+				
+				do
+				{
+					buffreader.read(cbuf, 0, (int)remainder);	// reading by chunk size of n bytes
+					filesize = filesize - remainder;
+					remainder=4999990;
+						
+					temp_str=new String(cbuf);	
+					temp_str=temp_str.replaceAll("[^a-zA-Z0-9]"," ");//remove special characters.
+					
+					word.storeToCache(temp_str , cache);		//function call to storeTocache
+				
+				}while(filesize>0);
+				
+				
+				List keylist = cache.getKeys();				//retrieving all keys present in  the cache
+				int size = keylist.size();
+				
+				ListIterator iterator = keylist.listIterator();
+				
+				while(iterator.hasNext())
+				{
+					
+					String key= iterator.next().toString();
+					
+					Element el = cache.get(key);			//getting value according to key.
+					
+					String value = el.getObjectValue().toString();
+					
+					buffwriter.write(key+" -> "+value+"\n");	//storing key values in text file.
+					
+				}
+				
+				
+					
+				long memsize = cache.getMemoryStoreSize();
+				System.out.println("Data On Memory = "+memsize);
+				
+				long disksize=cache.getDiskStoreSize();
+				System.out.println("Data On Disk = "+disksize);
+				
+				cachemanager.clearAll();
+				cachemanager.shutdown();
+
+				buffreader.close();
+				buffwriter.close();
+				
+				
+				filereader.close();
+				filewriter.close();
+				
+				 
+	
+		
+				long endTime   = System.nanoTime();
+				long totalTime = (endTime - startTime)/1000000000;
+				
+				System.out.println("execution time for program="+totalTime+" secs");
+				System.out.println("getkeys size = "+ size);
+				
+		}
+
+}
+```
+
+
 
