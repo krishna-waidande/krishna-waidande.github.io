@@ -124,7 +124,7 @@ Disk :- The object in Disk Storage needs to be Serialized else they stored as Nu
   
  > In Ehcache suppose the system crashes or goes into unplanned shutdowm then the data will stay persistant.
  
- > Persistence :-
+ > Persistence :- Persistence means the cache will survive a JVM restart. Everything that was in the cache will still be there after restarting the JVM and creating a CacheManager disk persistence at the same location.
  
  
  To get more info about how to implement persistence click here.[persistence](http://www.ehcache.org/generated/2.10.4/html/ehc-all/#page/Ehcache_Documentation_Set%2Fto-persist_configuring_persistance_and_restart.html%23)
