@@ -111,21 +111,21 @@ public class word {
 			}while(filesize>0);//while
 				
 				
-				Set<String> l= hm.keySet();
+				Set<String> keyset = hm.keySet();		//got all keys i.e words from collection object.
 				
-				int size=l.size();
+				int size = keyset.size();
 				
-				Iterator<String> it= l.iterator();
+				Iterator<String> it= keyset.iterator();
 
-				int j=0;
-				while(it.hasNext())
+				
+				while(it.hasNext())				//writing data to output file		
 				{
-					String s= it.next().toString();
+					String key = it.next().toString();
 					
-					String v=hm.get(s).toString();
+					String value = hm.get(key).toString();
 					
-					buffer.write(j+" "+s+" -> "+v+"\n");
-					j++;
+					buffwriter.write(s+" -> "+v+"\n");
+					
 				}
 			
 					
