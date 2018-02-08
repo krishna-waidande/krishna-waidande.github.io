@@ -1,5 +1,7 @@
 # Things  Learned 
 
+## Assignment 1 
+
 
 ## FUNCTIONS :
 
@@ -84,6 +86,8 @@
 + ### How to debug . In the sense if we are getting some wrong output in that case try to put proper messages in our code & see what values we are getting.
 
 
+
+## Assignment 2
 
 
 
