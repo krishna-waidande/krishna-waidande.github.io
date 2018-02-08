@@ -131,5 +131,22 @@ Disk :- The object in Disk Storage needs to be Serialized else they stored as Nu
  
  
  To get more info about how to implement persistence click here.[persistence](http://www.ehcache.org/generated/2.10.4/html/ehc-all/#page/Ehcache_Documentation_Set%2Fto-persist_configuring_persistance_and_restart.html%23)
+ 
+ 
+ EHCACHE configuration :- 
+ you can refer to EHCACHE official documentation for configuration of latest version of [EHCACHE Configuration](http://www.ehcache.org/documentation/2.8/configuration/configuration.html#ehcache-failsafe.xml) for version 3.10.
+ 
+ 
+ 
+ Configuration of 2.10 -
+ 
+ + Download the jar file of ehcache2.10.
+ + extract that jar into your workspace.
+ 
+ + after extraction open your IDE (I was using eclipse) so include 3 jar files into your project which are present in 
+ ```ehcache2.10/lib/``` folder.
   
+ + after extracting create ehcache.xml file and place in your workspace.
+ 
+ + to know more about ehcache file elements open ehcache.xml file which is present in that extracted folder.
 
