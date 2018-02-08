@@ -161,7 +161,7 @@ then afterwords. next approach come to my mind was we can serialise the collecti
 
 serialization means storing the current state of object into file . and vise varsa means retriving orignal object from file is called as deserialization.
 
-but it was very difficult to implement. so these approach also failed .
+but it was very complex to implement. and in this approach also my whole object was coming into memory . so this was a wrong approach to solve this problem.
 
 PSUDO CODE 
 
@@ -206,4 +206,54 @@ WHILE
 	RETURN TO MAIN().
 
 END MAKE_SERIALIZE().
+
 ```
+
+
++ ### THIRD APPROACH
+
+o later after thinking we come up with solution that we will read the file in chunk by chunk and split that chunk into words and start storing each word into database.
+and while inserting word only check whether that word is present there or not. if a word is present increment the count of word in database.
+
+
+
+```
+
+MAIN()
+
+WHILE 
+	READ THE FILE BY FIXED CHUNK SIZE.
+	SPLIT THE CHUNK WORD BY WORD.
+	PUT THE WORDS IN THE ARRAY OF COLLECTION OBJECT.
+
+	FUNCTION CALL TO UPDATE_DB()
+
+LOOP UNTIL END OF FILE. 
+READ THE NEXT CHUNK(REPEAT WHILE).
+
+
+
+
+FUNCTION UPDATE_DB()
+	
+	WHILE
+	READ THE ARRAY OF COLLECTION OBJECT 
+
+	CHECK WHETHER THE WORD(COLLECTION OBJECT) IS PRESENT IN THE DATABASE TABLE.
+
+	IF PRESENT
+	  UPDATE THE COUNT IN DB.
+	ELSE
+	  INSERT THE WORD IN DB.
+
+	END WHILE.	
+
+	RETURN TO MAIN().
+
+END UPDATE_DB.
+ ```
+
+### NOTE:
+
+
+### COLLECTION OBJECT WILL BE STORED IN <KEY,VALUE> PAIR WHERE KEY = WORD AND VALUE = COUNT.
