@@ -1,10 +1,10 @@
 # Assignment 2
 
-# So My second assignment was about count no of words from given text file.
+### So My second assignment was about count no of words from given text file.
 
 > Again i have to test that code with larger file size.
  
-# Count the occurrences of every word in an input file
+### Count the occurrences of every word in an input file
 
 For example, 
 
@@ -28,8 +28,8 @@ but later one thought come to my mind. i.e I googled english dictionry word coun
 
 So after reading this  I feel that all those words can fit into collection object. because that was a finite number . So at most our ```collection object will go upto 10-15 MB.```
 
-but the problem with that solution was what if my text file will contain words other than english words. for exmple 
-I can write a marathi word in english so there is possibility of my object can exceed the 10-15 MB size.
+but the ``problem with that solution was what if my text file will contain words other than english words. for exmple 
+I can write a marathi word in english so there is possibility of my object can exceed the 10-15 MB size.``
 
 My mentor suggested us that a think a appraoch for that file which will contain 4-5gb of words. so our object will occupy the space of all RAM. so in this condition our code wont be able to run .
 
