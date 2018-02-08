@@ -104,7 +104,7 @@ Its an open source library for implementing caching that is completely developed
 
 
 + It stores the data in <key,value> pair of datatype Element
-+ It has 4 tier storage structure which are as follows -
++ It have various tier storage structures which are as follows -
 
 
 On-Heap :- On-Heap has limited storage as it is stored on JVM's heap memory
