@@ -1,4 +1,4 @@
-# Assignment 2
+# Assignment 2 - [Assigment 1](https://krishna-waidande.github.io//) [Learned things] (https://krishna-waidande.github.io//things_learned)
 
 ### So My second assignment was about count no of words from given text file.
 
