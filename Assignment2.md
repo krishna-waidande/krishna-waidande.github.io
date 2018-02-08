@@ -252,13 +252,13 @@ FUNCTION UPDATE_DB()
 END UPDATE_DB.
  ```
 
-### NOTE:
+#### NOTE:
 
 
-### COLLECTION OBJECT WILL BE STORED IN <KEY,VALUE> PAIR WHERE KEY = WORD AND VALUE = COUNT.
+#### COLLECTION OBJECT WILL BE STORED IN <KEY,VALUE> PAIR WHERE KEY = WORD AND VALUE = COUNT.
 
 
-#### above solution was correct for this problem but our mentor told us to come with some different solution.
+### above solution was correct for this problem but our mentor told us to come with some different solution.
 so i start to think on a different solution . but nothing come to my mind. because i was wondoring how I am going to store large data into memory without using database. 
 
 so later my mentor gave me suggestion try to solve this problem using cacheing (EHCACHE).
