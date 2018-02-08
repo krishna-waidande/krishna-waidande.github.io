@@ -215,7 +215,7 @@ END MAKE_SERIALIZE().
 So later after thinking we come up with solution that we will read the file in chunk by chunk and split that chunk into words and start storing each word into database.
 and while inserting word only check whether that word is present there or not. if a word is present increment the count of word in database.
 
-
+This was a correct and good approach to solve this type of problem.
 
 ```
 MAIN()
@@ -256,3 +256,14 @@ END UPDATE_DB.
 
 
 ### COLLECTION OBJECT WILL BE STORED IN <KEY,VALUE> PAIR WHERE KEY = WORD AND VALUE = COUNT.
+
+
+### above solution was correct for this problem but our mentor told us to come with some different solution.
+so i start to think on a different solution . but nothing come to my mind. because i was wondoring how I am going to store large data into memory without using database. 
+
+so later my mentor gave me suggestion try to solve this problem using cacheing (EHCACHE).
+
+so I started to read about how we can implement caching mechanism in our code.
+so in java there are so many APIs available to implement caching mechanism in java.
+
+So I choose to 
