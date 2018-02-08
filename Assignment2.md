@@ -262,6 +262,9 @@ END UPDATE_DB.
 
 
 ### above solution was correct for this problem but our mentor told us to come with some different solution.
+
++ ### Forth Approach
+
 so i start to think on a different solution . but nothing come to my mind. because i was wondoring how I am going to store large data into memory without using database. 
 
 so later my mentor gave me suggestion try to solve this problem using cacheing (EHCACHE).
