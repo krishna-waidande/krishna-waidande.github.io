@@ -1,6 +1,5 @@
 
-[Assigment 1](https://krishna-waidande.github.io//) 
-[Learned things](https://krishna-waidande.github.io//things_learned)
+### [Assigment 1](https://krishna-waidande.github.io//) [Learned things](https://krishna-waidande.github.io//things_learned)
 
 # Assignment 2 
 
