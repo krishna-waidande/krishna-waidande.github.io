@@ -39,6 +39,118 @@ So this was ```disadvantage of our approach that we cant restrict size of collec
 
 But if you know collection object wont exceed size limit. means it will take less memory you can go for this approach.
 
+```java
+
+
+import java.util.*;
+import java.io.*;
+
+public class word {
+
+	public word() {
+	}
+
+	public static void main(String[] args) throws IOException{
+		long startTime = System.nanoTime();
+		
+		File f= new File("1gb.txt");
+		
+		FileReader filereader = new FileReader("1gb.txt");
+		FileWriter filewriter = new FileWriter("testout.txt");
+
+		BufferedReader buffreader = new BufferedReader(filereader);
+		BufferedWriter buffwriter = new BufferedWriter(filewriter);
+
+		HashMap<String,Integer> hm= new HashMap();
+			
+				
+				long filesize= f.length();
+				
+				char cbuf[] =new char[3999990];
+				
+				long n= filesize % 3999990;
+				
+				String temp_str;
+				int i=0;
+			
+				
+			do
+			{
+					br.read(cbuf, 0, (int)n);
+					filesize = filesize - n;
+					n = 3999990;
+						
+					temp_str = new String(cbuf);	
+
+				
+				String[] words = temp_str.split("[\\s@&.?$+-;=|\\<|\\>|\\[|\\]|\\/|@|\\'|\\(|\\)]+"); 
+				
+				while (i < words.length) 
+				{  
+					String s = words[i]; 
+				
+					if(hm.containsKey(s))
+					{
+						hm.put(ab,hm.get(s)+1);
+					
+					}
+					else
+					{
+				
+						hm.put(s,1);
+				
+					}
+				
+					i++;
+				
+				}//innerwhile
+				
+				i=0;
+				
+				
+			}while(filesize>0);//while
+				
+				
+				Set<String> l= hm.keySet();
+				
+				int size=l.size();
+				
+				Iterator<String> it= l.iterator();
+
+				int j=0;
+				while(it.hasNext())
+				{
+					String s= it.next().toString();
+					
+					String v=hm.get(s).toString();
+					
+					buffer.write(j+" "+s+" -> "+v+"\n");
+					j++;
+				}
+			
+					
+					
+				
+				br.close();
+				buffer.close();
+				
+				fr.close();
+				fw.close();
+				
+				 
+				long endTime   = System.nanoTime();
+				long totalTime = (endTime - startTime)/1000000000;
+				
+				System.out.println("execution time for program="+totalTime+" secs");
+				System.out.println("execution ends = "+ size);
+		}
+
+}
+
+
+
+
+```
 
 # SECOND APPROACH
 
