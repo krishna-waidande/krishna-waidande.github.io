@@ -2,7 +2,7 @@
 ### [Assigment 1](https://krishna-waidande.github.io//) | [Gradle Installation](https://krishna-waidande.github.io//gradle) | [Apache Tomcat Installation](https://krishna-waidande.github.io//tomcat)
 
 
-# Assignment 2  | [Learned things](https://krishna-waidande.github.io//things_learned2)
+# Assignment 2  | [Things learned](https://krishna-waidande.github.io//things_learned2)
 
 ### So My second assignment was about count no of words from given text file.
 
