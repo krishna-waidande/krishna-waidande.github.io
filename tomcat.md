@@ -39,3 +39,23 @@ To check whether server has started or not [Click Here](http://localhost:8080/)
 
 10 . To stop server .
 > $CATALINA_HOME/bin/shutdown.sh
+
+
+
+### While following above steps I got error so belew is a error an solution to that error .
+ 
+ So at step #6
+ ```
+user@user-Lenovo-ideapad-320-15ISK:/$ sudo gedit /etc/environment
+No protocol specified
+Unable to init server: Could not connect: Connection refused				//error
+
+(gedit:3219): Gtk-WARNING **: cannot open display: :0
+```
+#### Solution to above error
+```
+user@user-Lenovo-ideapad-320-15ISK:/$ xhost +si:localuser:root			//solution to error
+localuser:root being added to access control list
+user@user-Lenovo-ideapad-320-15ISK:/$ sudo gedit /etc/environment
+```
+
