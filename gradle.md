@@ -1,4 +1,4 @@
-### [Assignment1](https://krishna-waidande.github.io//README) | [Assignment2](https://krishna-waidande.github.io//Assignment2) | [Things Learned](https://krishna-waidande.github.io//things_learned) | [Apache Tomcat Installation](https://krishna-waidande.github.io//tomcat.md) 
+### [Assignment1](https://krishna-waidande.github.io//README) | [Assignment2](https://krishna-waidande.github.io//Assignment2) |  [Apache Tomcat Installation](https://krishna-waidande.github.io//tomcat.md) 
 
 
 ## Gradle Installation
