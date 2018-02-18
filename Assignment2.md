@@ -1,8 +1,8 @@
 
-### [Assigment 1](https://krishna-waidande.github.io//) | [Learned things](https://krishna-waidande.github.io//things_learned) | [Gradle Installation](https://krishna-waidande.github.io//gradle) | [Apache Tomcat Installation](https://krishna-waidande.github.io//tomcat)
+### [Assigment 1](https://krishna-waidande.github.io//) | [Gradle Installation](https://krishna-waidande.github.io//gradle) | [Apache Tomcat Installation](https://krishna-waidande.github.io//tomcat)
 
 
-# Assignment 2 
+# Assignment 2  | [Learned things](https://krishna-waidande.github.io//things_learned2)
 
 ### So My second assignment was about count no of words from given text file.
 
