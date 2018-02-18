@@ -1,3 +1,6 @@
+[ASSIGNMENT1](https://krishna-waidande.github.io//README) | [ASSIGNMENT2](https://krishna-waidande.github.io//Assignment2) | [THINGS LEARNED](https://krishna-waidande.github.io//things_learned) 
+
+
 ## Gradle Installation
 
 1 . Download zip file of gradlbe from https://gradle.org/releases/
@@ -47,4 +50,4 @@ OS:           Linux 4.13.0-32-generic amd64
 ```
 
 This is a offical link for installation of gradle 
-[Gradle-Install]https://gradle.org/install/
+[Gradle-Install](https://gradle.org/install/)
