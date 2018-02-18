@@ -1,4 +1,4 @@
-## gradle installation
+## Gradle Installation
 
 1 . Download zip file of gradlbe from https://gradle.org/releases/
 
