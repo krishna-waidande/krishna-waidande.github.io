@@ -3,7 +3,10 @@
 
 1 . Download the latest version of Apache Tomcat from here >> [Get Apache](https://tomcat.apache.org/download-80.cgi)
 
-2 . Open the Terminal (Ctrl + Alt + T) and enter the following command to change the directory.
+2 . Open the Terminal (Ctrl + Alt + T) and enter the following commands. 
+
+
+To change the directory.
 > cd /opt/
 
 3 . Enter the command given below to extract the Tomcat from  the ~/Downloads directory. If your downloaded file is in any other directory, replace the last parameter by the actual file path.
