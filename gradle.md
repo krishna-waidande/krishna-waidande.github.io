@@ -24,3 +24,24 @@
 type this command in terminal
 ```export PATH=$PATH:/opt/gradle/gradle-4.5.1/bin:$PATH```
 
+After that just run this command into terminal
+
+> gradle -v or gradle --version
+
+
+You will get following output
+
+```
+------------------------------------------------------------
+Gradle 4.5.1
+------------------------------------------------------------
+
+Build time:   2018-02-05 13:22:49 UTC
+Revision:     37007e1c012001ff09973e0bd095139239ecd3b3
+
+Groovy:       2.4.12
+Ant:          Apache Ant(TM) version 1.9.9 compiled on February 2 2017
+JVM:          9.0.4 (Oracle Corporation 9.0.4+11)
+OS:           Linux 4.13.0-32-generic amd64
+
+```
