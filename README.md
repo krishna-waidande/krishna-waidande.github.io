@@ -1,4 +1,4 @@
-### [Assignment2](https://krishna-waidande.github.io//Assignment2) | [Things learned](https://krishna-waidande.github.io//things_learned) | [Gradle Installation](https://krishna-waidande.github.io//gradle.md) | [Apache Tomcat Installation](https://krishna-waidande.github.io//tomcat.md)
+### [Assignment2](https://krishna-waidande.github.io//Assignment2) | [Things learned](https://krishna-waidande.github.io//things_learned) | [Gradle Installation](https://krishna-waidande.github.io//gradle) | [Apache Tomcat Installation](https://krishna-waidande.github.io//tomcat)
 
 # ASSIGNMENT 1
 
