@@ -83,18 +83,15 @@ user@user-Lenovo-ideapad-320-15ISK:~/Desktop/DemoProject/DemoProject$
 
 ```
 
-In above example DemoProject is name of my remote repository (Github repository) . 
+  In above example DemoProject is name of my remote repository (Github repository) . 
 
-Get into that folder by typing cd <repository name> as show above.
-  
+  Get into that folder by typing cd <repository name> as show above.
   
   Now You can create your project Folder files/folder in this folder.
   
   Now we will see how to add a text file into remote repository.
   
   create a text file once created just type following commands
-  
-  # Basic Git Commands
   
   git add <filename / folder name> : To add files to remote repository.
   ```
@@ -114,8 +111,6 @@ Get into that folder by typing cd <repository name> as show above.
   create mode 100644 DemoFile.txt
   ```
   
-  git status :- 
-  
   git push : to push our local file / folder to remote repository.
   
   while pushing file it asks for your username and password just provide username and password of your github account.
@@ -131,6 +126,13 @@ Get into that folder by typing cd <repository name> as show above.
   * [new branch]      master -> master
   ```
   After push you can go to your Github  account and refresh the page you will see your file there. 
+  
+  
+  Note :- for now we are adding files to master so you can use ```git push``` coommand as it is . but if you want to add
+          your file to another branch you need to run this command.
+          ``` git push origin newBranchName```
+  
+  
   
   git branch :- telles us on which branch we are.
   ``` 
