@@ -15,9 +15,6 @@ Firstly getting started with git let me explain you about git.
 ```Git is a version control system. that means``` 
 
 
-Now we will learn how to use basic git commands.
-
-
 first install git on your machine .
 to install git [Click-here](https://git-scm.com/download/linux).
 
@@ -89,7 +86,8 @@ user@user-Lenovo-ideapad-320-15ISK:~/Desktop/DemoProject/DemoProject$
   
   Now You can create your project Folder files/folder in this folder.
   
-  Now we will see how to add a text file into remote repository.
+  Now we will see 
+  #### how to add a text file into remote repository.
   
   create a text file once created just type following commands
   
