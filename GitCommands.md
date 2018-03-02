@@ -118,6 +118,20 @@ Get into that folder by typing cd <repository name> as show above.
   
   git push : to push our local file / folder to remote repository.
   
+  while pushing file it asks for your username and password just provide username and password of your github account.
+  
+  ```
+  user@user-Lenovo-ideapad-320-15ISK:~/Desktop/DemoProject/DemoProject$ git push
+  Username for 'https://github.com': krishna-waidande
+  Password for 'https://krishna-waidande@github.com': 
+  Counting objects: 3, done.
+  Writing objects: 100% (3/3), 254 bytes | 254.00 KiB/s, done.
+  Total 3 (delta 0), reused 0 (delta 0)
+  To https://github.com/krishna-waidande/DemoProject.git
+  * [new branch]      master -> master
+  ```
+  After push you can go to your Github  account and refresh the page you will see your file there. 
+  
   git branch :- telles us on which branch we are.
   ``` 
   user@user-Lenovo-ideapad-320-15ISK:~/Desktop/DemoProject/DemoProject$ git branch
