@@ -28,7 +28,7 @@ Create a account on [Github](https://github.com)
 
 After creating account on Github you will see a window on that window look on on right upper corner on navigation bar.
 
-> You will se a + sign click on that sign choose new repository option.
+> You will see + sign click on that sign choose new repository option.
 
 
 > Now give a repository name same as your project name (not mendatory same as project).
@@ -62,4 +62,27 @@ now you are in a project where you want to clone a github repository.
 
 now on teminal just before typing a command just go on your github page and copy the url.
 
+for exmmple :- https://github.com/krishna-waidande/DemoProject.git
 
+
+and now on terminal type following command and hit enter.
+
+```
+git clone https://github.com/krishna-waidande/DemoProject.git
+```
+After typing this command just type ```ls``` you will see a folder is created in your local machine name will be same as your remote repository name. 
+
+```
+user@user-Lenovo-ideapad-320-15ISK:~/Desktop/DemoProject$ git clone https://github.com/krishna-waidande/DemoProject.git
+Cloning into 'DemoProject'...
+warning: You appear to have cloned an empty repository.
+user@user-Lenovo-ideapad-320-15ISK:~/Desktop/DemoProject$ ls
+DemoProject
+user@user-Lenovo-ideapad-320-15ISK:~/Desktop/DemoProject$ cd DemoProject/
+user@user-Lenovo-ideapad-320-15ISK:~/Desktop/DemoProject/DemoProject$ 
+
+```
+
+In above example DemoProject is name of my remote repository (Github repository) . 
+
+Get into that folder by typing cd <repository name as show above.
