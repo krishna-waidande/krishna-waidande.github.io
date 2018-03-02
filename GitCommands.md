@@ -101,7 +101,7 @@ Get into that folder by typing cd <repository name> as show above.
   user@user-Lenovo-ideapad-320-15ISK:~/Desktop/DemoProject/DemoProject$ git add DemoFile.txt
   ```
   
-  git commit -m "initial commit" := This is used to commit added files to server.
+  git commit -m "initial commit" :- This is used to commit added files to server.
   
   
   -m is used for givimg messege for our commit and it ia compulaory to give proper commit messages.
