@@ -26,11 +26,21 @@ After installation of git on local machine.
 
 Create a account on [Github](https://github.com)
 
-After creating account on Github you will see a window l
+After creating account on Github you will see a window on that window look on on right upper corner on navigation bar.
+
+> You will se a + sign click on that sign choose new repository option.
+
+
+> Now give a repository name same as your project name (not mendatory same as project).
+
+
+> After that just click on create repository button.
 
 
 
-Open terminal 
+Once done now Open terminal.
+
+
 
 Go to a folder in which you will create your all projeect files.
 suppose I want to create my project in DemoProject folder which is located on my desktop just get in that project
@@ -50,6 +60,6 @@ now you are in a project where you want to clone a github repository.
 
 > Clonning directory means sinking our local repository(folder) with remote repository(your git repository).
 
-now on teminal just type a command.
+now on teminal just before typing a command just go on your github page and copy the url.
 
 
