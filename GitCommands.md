@@ -137,3 +137,5 @@ Get into that folder by typing cd <repository name> as show above.
   user@user-Lenovo-ideapad-320-15ISK:~/Desktop/DemoProject/DemoProject$ git branch
   * master
   ```
+  
+  git pull :- to fetch files or folders from Remote repository. 
