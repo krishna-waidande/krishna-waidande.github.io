@@ -44,9 +44,7 @@ Class body
 + The method names should be relevant to the scenario and should be written in Camel-Case.
 
 
-
-> Eg :-	For a method to create company.
-
+> Eg :-	For a method to create company 
 ```java
 createCompany() { //valid name	
 /* method body */
