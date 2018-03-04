@@ -42,6 +42,8 @@ Class body
 ### Method Name 
 
 + The method names should be relevant to the scenario and should be written in Camel-Case.
+
+
 > Eg :-	For a method to create company.
 ```java
 createCompany() {	// valid method name
@@ -59,7 +61,9 @@ CreateCompany() {	// invalid method name
 
 + Should add setting in editor to alphabetically sort the importing statements.
 
+
 + Should import same packages in contiguous lines without an interrupting blank space. 	
+
 
 > Like :
 ```
