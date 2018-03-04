@@ -21,8 +21,6 @@ Because since we are creating a class for Company it’s obvious that the name v
 ‘errorCode’ is valid. 
 errorcode, ErrorCode and Errorcode are invalid.
 ```
-
-
 ### Class Name
 
 + The class name should follow “JAVA naming conventions” (In every new word in the class name the first character should be an upper-case).
@@ -30,7 +28,6 @@ errorcode, ErrorCode and Errorcode are invalid.
 
 
 > Eg :- For class containing “Company detail” the class name should be
-
 ```java
 CompanyDetail {
 /*
@@ -58,10 +55,9 @@ CreateCompany() {	// invalid method name
 }     
 ```
 
-
 ### Proper Java Indentation
 
-+ Import statements :
+#### Import statements :
 
 
 + Should add setting in editor to alphabetically sort the importing statements.
@@ -81,20 +77,19 @@ import com.krishagni.CRM.rest.Factory;
 import com.krishagni.CRM.rest.Dao.CompanyDao;
 ```
 
-+ Curly braces :
+#### Curly braces :
 
 
 + The curly braces used in any Class, Method, Loops and Statements should be in proper format for enhancing the readability of the code.
 
-Sample code showing proper curly brace usage
+> Sample code showing proper curly brace usage
 ```
 public String getName() {
 return name;
 }
 ```
 
-
-Sample code showing improper curly brace usage
+> Sample code showing improper curly brace usage
 ```
 public String getName() 
 {
@@ -102,12 +97,13 @@ public String getName()
 }
 ```
 
-+ Alignment :
+#### Alignment :
 
-The code must be aligned in the proper way keeping 4 spaces before any method or variables.
++ The code must be aligned in the proper way keeping 4 spaces before any method or variables.
 
-	Sample code with proper alignment
- 	public class Company {
+> Sample code with proper alignment
+```java 	
+public class Company {
     CompanyDao dao;
     Company comp = new Company();    
     
@@ -115,37 +111,28 @@ The code must be aligned in the proper way keeping 4 spaces before any method or
 	        return addcomp;
     }
 }
+```
 
 There should be proper spacing before and after an operator.
 
-Like:
+> Like:
 int name = 10; 
 
-Unlike:
-	int name=10;
+> Unlike:
+int name=10;
 
-4.4 Remove unwanted Spaces :
-Spaces which are not needed should not be used, the code should be kept in compact size and in readable format.
+#### Remove unwanted Spaces :
++ Spaces which are not needed should not be used, the code should be kept in compact size and in readable format.
 
-4.5 Line Length :
-Maximum characters in a line should not be more than 120.
+#### Line Length :
++ Maximum characters in a line should not be more than 120.
 
+### XML, HTML Indentation
 
++ Before every tag two spaces need to be given to make it in standard format.
 
-
-
-
-
-
-
-
-
-
-
-5. XML, HTML Indentation
-
-Before every tag two spaces need to be given to make it in standard format.
-Like:
+> Like:
+```xml
 <bean id = "dao" class = "com.krishagni.CRM.rest.Dao.CompanyDaoImpl">
   <property name = "sessionFactory" ref = "sessionFactory"> </property>
 </bean>
@@ -153,14 +140,19 @@ Unlike:
 <bean id = "dao" class = "com.krishagni.CRM.rest.Dao.CompanyDaoImpl">
    	 <property name="sessionFactory" ref = "sessionFactory"></property>
 </bean>
+```
 
-5.1 For Hbm file :-
+#### For Hbm file :
 
-While integrating the hibernate file with database the database name, table name, column name need to be in upper-case so that it can be differentiated with java object properties.  
++ While integrating the hibernate file with database the database name, table name, column name need to be in upper-case so that it can be differentiated with java object properties.  
 
-Something like this 
-	<id name = "id" type = "int">
-        	  <column name = "ID" />
-        	</id>
 
-Which helps us understand that id (java object property) is different from ID (Database column name)
+>Something like this 
+```
+<id name = "id" type = "int">
+  <column name = "ID" />
+</id>
+```
+
+> Which helps us understand that id (java object property) is different from ID (Database column name)
+
