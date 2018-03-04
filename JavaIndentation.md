@@ -46,6 +46,8 @@ Class body
 
 
 > Eg :-	For a method to create company.
+
+
 valid name
 ```java
 createCompany() {	
