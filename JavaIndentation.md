@@ -188,12 +188,12 @@ int name=10;
 
 
 > Something like this 
-```
+
+```xml
 <id name = "id" type = "int">
   <column name = "ID" />
 </id>
 ```
-
 
 > Which helps us understand that id (java object property) is different from ID (Database column name)
 
