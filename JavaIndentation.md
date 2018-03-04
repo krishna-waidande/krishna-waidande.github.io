@@ -48,7 +48,6 @@ Class body
 > Eg :-	For a method to create company.
 
 ```java
-
 createCompany() { //valid name	
 /* method body */
 }	
@@ -56,7 +55,6 @@ createCompany() { //valid name
 CreateCompany() { //invalid name	
 /* method body */
 }     
-
 ```
 
 
@@ -86,6 +84,7 @@ import com.krishagni.CRM.rest.Company;
 import com.krishagni.CRM.rest.Factory;
 import com.krishagni.CRM.rest.Dao.CompanyDao;
 ```
+
 
 #### Curly braces :
 
