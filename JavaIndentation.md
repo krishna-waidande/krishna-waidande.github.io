@@ -70,13 +70,15 @@ CreateCompany() { //invalid name
 
 
 > Like :
-```java
+```
 import com.krishagni.CRM.rest.Company;
 import com.krishagni.CRM.rest.Factory;
 import com.krishagni.CRM.rest.Dao.CompanyDao;
 ```
+
+
 > Unlike :
-```java
+```
 import com.krishagni.CRM.rest.Company;
 
 import com.krishagni.CRM.rest.Factory;
@@ -84,7 +86,11 @@ import com.krishagni.CRM.rest.Dao.CompanyDao;
 ```
 
 #### Curly braces :
+
+
 + The curly braces used in any Class, Method, Loops and Statements should be in proper format for enhancing the readability of the code.
+
+
 
 > Sample code showing proper curly brace usage
 ```
@@ -92,6 +98,8 @@ public String getName() {
 return name;
 }
 ```
+
+
 > Sample code showing improper curly brace usage
 ```
 public String getName() 
@@ -100,9 +108,12 @@ public String getName()
 }
 ```
 
+
 #### Alignment :
 
+
 + The code must be aligned in the proper way keeping 4 spaces before any method or variables.
+
 
 > Sample code with proper alignment
 ```java 	
@@ -116,23 +127,39 @@ public class Company {
 }
 ```
 
+
 There should be proper spacing before and after an operator.
 
-> Like:
+
+> Like :
 int name = 10; 
+
+
 
 > Unlike:
 int name=10;
 
+
+
 #### Remove unwanted Spaces :
+
+
 + Spaces which are not needed should not be used, the code should be kept in compact size and in readable format.
 
+
+
 #### Line Length :
+
+
 + Maximum characters in a line should not be more than 120.
+
+
 
 ### XML, HTML Indentation
 
+
 + Before every tag two spaces need to be given to make it in standard format.
+
 
 > Like :
 ```xml
@@ -140,24 +167,28 @@ int name=10;
   <property name = "sessionFactory" ref = "sessionFactory"> </property>
 </bean>
 ```
->Unlike :
+
+> Unlike :
 ```xml
 <bean id = "dao" class = "com.krishagni.CRM.rest.Dao.CompanyDaoImpl">
    	 <property name="sessionFactory" ref = "sessionFactory"></property>
 </bean>
 ```
 
+
 #### For Hbm file :
+
 
 + While integrating the hibernate file with database the database name, table name, column name need to be in upper-case so that it can be differentiated with java object properties.  
 
 
->Something like this 
+> Something like this 
 ```
 <id name = "id" type = "int">
   <column name = "ID" />
 </id>
 ```
+
 
 > Which helps us understand that id (java object property) is different from ID (Database column name)
 
