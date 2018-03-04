@@ -258,7 +258,8 @@ public class word {
          		String str_word = string_token.nextToken();
 			if(cache.isKeyInCache(str_word)) {	//if word is in cache just increment word count.
 				Element el = cache.get(str_word);
-				cache.put(new Element(str_word ,Integer.parseInt(el.getObjectValue().toString())+1));				} else {
+				cache.put(new Element(str_word ,Integer.parseInt(el.getObjectValue().toString())+1));				} 
+			else {
 				cache.put(new Element(str_word,1));	//New word is inserted in cache and word count is 1
 			}
 		}//while
