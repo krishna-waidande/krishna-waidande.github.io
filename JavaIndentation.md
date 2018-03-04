@@ -75,11 +75,8 @@ import com.krishagni.CRM.rest.Company;
 import com.krishagni.CRM.rest.Factory;
 import com.krishagni.CRM.rest.Dao.CompanyDao;
 ```
-
-
 > Unlike :
 ```java
-
 import com.krishagni.CRM.rest.Company;
 
 import com.krishagni.CRM.rest.Factory;
