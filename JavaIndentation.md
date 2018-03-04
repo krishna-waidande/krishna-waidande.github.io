@@ -21,6 +21,7 @@ Because since we are creating a class for Company it’s obvious that the name v
 ‘errorCode’ is valid. 
 errorcode, ErrorCode and Errorcode are invalid.
 ```
+
 ### Class Name
 
 + The class name should follow “JAVA naming conventions” (In every new word in the class name the first character should be an upper-case).
