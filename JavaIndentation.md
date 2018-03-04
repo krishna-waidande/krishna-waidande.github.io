@@ -1,6 +1,6 @@
 # Rules for Indentation in a code
 
- ### Variable Name
+### Variable Name
 
 
 + The variable names should be valid to the point.
@@ -23,10 +23,10 @@ errorcode, ErrorCode and Errorcode are invalid.
 ```
 
 
-
- ### Class Name
+### Class Name
 
 + The class name should follow “JAVA naming conventions” (In every new word in the class name the first character should be an upper-case).
+
 
 
 > Eg :- For class containing “Company detail” the class name should be
@@ -44,6 +44,7 @@ Class body
 ### Method Name 
 
 +The method names should be relevant to the scenario and should be written in Camel-Case.
+
 
 
 > Eg :-	For a method to create company .
