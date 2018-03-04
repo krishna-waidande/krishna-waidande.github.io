@@ -46,15 +46,17 @@ Class body
 
 
 > Eg :-	For a method to create company.
+
 ```java
+
 createCompany() { //valid name	
 /* method body */
 }	
 
-
 CreateCompany() { //invalid name	
 /* method body */
 }     
+
 ```
 
 
