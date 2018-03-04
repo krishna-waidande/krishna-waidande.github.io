@@ -44,16 +44,21 @@ Class body
 + The method names should be relevant to the scenario and should be written in Camel-Case.
 
 
+
 > Eg :-	For a method to create company.
+valid name
 ```java
-createCompany() {	// valid method name
+createCompany() {	
 /* method body */
 }	
-
-CreateCompany() {	// invalid method name
+```
+invalid name
+```java
+CreateCompany() {	
 /* method body */
 }     
 ```
+
 
 ### Proper Java Indentation
 
