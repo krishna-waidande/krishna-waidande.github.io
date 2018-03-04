@@ -131,12 +131,14 @@ int name=10;
 
 + Before every tag two spaces need to be given to make it in standard format.
 
-> Like:
+> Like :
 ```xml
 <bean id = "dao" class = "com.krishagni.CRM.rest.Dao.CompanyDaoImpl">
   <property name = "sessionFactory" ref = "sessionFactory"> </property>
 </bean>
-Unlike:
+```
+>Unlike :
+```xml
 <bean id = "dao" class = "com.krishagni.CRM.rest.Dao.CompanyDaoImpl">
    	 <property name="sessionFactory" ref = "sessionFactory"></property>
 </bean>
