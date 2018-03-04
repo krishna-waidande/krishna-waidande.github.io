@@ -75,17 +75,18 @@ import com.krishagni.CRM.rest.Company;
 import com.krishagni.CRM.rest.Factory;
 import com.krishagni.CRM.rest.Dao.CompanyDao;
 ```
+
+
 > Unlike :
 ```java
+
 import com.krishagni.CRM.rest.Company;
 
 import com.krishagni.CRM.rest.Factory;
 import com.krishagni.CRM.rest.Dao.CompanyDao;
 ```
 
-
 #### Curly braces :
-
 + The curly braces used in any Class, Method, Loops and Statements should be in proper format for enhancing the readability of the code.
 
 > Sample code showing proper curly brace usage
