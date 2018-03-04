@@ -77,7 +77,8 @@ import com.krishagni.CRM.rest.Dao.CompanyDao;
 ```
 
 > Unlike :
-```import com.krishagni.CRM.rest.Company;
+```
+import com.krishagni.CRM.rest.Company;
 
 import com.krishagni.CRM.rest.Factory;
 import com.krishagni.CRM.rest.Dao.CompanyDao;
