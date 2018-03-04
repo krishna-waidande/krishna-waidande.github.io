@@ -46,18 +46,19 @@ Class body
 
 
 > Eg :-	For a method to create company.
-valid name
+
 ```java
 createCompany() {	
 /* method body */
 }	
 ```
-invalid name
+valid name
 ```java
 CreateCompany() {	
 /* method body */
 }     
 ```
+invalid name
 
 
 ### Proper Java Indentation
@@ -76,6 +77,8 @@ import com.krishagni.CRM.rest.Company;
 import com.krishagni.CRM.rest.Factory;
 import com.krishagni.CRM.rest.Dao.CompanyDao;
 ```
+
+
 > Unlike:
 ```java
 import com.krishagni.CRM.rest.Company;
