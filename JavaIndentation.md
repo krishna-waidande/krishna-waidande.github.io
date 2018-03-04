@@ -7,6 +7,7 @@
 
 
 > Eg :-
+
 ```  
 String name 		(It is valid attribute name for the class Company)
 String companyname 	(It is invalid attribute name for the class Company)
@@ -17,6 +18,7 @@ Because since we are creating a class for Company it’s obvious that the name v
 
 
 > Eg :-
+
 ```
 ‘errorCode’ is valid. 
 errorcode, ErrorCode and Errorcode are invalid.
@@ -29,6 +31,7 @@ errorcode, ErrorCode and Errorcode are invalid.
 
 
 > Eg :- For class containing “Company detail” the class name should be
+
 ```java
 CompanyDetail {
 /*
@@ -70,7 +73,7 @@ CreateCompany() { //invalid name
 
 > Like :
 
-```
+```java
 import com.krishagni.CRM.rest.Company;
 import com.krishagni.CRM.rest.Factory;
 import com.krishagni.CRM.rest.Dao.CompanyDao;
@@ -78,7 +81,7 @@ import com.krishagni.CRM.rest.Dao.CompanyDao;
 
 > Unlike :
 
-```
+```java
 import com.krishagni.CRM.rest.Company;
 
 import com.krishagni.CRM.rest.Factory;
@@ -116,6 +119,7 @@ public String getName()
 
 
 > Sample code with proper alignment
+
 ```java 	
 public class Company {
     CompanyDao dao;
@@ -126,7 +130,6 @@ public class Company {
     }
 }
 ```
-
 
 There should be proper spacing before and after an operator.
 
@@ -162,6 +165,7 @@ int name=10;
 
 
 > Like :
+
 ```xml
 <bean id = "dao" class = "com.krishagni.CRM.rest.Dao.CompanyDaoImpl">
   <property name = "sessionFactory" ref = "sessionFactory"> </property>
@@ -169,6 +173,7 @@ int name=10;
 ```
 
 > Unlike :
+
 ```xml
 <bean id = "dao" class = "com.krishagni.CRM.rest.Dao.CompanyDaoImpl">
    	 <property name="sessionFactory" ref = "sessionFactory"></property>
