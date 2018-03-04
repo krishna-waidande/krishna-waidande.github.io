@@ -1,90 +1,107 @@
 # Rules for Indentation in a code
 
-+ ### Variable Name
+ ### Variable Name
 
 
-> The variable names should be valid to the point.
++ The variable names should be valid to the point.
 
 
-Eg :-
+> Eg :-
 ```  
 String name 		(It is valid attribute name for the class Company)
 String companyname 	(It is invalid attribute name for the class Company)
 ```
 Because since we are creating a class for Company it’s obvious that the name variable defined in the scope of the class company contains the name of the company.
 
-> The variable names should be in Camel-Case :
-Eg :-	‘errorCode’ is valid. 
-                    	errorcode, ErrorCode and Errorcode are invalid.
++ The variable names should be in Camel-Case :
 
 
-+ ### Class Name
+> Eg :-
+```
+‘errorCode’ is valid. 
+errorcode, ErrorCode and Errorcode are invalid.
+```
 
-The class name should follow “JAVA naming conventions” (In every new word in the class name the first character should be an upper-case).
-Eg: 	For class containing “Company detail” the class name should be
-               	CompanyDetail {
-		/*
+
+
+ ### Class Name
+
++ The class name should follow “JAVA naming conventions” (In every new word in the class name the first character should be an upper-case).
+
+
+> Eg :- For class containing “Company detail” the class name should be
+
+```java
+CompanyDetail {
+/*
 Class body
-		*/
+*/
 }
-The class name should be same as your file name.
+```
 
-     3. Method Name 
++ The class name should be same as your file name.
 
-The method names should be relevant to the scenario and should be written in Camel-Case.
-Eg :-	For a method to create company .
-	createCompany() {	// valid method name
+### Method Name 
+
++The method names should be relevant to the scenario and should be written in Camel-Case.
+
+
+> Eg :-	For a method to create company .
+```
+createCompany() {	// valid method name
 /* method body */
 }	
-	CreateCompany() {	// invalid method name
-	/* method body */
-	}     
+
+CreateCompany() {	// invalid method name
+/* method body */
+}     
+```
 
 
+### Proper Java Indentation
+
++ Import statements :
 
 
++ Should add setting in editor to alphabetically sort the importing statements.
++ Should import same packages in contiguous lines without an interrupting blank space. 	
 
-4. Proper Java Indentation
-
-4.1 Import statements :
-Should add setting in editor to alphabetically sort the importing statements.
-Should import same packages in contiguous lines without an interrupting blank space. 	
-
-Like :
+> Like :
+```
 import com.krishagni.CRM.rest.Company;
 import com.krishagni.CRM.rest.Factory;
 import com.krishagni.CRM.rest.Dao.CompanyDao;
-
-Unlike:
-	import com.krishagni.CRM.rest.Company;
+```
+> Unlike:
+```
+import com.krishagni.CRM.rest.Company;
 
 import com.krishagni.CRM.rest.Factory;
 import com.krishagni.CRM.rest.Dao.CompanyDao;
+```
 
-4.2 Curly braces :
-The curly braces used in any Class, Method, Loops and Statements should be in proper format for enhancing the readability of the code.
++ Curly braces :
+
+
++ The curly braces used in any Class, Method, Loops and Statements should be in proper format for enhancing the readability of the code.
 
 Sample code showing proper curly brace usage
-	public String getName() {
+```
+public String getName() {
 return name;
 }
+```
+
 
 Sample code showing improper curly brace usage
+```
 public String getName() 
 {
    	 Return name;
 }
+```
 
-
-
-
-
-
-
-
-
-
-4.3 Alignment :
++ Alignment :
 
 The code must be aligned in the proper way keeping 4 spaces before any method or variables.
 
