@@ -41,12 +41,9 @@ Class body
 
 ### Method Name 
 
-+The method names should be relevant to the scenario and should be written in Camel-Case.
-
-
-
-> Eg :-	For a method to create company .
-```
++ The method names should be relevant to the scenario and should be written in Camel-Case.
+> Eg :-	For a method to create company.
+```java
 createCompany() {	// valid method name
 /* method body */
 }	
@@ -60,8 +57,8 @@ CreateCompany() {	// invalid method name
 
 #### Import statements :
 
-
 + Should add setting in editor to alphabetically sort the importing statements.
+
 + Should import same packages in contiguous lines without an interrupting blank space. 	
 
 > Like :
@@ -70,6 +67,7 @@ import com.krishagni.CRM.rest.Company;
 import com.krishagni.CRM.rest.Factory;
 import com.krishagni.CRM.rest.Dao.CompanyDao;
 ```
+
 > Unlike:
 ```
 import com.krishagni.CRM.rest.Company;
@@ -77,9 +75,7 @@ import com.krishagni.CRM.rest.Company;
 import com.krishagni.CRM.rest.Factory;
 import com.krishagni.CRM.rest.Dao.CompanyDao;
 ```
-
 #### Curly braces :
-
 
 + The curly braces used in any Class, Method, Loops and Statements should be in proper format for enhancing the readability of the code.
 
@@ -89,7 +85,6 @@ public String getName() {
 return name;
 }
 ```
-
 > Sample code showing improper curly brace usage
 ```
 public String getName() 
