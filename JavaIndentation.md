@@ -1,6 +1,6 @@
 # Rules for Indentation in a code
 
-### Variable Name
+## Variable Name
 
 
 + The variable names should be valid to the point.
@@ -24,7 +24,7 @@ int errorCode 				is valid.
 int errorcode,ErrorCode,Errorcode 	are invalid.
 ```
 
-### Class Name
+## Class Name
 
 + The class name should follow “JAVA naming conventions” (In every new word in the class name the first character should be an upper-case).
 
@@ -42,7 +42,7 @@ Class body
 
 + The class name should be same as your file name.
 
-### Method Name 
+## Method Name 
 
 + The method names should be relevant to the scenario and should be written in Camel-Case.
 
@@ -61,9 +61,9 @@ void CreateCompany() { //invalid name
 
 
 
-### Proper Java Indentation
+## Proper Java Indentation
 
-#### Import statements :
+### Import statements :
 
 + Should add setting in editor to alphabetically sort the importing statements.
 
@@ -88,7 +88,7 @@ import com.krishagni.CRM.rest.Factory;
 import com.krishagni.CRM.rest.Dao.CompanyDao;
 ```
 
-#### Curly braces :
+### Curly braces :
 
 
 + The curly braces used in any Class, Method, Loops and Statements should be in proper format for enhancing the readability of the code.
@@ -112,7 +112,7 @@ public String getName()
 ```
 
 
-#### Alignment :
+### Alignment :
 
 
 + The code must be aligned in the proper way keeping 4 spaces before any method or variables.
@@ -144,21 +144,21 @@ int name=10;
 
 
 
-#### Remove unwanted Spaces :
+### Remove unwanted Spaces :
 
 
 + Spaces which are not needed should not be used, the code should be kept in compact size and in readable format.
 
 
 
-#### Line Length :
+### Line Length :
 
 
 + Maximum characters in a line should not be more than 120.
 
 
 
-### XML, HTML Indentation
+## XML, HTML Indentation
 
 
 + Before every tag two spaces need to be given to make it in standard format.
@@ -181,7 +181,7 @@ int name=10;
 ```
 
 
-#### For Hbm file :
+### For Hbm file :
 
 
 + While integrating the hibernate file with database the database name, table name, column name need to be in upper-case so that it can be differentiated with java object properties.  
