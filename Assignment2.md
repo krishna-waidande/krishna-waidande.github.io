@@ -252,7 +252,7 @@ public class word {
 	
 	public static void storeToCache(String str,Cache cache)
 	{
-		StringTokenizer string_token = new StringTokenizer(str," ");								//split chunk by space to get individual words.
+		StringTokenizer string_token = new StringTokenizer(str," ");	//split chunk by space to get individual words.
 		
 		while (string_token.hasMoreTokens()) {  
          		String str_word = string_token.nextToken();
@@ -301,7 +301,7 @@ public class word {
 			String key= iterator.next().toString();
 			Element el = cache.get(key);				//getting value according to key.
 			String value = el.getObjectValue().toString();
-			buffwriter.write(key+" -> "+value+"\n");	//storing key values in text file.
+			buffwriter.write(key+" -> "+value+"\n");		//storing key values in text file.
 		}
 		long memsize = cache.getMemoryStoreSize();
 		System.out.println("Data On Memory = "+memsize);
