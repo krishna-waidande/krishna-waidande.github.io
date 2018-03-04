@@ -20,8 +20,8 @@ Because since we are creating a class for Company it’s obvious that the name v
 > Eg :-
 
 ```
-‘errorCode’ is valid. 
-errorcode, ErrorCode and Errorcode are invalid.
+int errorCode 				is valid. 
+int errorcode,ErrorCode,Errorcode 	are invalid.
 ```
 
 ### Class Name
@@ -33,7 +33,7 @@ errorcode, ErrorCode and Errorcode are invalid.
 > Eg :- For class containing “Company detail” the class name should be
 
 ```java
-CompanyDetail {
+public class CompanyDetail {
 /*
 Class body
 */
@@ -50,11 +50,11 @@ Class body
 > Eg :-	For a method to create company.
 
 ```java
-createCompany() { //valid name	
+void createCompany() { //valid name	
 /* method body */
 }	
 
-CreateCompany() { //invalid name	
+void CreateCompany() { //invalid name	
 /* method body */
 }     
 ```
