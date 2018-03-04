@@ -66,94 +66,50 @@ public class word {
 		BufferedWriter buffwriter = new BufferedWriter(filewriter);
 
 		HashMap<String,Integer> hm= new HashMap();
-			
-				
-				long filesize= f.length();
-				
-				char cbuf[] =new char[3999990];
-				
-				long n= filesize % 3999990;
-				
-				String temp_str;
-				int i=0;
-			
-				
-			do
-			{
-					br.read(cbuf, 0, (int)n);
-					filesize = filesize - n;
-					n = 3999990;
-						
-					temp_str = new String(cbuf);	
+		
+		long filesize= f.length();
+		char cbuf[] =new char[3999990];
+		long n= filesize % 3999990;
+		String temp_str;
+		int i=0;
+		do {
+			br.read(cbuf, 0, (int)n);
+			filesize = filesize - n;
+			n = 3999990;
+			temp_str = new String(cbuf);	
 
+			String[] words = temp_str.split("[\\s@&.?$+-;=|\\<|\\>|\\[|\\]|\\/|@|\\'|\\(|\\)]+"); 
+			while (i < words.length) {  
+			    String s = words[i]; 
+			    if(hm.containsKey(s)) {
+			       hm.put(ab,hm.get(s)+1);
+			    } else {
+			 	hm.put(s,1);
+			    }
+			    i++;
+			}//innerwhile
+			i=0;
+		}while(filesize>0);//while
 				
-				String[] words = temp_str.split("[\\s@&.?$+-;=|\\<|\\>|\\[|\\]|\\/|@|\\'|\\(|\\)]+"); 
-				
-				while (i < words.length) 
-				{  
-					String s = words[i]; 
-				
-					if(hm.containsKey(s))
-					{
-						hm.put(ab,hm.get(s)+1);
-					
-					}
-					else
-					{
-				
-						hm.put(s,1);
-				
-					}
-				
-					i++;
-				
-				}//innerwhile
-				
-				i=0;
-				
-				
-			}while(filesize>0);//while
-				
-				
-				Set<String> keyset = hm.keySet();		//got all keys i.e words from collection object.
-				
-				int size = keyset.size();
-				
-				Iterator<String> it= keyset.iterator();
-
-				
-				while(it.hasNext())				//writing data to output file		
-				{
-					String key = it.next().toString();
-					
-					String value = hm.get(key).toString();
-					
-					buffwriter.write(s+" -> "+v+"\n");
-					
-				}
-			
-					
-					
-				
-				br.close();
-				buffer.close();
-				
-				fr.close();
-				fw.close();
-				
-				 
-				long endTime   = System.nanoTime();
-				long totalTime = (endTime - startTime)/1000000000;
-				
-				System.out.println("execution time for program="+totalTime+" secs");
-				System.out.println("execution ends = "+ size);
+		Set<String> keyset = hm.keySet();		//got all keys i.e words from collection object.
+		int size = keyset.size();
+		Iterator<String> it= keyset.iterator();
+		while(it.hasNext()) {			//writing data to output file		
+		    String key = it.next().toString();
+		    String value = hm.get(key).toString();
+		    buffwriter.write(key+" -> "+value+"\n");
 		}
-
+		br.close();
+		buffer.close();
+		fr.close();
+		fw.close();
+				
+		long endTime   = System.nanoTime();
+		long totalTime = (endTime - startTime)/1000000000;
+		System.out.println("execution time for program="+totalTime+" secs");
+		System.out.println("execution ends = "+ size);
+	}
 }
-
-
-
-
 ```
 
 + ### SECOND APPROACH
@@ -293,133 +249,75 @@ public class word {
 
 	public word() {
 	}
-
 	
 	public static void storeToCache(String str,Cache cache)
 	{
-		StringTokenizer string_token = new StringTokenizer(str," ");									//split chunk by space to get individual words.
-		
+		StringTokenizer string_token = new StringTokenizer(str," ");								//split chunk by space to get individual words.
 		
 		while (string_token.hasMoreTokens()) {  
-         
-		 String str_word = string_token.nextToken();
-		
-		if(cache.isKeyInCache(str_word))	//if word is in cache just increment word count.
-		{
-			Element el = cache.get(str_word);
-			
-			cache.put(new Element(str_word ,Integer.parseInt(el.getObjectValue().toString())+1));						
-			
-		}
-		else
-		{
-		
-			cache.put(new Element(str_word,1));	//New word is inserted in cache and word count is 1
-		
-		}
-		
+         		String str_word = string_token.nextToken();
+			if(cache.isKeyInCache(str_word)) {	//if word is in cache just increment word count.
+				Element el = cache.get(str_word);
+				cache.put(new Element(str_word ,Integer.parseInt(el.getObjectValue().toString())+1));				} else {
+				cache.put(new Element(str_word,1));	//New word is inserted in cache and word count is 1
+			}
 		}//while
-		
-		
 	}
-	
 	public static void main(String[] args) throws IOException{
-		
 		long startTime = System.nanoTime();
 		
 		File file= new File("demo1.txt");
-		
 		FileReader filereader = new FileReader("demo1.txt");
 		FileWriter filewriter = new FileWriter("output.txt");
-		
-		
-
 		BufferedReader buffreader = new BufferedReader(filereader);
 		BufferedWriter buffwriter = new BufferedWriter(filewriter);
 		
-		
-		
-				CacheManager cachemanager = CacheManager.newInstance("src/ehcache.xml");
-				//give path where you will keep ehcache.xml file I put this file in src folder.
-		
-				Cache cache = cachemanager.getCache("mycache1");
+		CacheManager cachemanager = CacheManager.newInstance("src/ehcache.xml");
+		//give path where you will keep ehcache.xml file I put this file in src folder.
+		Cache cache = cachemanager.getCache("mycache1");
+		cachemanager.clearAll();
 				
-				cachemanager.clearAll();
-				
-			
-				
-				long filesize = file.length();
-				
-				char cbuf[] = new char[4999990];	//to store chunk
-				
-				long remainder= filesize % 4999990;
-				
-				String temp_str;
-				
-				int index;
-			
-				
-				do
-				{
-					buffreader.read(cbuf, 0, (int)remainder);	// reading by chunk size of n bytes
-					filesize = filesize - remainder;
-					remainder=4999990;
+		long filesize = file.length();
+		char cbuf[] = new char[4999990];				//to store chunk
+		String temp_str;
+		long remainder= filesize % 4999990;		
+		int index;
+		do {
+			buffreader.read(cbuf, 0, (int)remainder);		// reading by chunk size of n bytes
+			filesize = filesize - remainder;
+			remainder=4999990;
 						
-					temp_str=new String(cbuf);	
-					temp_str=temp_str.replaceAll("[^a-zA-Z0-9]"," ");//remove special characters.
-					
-					word.storeToCache(temp_str , cache);		//function call to storeTocache
+			temp_str=new String(cbuf);	
+			temp_str=temp_str.replaceAll("[^a-zA-Z0-9]"," ");	//remove special characters.
+			word.storeToCache(temp_str , cache);			//function call to storeTocache
+		}while(filesize>0);
 				
-				}while(filesize>0);
-				
-				
-				List keylist = cache.getKeys();				//retrieving all keys present in  the cache
-				int size = keylist.size();
-				
-				ListIterator iterator = keylist.listIterator();
-				
-				while(iterator.hasNext())
-				{
-					
-					String key= iterator.next().toString();
-					
-					Element el = cache.get(key);			//getting value according to key.
-					
-					String value = el.getObjectValue().toString();
-					
-					buffwriter.write(key+" -> "+value+"\n");	//storing key values in text file.
-					
-				}
-				
-				
-					
-				long memsize = cache.getMemoryStoreSize();
-				System.out.println("Data On Memory = "+memsize);
-				
-				long disksize=cache.getDiskStoreSize();
-				System.out.println("Data On Disk = "+disksize);
-				
-				cachemanager.clearAll();
-				cachemanager.shutdown();
-
-				buffreader.close();
-				buffwriter.close();
-				
-				
-				filereader.close();
-				filewriter.close();
-				
-				 
-	
-		
-				long endTime   = System.nanoTime();
-				long totalTime = (endTime - startTime)/1000000000;
-				
-				System.out.println("execution time for program="+totalTime+" secs");
-				System.out.println("getkeys size = "+ size);
-				
+		List keylist = cache.getKeys();					//retrieving all keys present in  the cache
+		int size = keylist.size();
+		ListIterator iterator = keylist.listIterator();
+		while(iterator.hasNext()) {
+			String key= iterator.next().toString();
+			Element el = cache.get(key);				//getting value according to key.
+			String value = el.getObjectValue().toString();
+			buffwriter.write(key+" -> "+value+"\n");	//storing key values in text file.
 		}
-
+		long memsize = cache.getMemoryStoreSize();
+		System.out.println("Data On Memory = "+memsize);
+		long disksize=cache.getDiskStoreSize();
+		System.out.println("Data On Disk = "+disksize);
+				
+		cachemanager.clearAll();
+		cachemanager.shutdown();
+		buffreader.close();
+		buffwriter.close();
+		filereader.close();
+		filewriter.close();
+		
+		long endTime = System.nanoTime();
+		long totalTime = (endTime - startTime)/1000000000;
+		System.out.println("execution time for program="+totalTime+" secs");
+		System.out.println("getkeys size = "+ size);
+	}
 }
 ```
 
