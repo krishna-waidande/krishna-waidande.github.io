@@ -1,23 +1,10 @@
 # Getting Started With Git
 
-
-Firstly getting started with git let me explain you about git.
-
-+ Who invented Git ?
+## Installation
 
 
-``` Linus Torvalds creator of the Linux operating system kernel, created a git to control versions of his work.```
-
-
-+ What is git?
-
-
-```Git is a version control system. that means``` 
-
-
-first install git on your machine .
+First install git on your machine .
 to install git [Click-here](https://git-scm.com/download/linux).
-
 
 After installation of git on local machine.
 
@@ -33,10 +20,9 @@ After creating account on Github you will see a window on that window look on on
 
 > After that just click on create repository button.
 
-
+### How to use git.
 
 Once done now Open terminal.
-
 
 
 Go to a folder in which you will create your all projeect files.
@@ -53,7 +39,7 @@ user@user-Lenovo-ideapad-320-15ISK:~/Desktop$ cd DemoProject/
 user@user-Lenovo-ideapad-320-15ISK:~/Desktop/DemoProject$ 
 ```
 
-now you are in a project where you want to clone a github repository.
+Now you are in a project where you want to clone a github repository.
 
 > Clonning directory means sinking our local repository(folder) with remote repository(your git repository).
 
@@ -66,6 +52,7 @@ and now on terminal type following command and hit enter.
 
 ```
 git clone https://github.com/krishna-waidande/DemoProject.git
+
 ```
 After typing this command just type ```ls``` you will see a folder is created in your local machine name will be same as your remote repository name. 
 
@@ -82,24 +69,24 @@ user@user-Lenovo-ideapad-320-15ISK:~/Desktop/DemoProject/DemoProject$
 
   In above example DemoProject is name of my remote repository (Github repository) . 
 
-  Get into that folder by typing cd <repository name> as show above.
+  Get into that folder by typing ```cd <repository name>``` as show above.
   
   Now You can create your project Folder files/folder in this folder.
   
   Now we will see 
   #### how to add a text file into remote repository.
   
-  create a text file once created just type following commands
+  create a text file once created just type following commands .
   
-  git add <filename / folder name> : To add files to remote repository.
+  +  git add <filename / folder name> : To add files to remote repository.
   ```
   user@user-Lenovo-ideapad-320-15ISK:~/Desktop/DemoProject/DemoProject$ git add DemoFile.txt
   ```
   
-  git commit -m "initial commit" :- This is used to commit added files to server.
+  + git commit -m "initial commit" :- This is used to commit added files to server.
   
   
-  -m is used for givimg messege for our commit and it ia compulaory to give proper commit messages.
+  ##### -m is used for givimg messege for our commit and it ia compulaory to give proper commit messages.
   
   
    ```
@@ -109,9 +96,9 @@ user@user-Lenovo-ideapad-320-15ISK:~/Desktop/DemoProject/DemoProject$
   create mode 100644 DemoFile.txt
   ```
   
-  git push : to push our local file / folder to remote repository.
+  + git push : to push our local file / folder to remote repository.
   
-  while pushing file it asks for your username and password just provide username and password of your github account.
+  > while pushing file it asks for your username and password just provide username and password of your github account.
   
   ```
   user@user-Lenovo-ideapad-320-15ISK:~/Desktop/DemoProject/DemoProject$ git push
@@ -126,13 +113,12 @@ user@user-Lenovo-ideapad-320-15ISK:~/Desktop/DemoProject/DemoProject$
   After push you can go to your Github  account and refresh the page you will see your file there. 
   
   
-  Note :- for now we are adding files to master so you can use ```git push``` coommand as it is . but if you want to add
-          your file to another branch you need to run this command.
-          ``` git push origin newBranchName```
+  #### Note :- for now we are adding files to master so you can use ```git push``` coommand as it is . but if you want to add your file to another branch you need to run this command.
+  ``` git push origin newBranchName```
   
   
   
-  git branch :- telles us on which branch we are.
+  + git branch :- telles us on which branch we are.
   ``` 
   user@user-Lenovo-ideapad-320-15ISK:~/Desktop/DemoProject/DemoProject$ git branch
   * master
