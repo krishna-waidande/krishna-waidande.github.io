@@ -693,9 +693,7 @@ void file_append(int temp_file_num)
 void file_delete(int temp_file_num)			
 {
 	char temp_file[11]={NULL};
-	
 	sprintf(temp_file,"%d.txt",temp_file_num);
-	
 	unlink(temp_file);
 }
 
@@ -717,36 +715,29 @@ int main()
 
 	n= 3999990 % file_size;
 	
-	do							//reading input file chunk by chunk file.
-	{
+	do {							//reading input file chunk by chunk file.
              fread(buffer,n,1,file_pointer);
 	     reverse_buffer(buffer);
 	     file_size=file_size-n;
 	     n=3999990;
 
-	 }while(file_size>0);
+	 } while(file_size>0);
 
 	fclose(file_pointer);
 	
 	file_pointer = NULL;
-
 	file_pointer = fopen("output1.txt","w");
-
 	sprintf(temp_file,"%d.txt",temp_file_num - 1);		//retriving filename.
-
 	read_file_pointer = fopen(temp_file,"r");		//open that temp file in read mode.
 
 	stat(temp_file, &file_info);
   	file_size = file_info.st_size;				//retriving file size.
-
+	
 	fread(buffer, file_size , 1 , read_file_pointer);	//read in buffer
   	buffer[file_size]='\0';
-	
 	fputs(buffer, file_pointer);				//write to ouput file.
-	
 	fclose(file_pointer);
 	fclose(read_file_pointer);				//closing opened files.
-
 
 	for(index = temp_file_num - 2 ; index >=0 ; index--)	//for appending
 	file_append(index);
