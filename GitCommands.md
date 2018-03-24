@@ -2,6 +2,7 @@
 
 ## Installation
 
+![alt text](https://github.com/krishna-waidande/krishna-waidande.github.io/homepage.png)
 
 First install git on your machine .
 
