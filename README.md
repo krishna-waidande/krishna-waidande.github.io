@@ -7,5 +7,5 @@
 ### [Apache Tomcat Installation](https://krishna-waidande.github.io//tomcat)
 ### [Java Indentation](https://krishna-waidande.github.io/JavaIndentation)
 
-![alt text](krishna-waidande.github.io/homepage.png)
+![alt text](https://github.com/krishna-waidande/krishna-waidande.github.io/homepage.png)
 
