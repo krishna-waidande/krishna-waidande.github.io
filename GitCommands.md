@@ -4,18 +4,23 @@
 
 
 First install git on your machine .
-to install git [Click-here](https://git-scm.com/download/linux).
+
+I am using ubantu so I run this command in my terminal
+``` apt-get install git```
+
+
+To install git [Click-here](https://git-scm.com/download/linux).
 
 After installation of git on local machine.
 
 Create a account on [Github](https://github.com)
 
-After creating account on Github you will see a window on that window look on on right upper corner on navigation bar.
+After creating account on Github, you will see a window on that window look on right upper corner of navigation bar.
 
 > You will see + sign click on that sign choose new repository option.
 
 
-> Now give a repository name same as your project name (not mendatory same as project).
+> Now give a repository name same as your project name (optional but good habbit to keep same name as project name).
 
 
 > After that just click on create repository button.
@@ -39,7 +44,7 @@ user@user-Lenovo-ideapad-320-15ISK:~/Desktop$ cd DemoProject/
 user@user-Lenovo-ideapad-320-15ISK:~/Desktop/DemoProject$ 
 ```
 
-Now you are in a project where you want to clone a github repository.
+Now you are in a project folder where you want to clone a github repository.
 
 > Clonning directory means sinking our local repository(folder) with remote repository(your git repository).
 
