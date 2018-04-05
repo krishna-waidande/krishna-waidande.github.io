@@ -72,5 +72,11 @@ If you are on a different branch:
 
 ```git push origin -u new-name```
 
+## Merging our code to master branch 
+First come on  master branch 
 
+```git merge```
+
+after merge push that to master
+git merge K_Add_Feature -m "merging file"
 
