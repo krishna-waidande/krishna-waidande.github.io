@@ -1,16 +1,11 @@
 ##  To clone remote repository to our local folder
-
-
 ```git clone remote_repo_url```
 
 
 For example :-
-
-
 ```git clone https://github.com/krishna-waidande/TestGit.git```
 
 ## To check branch name
-
 ```git branch```
 
 ## To add file to git.
