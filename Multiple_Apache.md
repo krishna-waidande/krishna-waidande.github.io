@@ -13,8 +13,8 @@ We will begin by updating the local package index to reflect the latest upstream
 
 Open your terminal and run below commands.
 
-```sudo apt-get update
-   sudo apt-get install apache2```
+```sudo apt-get update```
+```sudo apt-get install apache2```
 
 
 Step 2: Check your Web Server.Run following command.
@@ -22,7 +22,7 @@ Step 2: Check your Web Server.Run following command.
 sudo systemctl status apache2
 
 you will see below output
-
+```
  apache2.service - LSB: Apache2 web server
    Loaded: loaded (/etc/init.d/apache2; bad; vendor preset: enabled)
   Drop-In: /lib/systemd/system/apache2.service.d
@@ -38,7 +38,7 @@ you will see below output
            ├─4374 /usr/sbin/apache2 -k start
            ├─4377 /usr/sbin/apache2 -k start
            └─4378 /usr/sbin/apache2 -k start
-           
+ ```          
  If you dont see status as Active run following command
  
 sudo systemctl restart apache2 & check status it will show status as Acive.
@@ -92,7 +92,7 @@ systemctl status apache2@server2.service
 
 5. Get into /etc/apache2-server2/sites-available directory you will find 000-default.conf file edit that file with your servername in my case i put servername as localhost2.
 here is a screenshot
-
+```
 <VirtualHost localhost2:8089>
 	# The ServerName directive sets the request scheme, hostname and port that
 	# the server uses to identify itself. This is used when creating
@@ -102,22 +102,20 @@ here is a screenshot
 	# value is not decisive as it is used as a last resort host regardless.
 	# However, you must set it for any further virtual host explicitly.
 	#ServerName www.example.com
-	
-	ServerName localhost2 // here specify host name
+	ServerName localhost2 
 	ServerAdmin webmaster@localhost
 	DocumentRoot /var/www/html
 	ErrorLog ${APACHE_LOG_DIR}/error.log
 	CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
+```
+
 
 6. Change the port.conf file which is present in /etc/apache2-server2
 vi /etc/server2/port.conf
 port.conf file
 
-# If you just change the port or add more ports here, you will likely also
-# have to change the VirtualHost statement in
-# /etc/apache2/sites-enabled/000-default.conf
-
+```
 Listen 8089
 
 <IfModule ssl_module>
@@ -128,21 +126,18 @@ Listen 8089
 	Listen 443
 </IfModule>
 
-# vim: syntax=apache ts=4 sw=4 sts=4 sr noet
+```
+
+Check for available port by typing command  ```sudo netstat -tlnp```
 
 
-check for available port
-
-command to check used port is 
-sudo netstat -tlnp
-
-
-after doing this specify your hostname into /etc/hostname file and also add a entry of newly created hostname into /etc/hosts file also 
+After doing this specify your hostname into /etc/hostname file and also add a entry of newly created hostname into /etc/hosts file also 
 
 127.0.0.1	localhost
 127.0.1.1	localhost2
 192.168.1.128	localhost
-# The following lines are desirable for IPv6 capable hosts
+
+#The following lines are desirable for IPv6 capable hosts
 ::1     ip6-localhost ip6-loopback
 fe00::0 ip6-localnet
 ff00::0 ip6-mcastprefix
