@@ -1,12 +1,11 @@
 ## Install Apache :
 
-# + Prerequisites
-
+#### Prerequisites
 
 Before you begin this guide, you should have a regular, non-root user with sudo privileges configured on your server/machine.
 
 
-+ Step : 1
+#### Step 1:
 
 Apache is available within Ubuntu's default software repositories, so we will install it using conventional package management tools.
 We will begin by updating the local package index to reflect the latest upstream changes. Afterwards, we can install the apache2 package:
@@ -19,7 +18,8 @@ Open your terminal and run below commands.
 ```sudo apt-get install apache2```
 
 
-+ Step 2: Check your Web Server.Run following command.
+#### Step 2:
+Check your Web Server.Run following command.
 
 ```sudo systemctl status apache2```
 
@@ -57,15 +57,15 @@ Now open your browser and type localhost in URL, in case of server type IP addre
 ### Now we will see how to configure multiple instance of Apaches on single machine.
 
 
-+ 1. Open your terminal.
++ Open your terminal.
 
-+ 2. Go to /usr/share/doc/apache2/examples this directory 
++ Go to /usr/share/doc/apache2/examples this directory.You will find setup-instance file.
 cd /usr/share/doc/apache2/examples
 
-3. You will find setup-instance file.
++ Execute that file using ```sh setup-instance server2``` command where ```server2``` is a suffix.That is it appends ```apache2-``` by default to your instance name. 
 
-3. Execute that file using ```sh setup-instance server2``` command where server2 is a suffix.That is it appends “apache2-” by default to your instance name. 
 
+```
 sudo sh setup-instance server2
 [sudo] password for user: 
 Setting up /etc/apache2-server2 ...
@@ -74,19 +74,21 @@ use the 'apache2@server2.service' service to control your new instance
 sample commands:
 systemctl start apache2@server2.service
 systemctl enable apache2@server2.service
+```
 
-so here above 2 commands are used to start and enable apache2@server2, run these 2 commands
-
-you will see output like :
-
+Above 2 commands are used to start and enable apache2@server2.After running these 2 commands you will see output like :
+```
 user@idp:/usr/share/doc/apache2/examples$ systemctl start apache2@server2.service
 user@idp:/usr/share/doc/apache2/examples$ systemctl enable apache2@server2.service
 Created symlink /etc/systemd/system/multi-user.target.wants/apache2@server2.service → /lib/systemd/system/apache2@.service.
 user@idp:/usr/share/doc/apache2/examples$ 
+```
 
-to test weather your 2nd instance is running or not type below command
-
+To test weather your 2nd instance is running or not type below command
+```
 systemctl status apache2@server2.service
+
+
 ● apache2@server2.service - The Apache HTTP Server
    Loaded: loaded (/lib/systemd/system/apache2@.service; enabled; vendor preset: enabled)
    Active: active (running) since Thu 2018-06-14 11:53:16 IST; 39s ago
@@ -96,11 +98,13 @@ systemctl status apache2@server2.service
            ├─17211 /usr/sbin/apache2 -d /etc/apache2-server2 -k start
            ├─17212 /usr/sbin/apache2 -d /etc/apache2-server2 -k start
            └─17213 /usr/sbin/apache2 -d /etc/apache2-server2 -k start 
+```
 
-4. Now you should see a new directory /etc/apache2-server2 which contains all config files. It would also create /etc/init.d/apache2-server2 using which you can start your apache instance.
++ Now you should see a new directory /etc/apache2-server2 which contains all config files. It would also create /etc/init.d/apache2-server2 using which you can start your apache instance.
 
-5. Get into /etc/apache2-server2/sites-available directory you will find 000-default.conf file edit that file with your servername in my case i put servername as localhost2.
-here is a screenshot
++ Get into /etc/apache2-server2/sites-available directory, you will find ```000-default.conf``` file edit this file with your servername in my case I put servername as localhost2.below is a screenshot of file
+
+
 ```
 <VirtualHost localhost2:8089>
 	# The ServerName directive sets the request scheme, hostname and port that
@@ -120,9 +124,8 @@ here is a screenshot
 ```
 
 
-6. Change the port.conf file which is present in /etc/apache2-server2
-vi /etc/server2/port.conf
-port.conf file
++ Change the ```port.conf``` file which is present in /etc/apache2-server2, Below i am attaching screenshot of my port.conf file.
+
 
 ```
 Listen 8089
@@ -137,11 +140,14 @@ Listen 8089
 
 ```
 
-Check for available port by typing command  ```sudo netstat -tlnp```
+
+Check for available port by typing command  ```sudo netstat -tlnp```.
 
 
-After doing this specify your hostname into /etc/hostname file and also add a entry of newly created hostname into /etc/hosts file also 
+After doing above steps specify your servername into /etc/hostname file and also add a entry of newly created servername into /etc/hosts file.
 
+
+```
 127.0.0.1	localhost
 127.0.1.1	localhost2
 192.168.1.128	localhost
@@ -152,23 +158,34 @@ fe00::0 ip6-localnet
 ff00::0 ip6-mcastprefix
 ff02::1 ip6-allnodes
 ff02::2 ip6-allrouters
+```
+
+After all this i think run following commands
 
 
-after all this i think we should go to check in the brower
-
-run commands
-
-service apache2 restart
-
-check its status 
-service apache2 restart
+```service apache2 restart```
 
 
-To start another server
-service apache2@servere2 restart
++ Check its status 
 
-check its status
-service apache2@server2 status
 
-in browser check into two different tabs whether server is up or not by typing
-localhost & localhost2:8089 in the different tabas.
+```service apache2 restart```
+
+
++ To start another server
+
+
+```service apache2@servere2 restart```
+
+
++ Check its status
+
+
+```service apache2@server2 status```
+
+
+Now check into browser, open two different tabas and type localhost and localhost2:8089 respectively in URL of tab1 and tab2.
+
+You will see the default login page in two diffrent tabs.
+
+you're done.
