@@ -1,6 +1,6 @@
-## Install Apache on machine :
+## Install Apache :
 
-+ Prerequisites
+# + Prerequisites
 
 
 Before you begin this guide, you should have a regular, non-root user with sudo privileges configured on your server/machine.
