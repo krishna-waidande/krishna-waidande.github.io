@@ -1,11 +1,11 @@
-## Install Apache :
+# Install Apache :
 
-#### Prerequisites
+### Prerequisites
 
 Before you begin this guide, you should have a regular, non-root user with sudo privileges configured on your server/machine.
 
 
-#### Step 1:
+### Step 1:
 
 Apache is available within Ubuntu's default software repositories, so we will install it using conventional package management tools.
 We will begin by updating the local package index to reflect the latest upstream changes. Afterwards, we can install the apache2 package:
@@ -18,7 +18,7 @@ Open your terminal and run below commands.
 ```sudo apt-get install apache2```
 
 
-#### Step 2:
+### Step 2:
 Check your Web Server.Run following command.
 
 ```sudo systemctl status apache2```
@@ -59,10 +59,12 @@ Now open your browser and type localhost in URL, in case of server type IP addre
 
 + Open your terminal.
 
-+ Go to /usr/share/doc/apache2/examples this directory.You will find setup-instance file.
-cd /usr/share/doc/apache2/examples
++ Go to ```cd /usr/share/doc/apache2/examples``` this directory.You will find setup-instance file.
+
 
 + Execute that file using ```sh setup-instance server2``` command where ```server2``` is a suffix.That is it appends ```apache2-``` by default to your instance name. 
+
+#### Note: you can give any name.
 
 
 ```
@@ -76,7 +78,7 @@ systemctl start apache2@server2.service
 systemctl enable apache2@server2.service
 ```
 
-Above 2 commands are used to start and enable apache2@server2.After running these 2 commands you will see output like :
+Above 2 commands are used to start and enable apache2@server2. After running these 2 commands you will see output like :
 ```
 user@idp:/usr/share/doc/apache2/examples$ systemctl start apache2@server2.service
 user@idp:/usr/share/doc/apache2/examples$ systemctl enable apache2@server2.service
@@ -84,7 +86,7 @@ Created symlink /etc/systemd/system/multi-user.target.wants/apache2@server2.serv
 user@idp:/usr/share/doc/apache2/examples$ 
 ```
 
-To test weather your 2nd instance is running or not type below command
+To test weather your 2nd instance is running or not type following command
 ```
 systemctl status apache2@server2.service
 
@@ -100,9 +102,12 @@ systemctl status apache2@server2.service
            └─17213 /usr/sbin/apache2 -d /etc/apache2-server2 -k start 
 ```
 
-+ Now you should see a new directory /etc/apache2-server2 which contains all config files. It would also create /etc/init.d/apache2-server2 using which you can start your apache instance.
++ Now you should see a new directory ```/etc/apache2-server2``` which contains all config files. It would also create ```/etc/init.d/apache2-server2``` using which you can start your apache instance.
 
-+ Get into /etc/apache2-server2/sites-available directory, you will find ```000-default.conf``` file edit this file with your servername in my case I put servername as localhost2.below is a screenshot of file
++ Get into ```/etc/apache2-server2/sites-available``` directory, you will find ```000-default.conf``` file edit this file with your servername in my case I put servername as ```localhost2``` and also change the port because port 80 is occupied by the default apache instance so here you need to change the port also I choose port 8089 in my case. Below is a screenshot of file.
+
+
+Check for available port by typing command  ```sudo netstat -tlnp```.
 
 
 ```
@@ -124,7 +129,7 @@ systemctl status apache2@server2.service
 ```
 
 
-+ Change the ```port.conf``` file which is present in /etc/apache2-server2, Below i am attaching screenshot of my port.conf file.
++ Change the ```port.conf``` file which is present in /etc/apache2-server2, Below I am giving screenshot of my port.conf file.
 
 
 ```
@@ -139,9 +144,6 @@ Listen 8089
 </IfModule>
 
 ```
-
-
-Check for available port by typing command  ```sudo netstat -tlnp```.
 
 
 After doing above steps specify your servername into /etc/hostname file and also add a entry of newly created servername into /etc/hosts file.
@@ -160,8 +162,9 @@ ff02::1 ip6-allnodes
 ff02::2 ip6-allrouters
 ```
 
-After all this i think run following commands
+After all this I think we should run following commands
 
++ Start default Apache 
 
 ```service apache2 restart```
 
@@ -172,7 +175,7 @@ After all this i think run following commands
 ```service apache2 restart```
 
 
-+ To start another server
++ Start another server
 
 
 ```service apache2@servere2 restart```
