@@ -1,12 +1,12 @@
-Install Apache on machine :
+## Install Apache on machine :
 
-Prerequisites
++ Prerequisites
 
 
 Before you begin this guide, you should have a regular, non-root user with sudo privileges configured on your server/machine.
 
 
-Step : 1
++ Step : 1
 
 Apache is available within Ubuntu's default software repositories, so we will install it using conventional package management tools.
 We will begin by updating the local package index to reflect the latest upstream changes. Afterwards, we can install the apache2 package:
@@ -14,14 +14,17 @@ We will begin by updating the local package index to reflect the latest upstream
 Open your terminal and run below commands.
 
 ```sudo apt-get update```
+
+
 ```sudo apt-get install apache2```
 
 
-Step 2: Check your Web Server.Run following command.
++ Step 2: Check your Web Server.Run following command.
 
-sudo systemctl status apache2
+```sudo systemctl status apache2```
 
-you will see below output
+
+You will see below output
 ```
  apache2.service - LSB: Apache2 web server
    Loaded: loaded (/etc/init.d/apache2; bad; vendor preset: enabled)
@@ -41,16 +44,22 @@ you will see below output
  ```          
  If you dont see status as Active run following command
  
-sudo systemctl restart apache2 & check status it will show status as Acive.
-
-now open your browser and type localhost in URL, in case of server type IP address of that server you will see default page of Apache.
+```sudo systemctl restart apache2``` 
 
 
-Now we will see how to configure multiple instance of Apaches on single machine.
+Then Check status it will show status as ```Acive```.
 
-1. Open your terminal.
 
-2. Go to /usr/share/doc/apache2/examples this directory 
+
+Now open your browser and type localhost in URL, in case of server type IP address of that server you will see default page of Apache.
+
+
+### Now we will see how to configure multiple instance of Apaches on single machine.
+
+
++ 1. Open your terminal.
+
++ 2. Go to /usr/share/doc/apache2/examples this directory 
 cd /usr/share/doc/apache2/examples
 
 3. You will find setup-instance file.
