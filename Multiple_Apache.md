@@ -5,12 +5,9 @@
 Before you begin this guide, you should have a regular, non-root user with sudo privileges configured on your server/machine.
 
 
-### Step 1:
++ Apache is available within Ubuntu's default software repositories, so we will install it using conventional package management tools.We will begin by updating the local package index to reflect the latest upstream changes. Afterwards, we can install the apache2 package:
 
-Apache is available within Ubuntu's default software repositories, so we will install it using conventional package management tools.
-We will begin by updating the local package index to reflect the latest upstream changes. Afterwards, we can install the apache2 package:
-
-Open your terminal and run below commands.
++ Open your terminal and run below commands.
 
 ```sudo apt-get update```
 
@@ -18,8 +15,7 @@ Open your terminal and run below commands.
 ```sudo apt-get install apache2```
 
 
-### Step 2:
-Check your Web Server.Run following command.
++ Check status of Apache .Run following command.
 
 ```sudo systemctl status apache2```
 
@@ -54,7 +50,7 @@ Then Check status it will show status as ```Acive```.
 Now open your browser and type localhost in URL, in case of server type IP address of that server you will see default page of Apache.
 
 
-### Now we will see how to configure multiple instance of Apaches on single machine.
+# Configure multiple instance of Apaches on single machine.
 
 
 + Open your terminal.
