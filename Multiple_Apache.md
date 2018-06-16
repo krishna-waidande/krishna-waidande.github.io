@@ -80,10 +80,9 @@ systemctl enable apache2@server2.service
 
 Above 2 commands are used to start and enable apache2@server2. After running these 2 commands you will see output like :
 ```
-user@idp:/usr/share/doc/apache2/examples$ systemctl start apache2@server2.service
-user@idp:/usr/share/doc/apache2/examples$ systemctl enable apache2@server2.service
-Created symlink /etc/systemd/system/multi-user.target.wants/apache2@server2.service → /lib/systemd/system/apache2@.service.
-user@idp:/usr/share/doc/apache2/examples$ 
+user@idp:~$ systemctl start apache2@server2.service
+user@idp~$ systemctl enable apache2@server2.service
+Created symlink /etc/systemd/system/multi-user.target.wants/apache2@server2.service → /lib/systemd/system/apache2@.service. 
 ```
 
 To test weather your 2nd instance is running or not type following command
