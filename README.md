@@ -5,7 +5,7 @@
 ### [Assignment 2](https://krishna-waidande.github.io//Assignment2)
 ### [Gradle Installation](https://krishna-waidande.github.io//gradle)
 ### [Apache Tomcat Installation](https://krishna-waidande.github.io//tomcat)
-### [Java Indentation](https://krishna-waidande.github.io/JavaIndentation)
+### [Java Indentation](https://krishna-waidande.github.io//JavaIndentation)
+### [Install multiple Apache instances](https://krishna-waidande.github.io//Multiple_Apache)
 
-![alt text](https://github.com/krishna-waidande/krishna-waidande.github.io/homepage.png)
 
