@@ -22,7 +22,8 @@ Example : ```java -jar jenkins.war --httpPort=9090```
 
 
 
-you will see the output as :``` 
+you will see the output as :
+``` 
 [jenkins@os-build ~]$ java -jar jenkins.war --httpPort=9090
 Running from: /home/jenkins/jenkins.war
 webroot: $user.home/.jenkins
