@@ -119,11 +119,17 @@ Now Open the browser and hit the URL ```localhost:<port no>/``` you will see the
 + Place downloaded ```jenkins.war``` file into ```TOMCAT_HOME/webapps folder```. 
 + Start the Tomcat.
 + Check the log file catalina.out which is placed in the ```TOMCAT_HOME/logs/catalina.out```. Run command to check logs.
+
+
 ```tail -100f TOMCAT_HOME/logs/catalina.out```
 
-It's chainset will start to run and at the end you will see a log message as ```INFO: Jenkins is fully up and running```
+It's chainset will start to run and at the end you will see a log message as
+
+
+```INFO: Jenkins is fully up and running```
 
 After this Open the browser and hit the URL ```localhost:<port no>/jenkins``` you will see the jenkins page. fill the required credentials.
 
+## That's it. You have successfully installed Jenkins on your machine. 
 
 
