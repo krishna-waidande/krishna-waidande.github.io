@@ -12,20 +12,18 @@
 
 
 
-##### Note : Jenkins by default runs on 8080 port. If you have your tomcat already running on 8080.you can run the following command by which Jenkins will run on another port.
+#### Note : Jenkins by default runs on 8080 port. If you have your tomcat already running on 8080.you can run the following command by which Jenkins will run on another port.
 
 
 ```java -jar jenkins.war --httpPort=<Port no>```
 
 
-example : ```java -jar jenkins.war --httpPort=9090```
+Example : ```java -jar jenkins.war --httpPort=9090```
 
 
 
-you will see the output as :
-
-
-``` [jenkins@os-build ~]$ java -jar jenkins.war --httpPort=9090
+you will see the output as :``` 
+[jenkins@os-build ~]$ java -jar jenkins.war --httpPort=9090
 Running from: /home/jenkins/jenkins.war
 webroot: $user.home/.jenkins
 Apr 14, 2018 9:13:21 AM Main deleteWinstoneTempContents
