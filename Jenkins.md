@@ -5,10 +5,7 @@
 
 ### Way 1 :
 + Place this war into a installation directory where you want to install jenkins.
-+ Then go into that folder and run the command: 
-
-
-```java -jar jenkinns.war```
++ Then go into that folder and run the command: ```java -jar jenkinns.war```
 
 
 
