@@ -2,18 +2,17 @@
 
 + Download the war file from following URL 
 
-
 ```https://updates.jenkins-ci.org/download/war/```
 
 
 ### Way 1 :
-
-
 + Place this war into a installation directory where you want to install jenkins.
-
 + Then go into that folder and run the command: 
 
+
 ```java -jar jenkinns.war```
+
+
 
 ##### Note : Jenkins by default runs on 8080 port. If you have your tomcat already running on 8080.you can run the following command by which Jenkins will run on another port.
 
@@ -123,14 +122,14 @@ Now Open the browser and hit the URL ```localhost:<port no>/``` you will see the
 ### Way 2 :
 
 + Shutdown the Tomcat.
-+ Place downloaded jenkins.war file into TOMCAT_HOME/webapps folder. 
++ Place downloaded ```jenkins.war``` file into ```TOMCAT_HOME/webapps folder```. 
 + Start the Tomcat.
-+ Check the log file catalina.out which is placed in theTOMCAT_HOME/logs/catalina.out. Run command to check logs.
++ Check the log file catalina.out which is placed in the ```TOMCAT_HOME/logs/catalina.out```. Run command to check logs.
 ```tail -100f TOMCAT_HOME/logs/catalina.out```
 
 It's chainset will start to run and at the end you will see a log message as ```INFO: Jenkins is fully up and running```
 
-After this Open the browser and hit the URL ```localhost:<port no>/jenkins you will see the jenkins page. fill the required credentials.
+After this Open the browser and hit the URL ```localhost:<port no>/jenkins``` you will see the jenkins page. fill the required credentials.
 
 
 
