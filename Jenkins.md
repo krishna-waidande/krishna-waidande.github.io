@@ -1,8 +1,6 @@
 ## Installation of Jenkins
 
-+ Download the war file from following URL 
-
-```https://updates.jenkins-ci.org/download/war/```
++ Download the war file from URL : ```https://updates.jenkins-ci.org/download/war/```
 
 
 ### Way 1 :
