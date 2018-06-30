@@ -1,4 +1,4 @@
-## Dependency check 
+# Dependency check 
 
 In this article we will learn about how to configure dependency check.but before going to topic let's see what is dependency-check.
 
@@ -25,6 +25,50 @@ So while installing dependency check it internally downloads one database into y
 
 So each time whenever you perform dependency-check it checks each dependency included in your project with NVD.
 dependencies which are there in the NVD, it generates report of these vulnerabilites and stores them into dependency-check-report.html file.
+
+
+I hope you have get an overall idea about dependency check and why we need to include this into our project.
+
+
+now let's check how we can install it and perform dependency check. there are mutiple ways to configure this into our project.
+
++ CLI
++ Gradle plugin
++ Ant plugin
++ Jenkins plugin
+
+
+In this article we will see how to configure it by using CLI and Gradle plugin.
+
++ CLI :
+
+Go to this link : https://www.owasp.org/index.php/OWASP_Dependency_Check and see on your right side of screen. you will se Quick download option . ==> then click on Command line option.Then downloading will start, it will download on zip file.
+
+
+Now open Terminal go to download folder.
+
+
+unzip that zip.
+
+
+After that go into dependency-check/bin folder.you will see 2 scripts. ```dependency.bat``` for windows & ```dependency.sh```
+for Linux.
+
+Run this command
+
+
+```./dependency-check.sh --project test --scan <path to dependency jars>```
+
+
+example : ```./dependency-check.sh --project test --scan /opt/apache-tomcat/webapps/openspecimen/WEB-INF/lib/```
+  
+  
+
+https://jeremylong.github.io/DependencyCheck/dependency-check-cli/arguments.html
+
+
+
+
 
 
 
