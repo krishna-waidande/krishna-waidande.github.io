@@ -9,6 +9,6 @@
 ### [Install multiple Apache instances](https://krishna-waidande.github.io//Multiple_Apache)
 ### [Know Apache](https://krishna-waidande.github.io//Apache)
 ### [Jenkins Installation](https://krishna-waidande.github.io//Jenkins)
-### [Configure Dependency check into build](https://krishna-waidande.github.io//dependency-check)
+### [Configure Dependency check into build](https://krishna-waidande.github.io//dependencycheck)
 
 
