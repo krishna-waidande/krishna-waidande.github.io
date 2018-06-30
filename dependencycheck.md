@@ -42,7 +42,7 @@ In this article we will see how to configure it by using CLI and Gradle plugin.
 
 + CLI :
 
-Go to this link : https://www.owasp.org/index.php/OWASP_Dependency_Check and see on your right side of screen. you will se Quick download option . ==> then click on Command line option.Then downloading will start, it will download on zip file.
+Go to this link : [Dependency-chek](https://www.owasp.org/index.php/OWASP_Dependency_Check) and see on your right side of screen. you will se ```Quick Download``` option . ==> then click on ```Command line``` option.Then downloading will start, it will download on zip file.
 
 
 Now open Terminal go to download folder.
@@ -63,8 +63,7 @@ Run this command
 example : ```./dependency-check.sh --project test --scan /opt/apache-tomcat/webapps/openspecimen/WEB-INF/lib/```
   
   
-
-https://jeremylong.github.io/DependencyCheck/dependency-check-cli/arguments.html
+For more options you can go to this link :https://jeremylong.github.io/DependencyCheck/dependency-check-cli/arguments.html
 
 
 
