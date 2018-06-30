@@ -63,7 +63,7 @@ Run this command
 example : ```./dependency-check.sh --project test --scan /opt/apache-tomcat/webapps/openspecimen/WEB-INF/lib/```
   
   
-For more options you can go to this link :https://jeremylong.github.io/DependencyCheck/dependency-check-cli/arguments.html
+For more options you can go to this link : [dependenccy-check-options](https://jeremylong.github.io/DependencyCheck/dependency-check-cli/arguments.html)
 
 
 
