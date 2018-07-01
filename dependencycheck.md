@@ -48,13 +48,13 @@ Go to this link : [Dependency-chek](https://www.owasp.org/index.php/OWASP_Depend
 Now open Terminal go to download folder.
 
 
-unzip that zip.
++ unzip that zip.
 
 
-After that go into dependency-check/bin folder.you will see 2 scripts. ```dependency.bat``` for windows & ```dependency.sh```
++ After that go into dependency-check/bin folder.you will see 2 scripts. ```dependency.bat``` for windows & ```dependency.sh```
 for Linux.
 
-Run this command
++ Run this command
 
 
 ```./dependency-check.sh --project test --scan <path to dependency jars>```
@@ -62,14 +62,14 @@ Run this command
 ```--project``` option is mendatory.
 
 
-example : ```./dependency-check.sh --project test --scan /opt/apache-tomcat/webapps/openspecimen/WEB-INF/lib/```
+Example : ```./dependency-check.sh --project test --scan /opt/apache-tomcat/webapps/openspecimen/WEB-INF/lib/```
   
   
-For more options you can go to this link : [dependenccy-check-options](https://jeremylong.github.io/DependencyCheck/dependency-check-cli/arguments.html)
++ For more options you can go to this link : [dependenccy-check-options](https://jeremylong.github.io/DependencyCheck/dependency-check-cli/arguments.html)
 
 ### Gradle plugin:
 
-Add these lines in your build.gradle file.
++ Add these lines in your build.gradle file.
 
 
 ```
