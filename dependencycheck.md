@@ -125,7 +125,7 @@ subprojects {
 }
 ```
 
-+ Customize the report directory?
++ Customize the report directory.
 
 
 By default, all reports will be placed under build/reports folder, to change the default reporting folder name modify the configuration section like this:
