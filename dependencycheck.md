@@ -48,7 +48,7 @@ Go to this link : [Dependency-chek](https://www.owasp.org/index.php/OWASP_Depend
 Now open Terminal go to download folder.
 
 
-+ unzip that zip.
++ Unzip that zip.
 
 
 + After that go into dependency-check/bin folder.you will see 2 scripts. ```dependency.bat``` for windows & ```dependency.sh```
@@ -87,8 +87,8 @@ apply plugin: 'org.owasp.dependencycheck'
 
 ### Some more things to know: 
 
-+ What if your project includes multiple sub-project? How can we use this plugin for each of them including the root project?
-
+```What if your project includes multiple sub-project? How can we use this plugin for each of them including the root project?
+````
 
 +  For all projects including root project:
 
