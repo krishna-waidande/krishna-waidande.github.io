@@ -92,7 +92,7 @@ apply plugin: 'org.owasp.dependencycheck'
 
 +  For all projects including root project:
 
-```
+```groovy
 buildscript {
   repositories {
     mavenCentral()
@@ -110,7 +110,7 @@ allprojects {
 +  For all sub-projects:
 
 
-```
+```groovy
 buildscript {
   repositories {
     mavenCentral()
@@ -130,7 +130,7 @@ subprojects {
 
 By default, all reports will be placed under build/reports folder, to change the default reporting folder name modify the configuration section like this:
 
-```
+```groovy
 subprojects {
     apply plugin: 'org.owasp.dependencycheck'
 
