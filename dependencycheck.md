@@ -85,7 +85,7 @@ buildscript {
 apply plugin: 'org.owasp.dependencycheck'
 ```
 
-Some more things : 
+### Some more things to know: 
 
 + What if your project includes multiple sub-project? How can we use this plugin for each of them including the root project?
 
