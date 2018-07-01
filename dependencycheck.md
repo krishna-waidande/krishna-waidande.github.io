@@ -72,7 +72,7 @@ Example : ```./dependency-check.sh --project test --scan /opt/apache-tomcat/weba
 + Add these lines in your build.gradle file.
 
 
-```
+```groovy
 buildscript {
     repositories {
         mavenCentral()
