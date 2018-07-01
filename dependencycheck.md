@@ -32,7 +32,7 @@ I hope you have get an overall idea about dependency check and why we need to in
 
 now let's check how we can install it and perform dependency check. there are mutiple ways to configure this into our project.
 
-+ CLI
++ CLI (Command Line)
 + Gradle plugin
 + Ant plugin
 + Jenkins plugin
@@ -40,7 +40,7 @@ now let's check how we can install it and perform dependency check. there are mu
 
 In this article we will see how to configure it by using CLI and Gradle plugin.
 
-### + CLI :
+###  CLI (Command Line) :
 
 Go to this link : [Dependency-chek](https://www.owasp.org/index.php/OWASP_Dependency_Check) and see on your right side of screen. you will se ```Quick Download``` option. then click on ```Command line``` option.Then downloading will start, it will download on zip file.
 
@@ -59,11 +59,89 @@ Run this command
 
 ```./dependency-check.sh --project test --scan <path to dependency jars>```
 
+```--project``` option is mendatory.
+
 
 example : ```./dependency-check.sh --project test --scan /opt/apache-tomcat/webapps/openspecimen/WEB-INF/lib/```
   
   
 For more options you can go to this link : [dependenccy-check-options](https://jeremylong.github.io/DependencyCheck/dependency-check-cli/arguments.html)
+
+### Gradle plugin:
+
+Add these lines in your build.gradle file.
+
+
+```
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'org.owasp:dependency-check-gradle:3.2.1'
+    }
+}
+
+apply plugin: 'org.owasp.dependencycheck'
+```
+
+Some more things : 
+
++ What if your project includes multiple sub-project? How can we use this plugin for each of them including the root project?
+
+
++  For all projects including root project:
+
+```
+buildscript {
+  repositories {
+    mavenCentral()
+  }
+  dependencies {
+    classpath 'org.owasp:dependency-check-gradle:3.2.0'
+  }
+}
+
+allprojects {
+    apply plugin: 'org.owasp.dependencycheck'
+}
+```
+
++  For all sub-projects:
+
+
+```
+buildscript {
+  repositories {
+    mavenCentral()
+  }
+  dependencies {
+    classpath 'org.owasp:dependency-check-gradle:3.2.0'
+  }
+}
+
+subprojects {
+    apply plugin: 'org.owasp.dependencycheck'
+}
+```
+
++ Customize the report directory?
+
+
+By default, all reports will be placed under build/reports folder, to change the default reporting folder name modify the configuration section like this:
+
+```
+subprojects {
+    apply plugin: 'org.owasp.dependencycheck'
+
+    dependencyCheck {
+        outputDirectory = "security-report"
+    }
+}
+```
+
+
+
 
 
 
