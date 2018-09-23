@@ -1,14 +1,16 @@
-THE RISE OF LINUX. 
+## THE RISE OF LINUX. 
 
 In 1991, while studying computer science at University of Helsinki,Linus Torvalds began a project that later became the Linux
 kernel.He wrote the program specifically for the hardware he was using and independent of an operating system because he 
 wanted to use the functions of his new PC with an 80386 processor.Development was done on MINIX using the GNU C Compiler. 
 
 
-What is opensource ? 
+> What is opensource ? 
 
+```
 The copy-right holder provides right to study, change and distribute the software to anyone for any purpose.Opensource 
 softwares are developed in public, in collaborative manner.
+```
 
 ## Different Linux Distributions (Distos)
 
@@ -54,7 +56,7 @@ Ubuntu is based on Debian and was founded to improve the core bits of Debian mor
 Every release name of Debian is based on the name of the movie Toy Story.
 ```
 
-SUSE
+### SUSE
 
 ```
 SuSE Linux is a leading, professional-class OS that is popular both for enterprise and home computing use; 
