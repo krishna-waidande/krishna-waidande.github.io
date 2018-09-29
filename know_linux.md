@@ -1,16 +1,44 @@
 ## THE RISE OF LINUX. 
 
+IN 1991, a student of University of Helsinki studying in computer science was writing program specifically for the hardware he was using and independent of an operating system because he wanted to use the functions of his new PC with an 80386 processor. The development was done on MINIX using the GNU C Compiler.
+
+Later this program known by "Linux kernal".
+
+Wait!! you must be thinking now what is kernal.
+Kernal means a part of program which interacts with the hardware part.IN simple work a program which talks with hardware of computer. get it...
+
+
+
 In 1991, while studying computer science at University of Helsinki,Linus Torvalds began a project that later became the Linux
-kernel.He wrote the program specifically for the hardware he was using and independent of an operating system because he 
-wanted to use the functions of his new PC with an 80386 processor.Development was done on MINIX using the GNU C Compiler. 
+kernel.He wrote the program  
 
 
-> What is opensource ? 
+> Do you know what is Opensource ? 
 
+Technical defination :
 ```
 The copy-right holder provides right to study, change and distribute the software to anyone for any purpose.Opensource 
 softwares are developed in public, in collaborative manner.
 ```
+
+I think it might get difficult to understand at first go. 
+
+Let me explain you what is Opensource.
+
+Take a example of Linux operating sysytem. Many people says Linux is opensource so you might be wondering what is opensource.
+
+
+Opensource means the code writtten for Linux operating system is easyly available for all. Here the source is (Linux code), It mean you can download that source code. Make a change into it, Add more functionalities according to your ideas and use the operating system the way you want.
+
+The important thing is it's free. no one will charge you for this. :)
+
+
+Isn't it cool?? 
+
+
+I hope you got the understanding of OpenSource concept.
+
+
 
 ## Different Linux Distributions (Distos)
 
