@@ -1,4 +1,4 @@
-## THE RISE OF LINUX. 
+# THE RISE OF LINUX. 
 
 In 1991, a student of University of Helsinki studying in computer science was writing program specifically for the hardware he was using and independent of an operating system because he wanted to use the functions of his new PC with an 80386 processor.The development was done on MINIX using the GNU C Compiler.
 
@@ -39,7 +39,7 @@ softwares are developed in public, in collaborative manner.
 
 I think it might get difficult to understand at first go. 
 
-Let me explain you what is Opensource.
+Let me explain you what is open source.
 
 Take a example of Linux operating sysytem. Many people says Linux is opensource so you might be wondering what is opensource.
 
@@ -52,7 +52,14 @@ The important thing is it's free. no one will charge you for this. :)
 Isn't it cool?? 
 
 
-I hope you understand the concept of OpenSource 
+I hope you understand the concept of open source 
+
+There are huge number of opensource softwares available on internet. Here I am lising few of them :
++ [OpenSpecimen](https://www.openspecimen.org/)
++ [Apache HTTP server](http://httpd.apache.org/ABOUT_APACHE.html)
++ [Android](https://www.android.com)
++ [Wordpress](https://wordpress.org/)
++ [Blender](https://www.blender.org/)
 
 ### Now let's see What's the difference between open source software and other types of software?
 
