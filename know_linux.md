@@ -1,11 +1,14 @@
 ## THE RISE OF LINUX. 
 
-IN 1991, a student of University of Helsinki studying in computer science was writing program specifically for the hardware he was using and independent of an operating system because he wanted to use the functions of his new PC with an 80386 processor. The development was done on MINIX using the GNU C Compiler.
+IN 1991, a student of University of Helsinki studying in computer science was writing program specifically for the hardware he was using and independent of an operating system because he wanted to use the functions of his new PC with an 80386 processor.The development was done on MINIX using the GNU C Compiler.
 
 Later this program known by "Linux kernal".
 
-Wait!! you must be thinking now what is kernal.
-Kernal means a part of program which interacts with the hardware part.In simple word a program which talks with hardware of computer.
+#### Wait!! you must be thinking now what is kernal.
+
+
+Kernal means a part of program which interacts with the hardware part and runs the operating system.In simple word a program which talks with hardware of computer is called as Kernal.
+Kernal is called as heart of operating system in computer science world.
 
 let's know more about Linux.
 
