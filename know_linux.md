@@ -10,7 +10,7 @@ Later this program known by "Linux kernal".
 Kernal means a part of program which interacts with the hardware part and runs the operating system.In simple word a program which talks with hardware of computer is called as Kernal.
 Kernal is called as heart of operating system in computer science world.
 
-let's know more about Linux.
+let's explore more about Linux.
 
 ### HOW IS LINUX DEVELOPED?
 
