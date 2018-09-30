@@ -5,17 +5,25 @@ IN 1991, a student of University of Helsinki studying in computer science was wr
 Later this program known by "Linux kernal".
 
 Wait!! you must be thinking now what is kernal.
-Kernal means a part of program which interacts with the hardware part.IN simple work a program which talks with hardware of computer. get it...
+Kernal means a part of program which interacts with the hardware part.In simple word a program which talks with hardware of computer.
+
+let's know more about Linux.
+
+### HOW IS LINUX DEVELOPED?
+
+The best thing about Linux is no one owns Linux. Unlike other operating systems like Microsoft’s Windows or Apple’s Mac and iOS. It doesn’t belong any big company.
+It is open source. Anyone can you Linux under GPU licence. It is the community that develops Linux that power Linux. 
+
+Linux has huge community of more than 10000 developers and 1000 companies , helping it to move towards the future.
+
+
+Here I am sharing a short video on [How linux is mainain](https://youtu.be/yVpbFMhOAwE)
 
 
 
-In 1991, while studying computer science at University of Helsinki,Linus Torvalds began a project that later became the Linux
-kernel.He wrote the program  
+### DO YOU KNOW WHAT IS OPENSOURCE ? 
 
-
-> Do you know what is Opensource ? 
-
-Technical defination :
+wiki defination :
 ```
 The copy-right holder provides right to study, change and distribute the software to anyone for any purpose.Opensource 
 softwares are developed in public, in collaborative manner.
@@ -38,7 +46,14 @@ Isn't it cool??
 
 I hope you got the understanding of OpenSource concept.
 
+### What's the difference between open source software and other types of software?
 
+Some software has source code that only the person, team, or organization who created it—and maintains exclusive control over it—can modify. People call this kind of software "proprietary" or "closed source" software.
+
+Open source software is different. Its authors make its source code available to others who would like to view that code, copy it, learn from it, alter it, or share it.
+
+
+Now let's see different Linux Distos.
 
 ## Different Linux Distributions (Distos)
 
@@ -101,3 +116,6 @@ The purchase price varies with the version and the number of installations.
 + Oracle 
 + Android 
 
+I hope you get the basic idea of Linux.
+
+### Happy learning :)
