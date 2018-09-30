@@ -17,7 +17,12 @@ It is open source. Anyone can you Linux under GPU licence. It is the community t
 Linux has huge community of more than 10000 developers and 1000 companies , helping it to move towards the future.
 
 
-Here I am sharing a short video on [How linux is mainain](https://youtu.be/yVpbFMhOAwE)
+### HOW LINUX IS MAINTAIN ??
+
+A new kernel comes out every 2-3 months. This sort of speed is achieved by employing a unique collaborative developing technique. This technique has made Linux as the biggest collaborative development product.
+
+Here is a short video which helps you visualise this approach in depth.
+[How linux is mainain](https://youtu.be/yVpbFMhOAwE)
 
 
 
