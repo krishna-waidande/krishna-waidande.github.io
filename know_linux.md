@@ -49,16 +49,16 @@ The important thing is it's free. no one will charge you for this. :)
 Isn't it cool?? 
 
 
-I hope you got the understanding of OpenSource concept.
+I hope you understand the concept of OpenSource 
 
-### What's the difference between open source software and other types of software?
+### Now let's see What's the difference between open source software and other types of software?
 
 Some software has source code that only the person, team, or organization who created it—and maintains exclusive control over it—can modify. People call this kind of software "proprietary" or "closed source" software.
 
 Open source software is different. Its authors make its source code available to others who would like to view that code, copy it, learn from it, alter it, or share it.
 
 
-Now let's see different Linux Distos.
+There are different flavours / types of Linux operating systems. have a look at different kind of flavours of Linux.
 
 ## Different Linux Distributions (Distos)
 
