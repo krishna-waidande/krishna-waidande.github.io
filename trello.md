@@ -86,8 +86,11 @@ Now let me tell you how did trello helped me to keep track of my daily task.
 
 My Experience : 
 
+```
+I am working as technical staff at Krishagni company. My role is to upgrade the client servers & install our OpenSpecimen product on client server. Installation process is a little bit long process. We need to ask client about provide us with a environment to install OpenSpecimen, this process takes a long time all the conversation happens on the emails.So we need to maintain the status of each client.If Trello were not there it was so difficult for me to keep track of all the clients. 
+Sometimes client or we forgot to take follow-ups on the mails. but as we can see a ticket is on-Hold state on Trello board from longer time. it helps us to take folloe-up of emails.
 
-
+```
 
 
 
