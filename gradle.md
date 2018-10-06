@@ -3,9 +3,9 @@
 
 ## Gradle Installation
 
-1 . Download zip file of gradlbe from https://gradle.org/releases/
+1 . Download zip file of gradle from https://gradle.org/releases/
 
-2 . After downloading zip file run following command into terminal
+2 . After downloading zip file run following command on the terminal
 
 
 > sudo mkdir /opt/gradle   
@@ -17,7 +17,7 @@
 4 . Copy that folder into /opt/gradle folder by typing following command   
 
 
-> sudo cp gradle-4.5.1 -r /opt/gradle
+> sudo cp -r gradle-4.5.1/  /opt/gradle
 
 
 
