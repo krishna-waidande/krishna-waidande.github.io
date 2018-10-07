@@ -25,7 +25,7 @@ Probably not unless you forget to keep the track of your task :)
 In our daily busy schedule. It is very difficult to remember all the things we want to do in that particular day so some of us might use the personal diary to keep the track of a task or maintains to-do list in their mobile app.
 
 
-#### what if I tell you, I have overcome this problem of tracking the daily tasks.
+#### What if I tell you, I have overcome this problem of tracking the daily tasks.
 
 
 There are so many software on the internet which gives you the functionality of keeping track of your task.
