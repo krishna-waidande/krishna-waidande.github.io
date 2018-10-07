@@ -9,8 +9,7 @@ Consider a scenario you are working on something and suddenly some other importa
 Here is a thing you forget the task which was assigned to you at the start of the day.
 
 
-Now next day Boss / Manager ask you about the task you forgot. 
-:) 
+Now next day Boss / Manager ask you about the task you forgot. **:)** 
 
 
 What you will do now ?? you will tell them something and they will think you are making excuses and all. You will become frustrated. 
