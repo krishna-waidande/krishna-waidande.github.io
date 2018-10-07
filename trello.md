@@ -11,16 +11,15 @@ Consider a scenario you are working on something and suddenly some other importa
 Here is a thing you forget the task which was assigned to you at the start of the day.
 
 
-Now next day Boss / Manager ask you about the task you forgot.
+Next day your Boss / Manager ask you about the task you forgot.
 
-
-What you will do now ?? you will tell them something and they will think you are making excuses and all. You will become frustrated. 
+Now you have to complete that task urgently. You have to put current task aside and work on previous task. isn't it a headcache? 
 
 
 Now think if you keep the track of your task would this situation occur?
 
 
-Probably not unless you forget to keep the track of your task :smile:
+Probably not unless you forget to keep the track of your task :)
 
 
 In our daily busy schedule. It is very difficult to remember all the things we want to do in that particular day so some of us might use the personal diary to keep the track of a task or maintains to-do list in their mobile app.
@@ -41,7 +40,7 @@ There are so many software on the internet which gives you the functionality of 
 
 
 #### Many more...
-Most of them are paid software :confused:
+Most of them are paid software :(
 
 
 There are softwares in the market which are free of cost, provide different features & easy to use. Let me tell you about the software I am using to keep track of my task.
