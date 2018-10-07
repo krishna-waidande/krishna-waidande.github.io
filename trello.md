@@ -48,7 +48,7 @@ There are softwares in the market which are free of cost, provide different feat
 
 ## [TRELLO](https://trello.com)
 
-Let me tell you a short history of trello
+Let me tell you a short history of Trello
 
 
 ### History of Trello
@@ -61,7 +61,7 @@ In 2015, Trello launched third-party integrations with tools such as Slack, GitH
 On January 9, 2017, Atlassian announced its intent to acquire Trello for $425 million. The transaction was made with $360 million in cash, while the remaining $65 million was made with shares and options.
 
 
-I started to use Trello a few months back. It really helps me to keep track of my task. On Trello we can create a board, cards, to-do list and much more things. I update my Trello board regularly. so it help me to remember all the task.
+I started to use Trello a few months back. It really helps me to keep track of my task. On Trello we can create a board, cards, to-do list much more things. I update my Trello board regularly. so it help me to remember all the task.
 
 There are 4 sections on my Trello board. 
 
@@ -83,7 +83,7 @@ My Experience :
 
 I am working as technical staff at Krishagni. My role is to upgrade the client servers & install our OpenSpecimen product on client server.
 The Installation process is a little bit long process. We need to ask the client about providing us with an environment to install OpenSpecimen, this process takes a long time all the conversation happens in the emails.
-So we need to maintain the status of each client.If Trello were not there it was so difficult for me to keep track of all the clients. 
+So we need to maintain the status of each client. If Trello were not there it was so difficult for me to keep track of all the clients. 
 Sometimes client or we forgot to take follow-ups on the mails. but as we can see a ticket is the On-Hold state on Trello board from a long time. it helps us to take follow-up of emails.
 
 
