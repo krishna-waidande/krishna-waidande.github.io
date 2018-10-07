@@ -31,17 +31,16 @@ what if I tell you, I have overcome this problem of tracking the daily tasks.
 
 There are so many software on the internet which gives you the functionality of keeping track of your task.
 
-+ Brightpod
++ [Brightpod](https://www.brightpod.com/)
 
-+ Casual
++ [Casual](https://casual.pm/)
 
-+ Codecks
++ [Codecks](https://www.codecks.io/)
 
-+ dapulse
++ [Favro](https://www.favro.com/)
 
-+ Favro
 
-Many more...
+#### Many more...
 Most of them are paid software :confused:
 
 
