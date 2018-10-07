@@ -68,29 +68,28 @@ I started to use Trello a few months back. It really helps me to keep track of m
 
 There are 4 sections on my Trello board. 
 
-+ TO-DO: When any new task assigns to me I create a ticket for this task and put under the TO-DO list.
++ `TO-DO`: When any new task assigns to me I create a ticket for this task and put under the TO-DO list.
 
 
-+ Doing: I keep those tickets under Doing list on which I am currently working on.I maintain a status of the current task in this ticket. I make note of my task here. so later also if I come on this task after a day or 2-3 days later I can recall all the things.
++ `Doing`: I keep those tickets under Doing list on which I am currently working on.I maintain a status of the current task in this ticket. I make note of my task here. so later also if I come on this task after a day or 2-3 days later I can recall all the things.
 
 
-+ On-Hold: Suppose any task postponed, as like any meeting with the client or we have sent a mail to the client about requirements so until requirements come from a client this task goes on On-Hold.
++ `On-Hold`: Suppose any task postponed, as like any meeting with the client or we have sent a mail to the client about requirements so until requirements come from a client this task goes on On-Hold.
 
 
-+ Done: As a completion of my task, I move the task ticket to done.
++ `Done`: As a completion of my task, I move the task ticket to done.
 
 
 Now let me tell you how did Trello help me to keep track of my daily task.
 
 My Experience : 
 
-```
 I am working as technical staff at Krishagni. My role is to upgrade the client servers & install our OpenSpecimen product on client server.
 The Installation process is a little bit long process. We need to ask the client about providing us with an environment to install OpenSpecimen, this process takes a long time all the conversation happens in the emails.
 So we need to maintain the status of each client.If Trello were not there it was so difficult for me to keep track of all the clients. 
 Sometimes client or we forgot to take follow-ups on the mails. but as we can see a ticket is the On-Hold state on Trello board from a long time. it helps us to take follow-up of emails.
 
-```
+
 
 Now I think you get the answer to the question of  "How to keep track of your task? "
 
