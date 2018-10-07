@@ -43,9 +43,7 @@ Many more...
 Most of them are paid software **:(**
 
 
-There are more software in the market which are free of cost, provide different features & easy to use.
-
-Let me tell you about the software I am using to keep track of my task.
+There are softwares in the market which are free of cost, provide different features & easy to use. Let me tell you about the software I am using to keep track of my task.
 
 
 ## [TRELLO](https://trello.com)
