@@ -20,7 +20,7 @@ The manager asks you for the document of it so that user can use the product.
 
 What will you do? Will you say I know my product well so I didn't create the document for the product? (At that time and place your manager will fire you)
 
-+ Consider a second Scenario **(Where you documented the project but at some time/place you missed to document some points)**
++ Consider a second Scenario **(You documented the project but at some of places you missed to document some points)**
 
 You are working on your project you are documenting the points which you think it will be hard to understand and recall and missed some points which you think are easy to remember.
 You completed that project, your manager hand over the product to the client with the document. All was going nice, but suddenly after 5-6 months, a minor bug occurs into your product.
