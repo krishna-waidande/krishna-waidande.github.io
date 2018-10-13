@@ -1,6 +1,7 @@
 # Why documentation is important?
 ---
 
+`Hello readers`,
 
 Most of us including me as well find documentation as a boring stuff. 
 
