@@ -29,4 +29,7 @@ The bug is from out of the syllabus. :D that means you read your all document bu
 
 Isn't it a big headache? to recall the thing which you have done 5-6 months ago.
 
-### If you don't want to be in either of the situations, start documenting things properly. :)
+If you documented each and every small thing about the product you have been overcome the above problems.
+
+
+### If you don't want to be in either of the above situations, start documenting things properly. :)
