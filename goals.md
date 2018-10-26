@@ -9,11 +9,11 @@ Also will share the what are goals behind this learning plan.
 
 + Improve email writing skills. 
 
-+ Learn Advance concepts of Apache server.
++ Learn advance concepts of Apache HTTP web server.
 
-+ Database Design and Its Concepts.
++ Database Designing.
 
-+ Get better at Linux Command.
++ Get better at Linux commands.
 
 The goal behind choosing the above topics are, I want to improve the things in which I am poor, also want to make a habit of self-learning.
 `Knowledge is the thing that never wastes`. So I am just trying to learn and gain knowledge by learning as much as I can get.
@@ -24,6 +24,6 @@ The goal behind choosing the above topics are, I want to improve the things in w
 
 + I will able to design a good schema of database and get idea of important concepts like index, joins, etc..
 
-+ Knowledge of more than 35+ advance commands and their usage with all options.
++ Knowledge of more than 35+ advanceed Linux commands and their usage with all options.
 
 ### Keep learning :)
