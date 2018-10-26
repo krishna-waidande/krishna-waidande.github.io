@@ -11,7 +11,7 @@ Also will share the what are goals behind this learning plan.
 
 + Learn advance concepts of Apache HTTP web server.
 
-+ Database Designing.
++ Database designing.
 
 + Get better at Linux commands.
 
