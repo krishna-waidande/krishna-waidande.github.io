@@ -9,16 +9,26 @@ I will try to answer them in the following blog.
 ## There are 4 basic parts of emails.
 
 > Subject line
+
+
 > Greeting
+
+
 > Email Text
+
+
 > Closing
 
 
 ## Do's : 
 
 + Have a professional Email id.
-Bad ones : silentkiller@gmail.com, KrishSwimmeer@gmail.com
-Good ones : krishnawaidadne@gmail.com, swapnil@gmail.com
+
+
+`Bad ones `: silentkiller@gmail.com, KrishSwimmeer@gmail.com
+
+
+`Good ones `: krishnawaidadne@gmail.com, swapnil@gmail.com
 
 + Subject line must be clear and brief.
 
@@ -29,19 +39,17 @@ Good ones : krishnawaidadne@gmail.com, swapnil@gmail.com
 
 ## Dont's 
 
-+ Dont make mistakes Spelling, Grammer, Punctuation, Capatalization
++ Dont make mistakes like spelling, grammer, punctuation, capatalization.
 
-+ Don't write long emails. it should contain 2 paragraphs.
++ Don't write long emails. It should contain 2-3 paragraphs.
 
-+ Dont compalint or blame in the email
++ Dont complaint or blame in the email.
 
 + Dont address the email until it is written ( It mean don't use send button untill it is checked.)
 
 
 
 ## How to organize email
-
-+ Be brief. you are not writing a book. so keep email shorten it should not exceeds more that 3 paragraphs.
 
 + After writing emails, come back and again read the whole email. Edit the words and try to short them.
 
