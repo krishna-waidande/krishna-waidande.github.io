@@ -4,31 +4,17 @@ Hello readers,
 
 Many of us faces the problem in email writting. How should we organize the email? what things we can avoid while writting
 emails? what are our mistakes in email? these are most common questions which comes to our mind. 
-I will try to answer them in the following blog.
-
-## There are 4 basic parts of emails.
-
-> Subject line
-
-
-> Greeting
-
-
-> Email Text
-
-
-> Closing
-
+Let's try to find answer of them in the following blog.
 
 ## Do's : 
 
 + Have a professional Email id.
 
 
-`Bad ones `: silentkiller@gmail.com, KrishSwimmeer@gmail.com
+**Bad ones** : `silentkiller@gmail.com, KrishSwimmeer@gmail.com`
 
 
-`Good ones `: krishnawaidadne@gmail.com, swapnil@gmail.com
+**Good ones** : `krishnawaidande@gmail.com, swapnil@gmail.com`
 
 + Subject line must be clear and brief.
 
@@ -37,19 +23,19 @@ I will try to answer them in the following blog.
 + Keep email text size upto 2-3 paragraphs.
 
 
-## Dont's 
+## Don'ts
 
-+ Dont make mistakes like spelling, grammer, punctuation, capatalization.
++ Make mistakes like spelling, grammer, punctuation, capatalization.
 
-+ Don't write long emails. It should contain 2-3 paragraphs.
++ Write long emails. It should contain 2-3 paragraphs.
 
-+ Dont complaint or blame in the email.
++ Complaint or blame in the email.
 
-+ Dont address the email until it is written ( It mean don't use send button untill it is checked.)
++ Address the email until it is written ( It means don't use send button untill it is checked.)
 
 
 
-## How to organize email
+## Points to remember :
 
 + After writing emails, come back and again read the whole email. Edit the words and try to short them.
 
@@ -59,4 +45,4 @@ I will try to answer them in the following blog.
 
 + Never use passive voice mostly use active voice.
 
-+ Never use extra words. try to eliminate the extra words. we use more adjectives and adverbs. don't use them.
++ Never use extra words.Try to eliminate the extra words, we use more adjectives and adverbs. Don't use them.
