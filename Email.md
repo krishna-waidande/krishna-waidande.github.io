@@ -8,6 +8,12 @@ Let's try to find answer of them in the following blog.
 
 ## Do's : 
 
++ Subject line must be clear and brief.
+
++ Do add words of appreciation especially when making request.
+
++ Keep email text size upto 2-3 paragraphs.
+
 + Have a professional Email id.
 
 
@@ -15,12 +21,6 @@ Let's try to find answer of them in the following blog.
 
 
 **Good ones** : `krishnawaidande@gmail.com, swapnil@gmail.com`
-
-+ Subject line must be clear and brief.
-
-+ Do add words of appreciation especially when making request.
-
-+ Keep email text size upto 2-3 paragraphs.
 
 
 ## Don'ts
