@@ -18,7 +18,7 @@ Let me explain you each and every field in top command :
 
 Row 1: 
 
-| top | 09:59:59 | up 55 min |  1 user | load average: 0.44, 0.52, 0.64 |
+#### | top | 09:59:59 | up 55 min |  1 user | load average: 0.44, 0.52, 0.64 |
 
 Cureent time : 9:59:59 is the current time of the system.
 
@@ -35,7 +35,7 @@ For more info on Load average (https://www.linuxjournal.com/article/9001)
 
 Row 2 :
 
-| Tasks | 301 total | 2 running | 251 sleeping | 0 stopped | 0 zombie |
+#### | Tasks | 301 total | 2 running | 251 sleeping | 0 stopped | 0 zombie |
 
 Total no of tasks : Total 301 task are three they might be the system level or the user level.
 
@@ -55,7 +55,7 @@ So if the number of zombies is high, that is a sign that one or more programs ha
 
 Row 3 :
 
-| %Cpu(s) |  2.3 us |  1.4 sy | 0.0 ni | 96.2 id | 0.0 wa | 0.0 hi | 0.1 si | 0.0 st |
+#### | %Cpu(s) |  2.3 us |  1.4 sy | 0.0 ni | 96.2 id | 0.0 wa | 0.0 hi | 0.1 si | 0.0 st |
 
 
 The two left-most fields, us and sy, represent percentage of CPU time spent in user mode and kernel mode, respectively.
@@ -73,7 +73,7 @@ So when CPU is running the kernal program that means process is in kernal mode.
 
 Row 4 : 
 
-| KiB Mem | KiB Mem | 7946952 total | 2839680 free | 2611976 used | 2495296 buff/cache |
+#### | KiB Mem | KiB Mem | 7946952 total | 2839680 free | 2611976 used | 2495296 buff/cache |
 
 This gives us the information of Memory it means Available, used, free memory.
 
@@ -88,7 +88,7 @@ This gives us the information of Memory it means Available, used, free memory.
 
 Row 5 : 
 
-| KiB Swap |  2097148 total |  2097148 free | 0 used | 4942148 avail Mem |
+#### | KiB Swap |  2097148 total |  2097148 free | 0 used | 4942148 avail Mem |
 
 This is same as Memory usage. It tells you information about swap device.
 
