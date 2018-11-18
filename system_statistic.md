@@ -49,7 +49,6 @@ Keep in mind that a process in a runnable state doesn't neccessarily mean it's c
 It's a mark stating that "I (the task) am ready to be executed, but it's up to the scheduler to decide when to pick me up."
 For more info on [Load Average](https://www.linuxjournal.com/article/9001)
 
----
 
 ### | Tasks | 301 total | 2 running | 251 sleeping | 0 stopped | 0 zombie |
 
@@ -67,7 +66,6 @@ In a terminal, you can stop a program by sending it a SIGSTOP signal or pressing
 After a child task is terminated, it is cleaned up and the only thing left is a task descriptor that includes a very important value: exit status. 
 So if the number of zombies is high, that is a sign that one or more programs have a bug properly terminating child tasks.
 
----
 
 ### | %Cpu(s) |  2.3 us |  1.4 sy | 0.0 ni | 96.2 id | 0.0 wa | 0.0 hi | 0.1 si | 0.0 st |
 
@@ -92,7 +90,6 @@ The amount of time CPU runs the code of the any user program is called as user m
 
 `st` : In a virtualized environment, a part of the CPU resources are given to each virtual machine (VM). The OS detects when it has work to do, but it cannot perform them because the CPU is busy on some other VM. The amount of time lost in this way is the “steal” time.
 
----
 
 ### | KiB Mem | KiB Mem | 7946952 total | 2839680 free | 2611976 used | 2495296 buff/cache |
 
@@ -106,7 +103,6 @@ It shows us the information of memory like available, used, free memory.
 | Buffer / cache | 2.4 GB |
 | Available | 4.3 |
 
----
 
 ### | KiB Swap |  2097148 total |  2097148 free | 0 used | 4942148 avail Mem |
 
@@ -117,7 +113,6 @@ This is same as Memory usage. It tells you information about swap device.
 | Total Used | 0 GB |
 | Free | 2.0 GB |
 
----
 
 ### | PID |	USER | PR | NI | VIRT | RES | SHR | S | %CPU | %MEM | TIME+ | COMMAND | 
 
@@ -131,7 +126,7 @@ This is same as Memory usage. It tells you information about swap device.
 It’s value ranges from -20 to 20(on most unix like operating systems).
 
 ### These three fields are related with to memory consumption of the processes. 
----
+
 `VIRT (Virtual Memory)` : “VIRT” is the total amount of memory consumed by a process. This includes the program’s code, the data stored by the process in memory, as well as any regions of memory that have been swapped to the disk.
 
 
@@ -153,7 +148,6 @@ The kernel will write the contents of a currently unused block of memory to the 
 
 `COMMAND` : This column shows the name of the processes.
 
----
 
 ### Tricks in top command (Press following characters from keyboard )
 
@@ -190,10 +184,3 @@ There are 3 ways for it. You have seen one of the way in the blog above. Below a
 
 
 ### Happy learning :)
-
- 
-
-
-
-
-
