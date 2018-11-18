@@ -1,8 +1,9 @@
 
+# How to debug performance issues of the server
+
 `Hello Readers`,
 
-Today we will see how to monitor performance of the system. there are many utilities present on the linux to do this task.
-we will see inbuilt utility present on Linux i.e top command.
+Today we will see how to monitor performance of the system. there are many utilities present on the linux to do this task, but we will see inbuilt utility present on Linux i.e `top` command.
 
 
 `Top` : It is a part of the procps package, a set of Linux utilities that provide system information. Besides top, procps also includes free, vmstat, ps, and many other tools. Top command provides statistics of all the running processes as well as memory usage, CPU usage. 
@@ -32,9 +33,8 @@ Let me explain you each and every field in top command :
 | 1716 | user | 20 | 0 | 395152 | 81288 | 56844 | S | 6.9 | 1.0 | 7:59.85 | Xorg |
 | 7651 | user | 20 | 0 | 719984 | 37016 | 27420 | S | 4.9 | 0.5 | 0:00.88 | gnome-terminal |
 
----
-                                                                                                                         
 
+                                                                                                                         
 ### | top | 09:59:59 | up 55 min |  1 user | load average: 0.44, 0.52, 0.64 |
 
 `Cureent time` : `9:59:59` is the current time of the system.
@@ -49,6 +49,7 @@ Keep in mind that a process in a runnable state doesn't neccessarily mean it's c
 It's a mark stating that "I (the task) am ready to be executed, but it's up to the scheduler to decide when to pick me up."
 For more info on Load average (https://www.linuxjournal.com/article/9001)
 
+---
 
 ### | Tasks | 301 total | 2 running | 251 sleeping | 0 stopped | 0 zombie |
 
@@ -66,28 +67,32 @@ In a terminal, you can stop a program by sending it a SIGSTOP signal or pressing
 After a child task is terminated, it is cleaned up and the only thing left is a task descriptor that includes a very important value: exit status. 
 So if the number of zombies is high, that is a sign that one or more programs have a bug properly terminating child tasks.
 
+---
 
 ### | %Cpu(s) |  2.3 us |  1.4 sy | 0.0 ni | 96.2 id | 0.0 wa | 0.0 hi | 0.1 si | 0.0 st |
 
 
 The two left-most fields, us and sy, represent percentage of CPU time spent in user mode and kernel mode, respectively.
 
-What is user mode and kernal mode ?
-The amount of time CPU runs the code of the any user program is called as user mode, but when our program needs to interact with hardware or I/O operation at that time our code calls the kernal funcationality `(System calls`). when CPU is executing system calls it is in kernal mode.
+### What is user mode and kernal mode ?
+
+
+`The amount of time CPU runs the code of the any user program is called as user mode, but when our program needs to interact with hardware or I/O operation at that time our code calls the kernal funcationality (System calls). when CPU is executing system calls it is in kernal mode.`
 
 `ni` : Linux uses a “nice” value to determine the priority of a process. A process with a high “nice” value is “nicer” to other processes, and gets a low priority. Similarly, processes with a lower “nice” gets higher priority.
 
-`id` : It displays how much % CPU is ideal it means free to use.
+`id` : It displays how much percentage of CPU is ideal, it means free to use.
 
-`wa` : which is the time the CPU spends waiting for I/O to complete.
+`wa` : Which is the time the CPU spends waiting for I/O to complete.
 
 `hi`: Hardware interrupts are typically used by peripherals to tell the system about events, such as a keypress on a keyboard
 
 
-`si` : software interrupts are generated due to specific instructions executed on the processor
+`si` : Software interrupts are generated due to specific instructions executed on the processor
 
 `st` : In a virtualized environment, a part of the CPU resources are given to each virtual machine (VM). The OS detects when it has work to do, but it cannot perform them because the CPU is busy on some other VM. The amount of time lost in this way is the “steal” time.
 
+---
 
 ### | KiB Mem | KiB Mem | 7946952 total | 2839680 free | 2611976 used | 2495296 buff/cache |
 
@@ -101,6 +106,7 @@ It shows us the information of memory like available, used, free memory.
 | Buffer / cache | 2.4 GB |
 | Available | 4.3 |
 
+---
 
 ### | KiB Swap |  2097148 total |  2097148 free | 0 used | 4942148 avail Mem |
 
@@ -111,6 +117,7 @@ This is same as Memory usage. It tells you information about swap device.
 | Total Used | 0 GB |
 | Free | 2.0 GB |
 
+---
 
 ### | PID |	USER | PR | NI | VIRT | RES | SHR | S | %CPU | %MEM | TIME+ | COMMAND | 
 
@@ -124,7 +131,7 @@ This is same as Memory usage. It tells you information about swap device.
 It’s value ranges from -20 to 20(on most unix like operating systems).
 
 ### These three fields are related with to memory consumption of the processes. 
-
+---
 `VIRT (Virtual Memory)` : “VIRT” is the total amount of memory consumed by a process. This includes the program’s code, the data stored by the process in memory, as well as any regions of memory that have been swapped to the disk.
 
 
@@ -134,8 +141,9 @@ The kernel will write the contents of a currently unused block of memory to the 
 
 SHR (Shared Memory) : This is a memory shared amoung the different processes. Access to shared memory areas is controlled via keys and access rights checking. Once the memory is being shared, there are no checks on how the processes are using it.
 
+---
 
-`S (State)` : This field shows the process state in the single-letter form. S=sleep R=running Z=zombie
+`S (State)` : This field shows the process state in the single-letter form. `S=sleep` `R=running` `Z=zombie`
 
 `%CPU` : It tells how much CPU is utilized by individual processes.
 
@@ -145,6 +153,7 @@ SHR (Shared Memory) : This is a memory shared amoung the different processes. Ac
 
 `COMMAND` : This column shows the name of the processes.
 
+---
 
 ### Tricks in top command (Press following characters from keyboard )
 
