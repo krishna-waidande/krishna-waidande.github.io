@@ -128,13 +128,13 @@ SHR (Shared Memory) : This is a memory shared amoung the different processes. Ac
 
 `SHift + R` : To sort processes with pid
 
-`r` : To renice the value of process.
-
 `Shift + u` : It will display the processes belongs to specified user. Enter the user name then you will see the processes only related to that user
 
 `Shit + P` : It will sort the processes according to CPU usage. ( which mean process which is consuming more CPU will be come at first place. )
 
 `Shift + M` : It will sort the processes according to Memory usage ( which mean process which is consuming more Memory will be come at first place.. )
+
+`r` : To renice the value of process.
 
 `c` : To get location of COMMAND.
 
