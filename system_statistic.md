@@ -139,7 +139,7 @@ The kernel will write the contents of a currently unused block of memory to the 
 
 `RES` : It is the memory consumed by the process in RAM.
 
-SHR (Shared Memory) : This is a memory shared amoung the different processes. Access to shared memory areas is controlled via keys and access rights checking. Once the memory is being shared, there are no checks on how the processes are using it.
+`SHR (Shared Memory)` : This is a memory shared amoung the different processes. Access to shared memory areas is controlled via keys and access rights checking. Once the memory is being shared, there are no checks on how the processes are using it.
 
 ---
 
@@ -172,3 +172,28 @@ SHR (Shared Memory) : This is a memory shared amoung the different processes. Ac
 `k` : To kill the process. you need to enter PID of the process.
 
 `d` : To change screen refresh interval time. by default value of it is 3 secs
+
+
+# How to check free available memory on Linux : 
+
+There are 3 ways for it. You have seen one of the way in the blog above. Below are 2 more ways given.
+
+1. Run `free -mh` command, It will show you all memory related statistics. like below :
+
+|     |         total |        used |       free |     shared | buff/cache |   available |
+|---|---|---|---|---|---|---|
+| Mem |           7.6G |        2.8G |        1.9G |        557M |        2.9G |        3.9G |
+| Swap |          2.0G |         0B  |      2.0G |
+
+
+2. Run ```cat /proc/meminfo``` command, this command will show you lot many things. Better and easy to use free or top command.
+
+
+## Happy learning :)
+
+ 
+
+
+
+
+
