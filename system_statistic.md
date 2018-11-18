@@ -9,6 +9,12 @@ we will see inbuilt utility present on Linux i.e top command.
 
 Let me explain you each and every field in top command :                                                                     
 
+| top | 09:59:59 | up 55 min |  1 user | load average: 0.44, 0.52, 0.64 |
+| Tasks | 301 total | 2 running | 251 sleeping | 0 stopped | 0 zombie |
+| %Cpu(s) |  2.3 us |  1.4 sy | 0.0 ni | 96.2 id | 0.0 wa | 0.0 hi | 0.1 si | 0.0 st |
+| KiB Mem | KiB Mem | 7946952 total | 2839680 free | 2611976 used | 2495296 buff/cache |
+| KiB Swap |  2097148 total |  2097148 free | 0 used | 4942148 avail Mem |
+
 
 | PID | USER | PR | NI | VIRT | RES |  SHR | S | %CPU | %MEM |  TIME+ | COMMAND |  
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -17,8 +23,6 @@ Let me explain you each and every field in top command :
 | 7651 | user | 20 | 0 | 719984 | 37016 | 27420 | S | 4.9 | 0.5 | 0:00.88 | gnome-terminal |
 
                                                                                                                          
-
-Row 1: 
 
 ### | top | 09:59:59 | up 55 min |  1 user | load average: 0.44, 0.52, 0.64 |
 
@@ -68,6 +72,7 @@ your program will take the help of kernal, so here kernal will run it's own prog
 So when CPU is running the kernal program that means process is in kernal mode.
 ```
 
+ 
  ### | KiB Mem | KiB Mem | 7946952 total | 2839680 free | 2611976 used | 2495296 buff/cache |
 
 This gives us the information of Memory it means Available, used, free memory.
