@@ -82,28 +82,34 @@ Row 6 : PID		USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMA
 
 PID : This is the process ID, an unique positive integer that identifies a process.
 
+USER : The user that is the owner of the process it means who starts that process.
+
 PR : The running instance of program is process, and each process needs space in RAM and CPU time to be executed, each process has its priority in which it is executed. The “PR” field shows the scheduling priority of the process from the perspective of the kernel.
 
 NI : Nice value only controls CPU time assigned to process and not utilisation of memory and I/O devices.
 It’s value ranges from -20 to 20(on most unix like operating systems).
 
-VIRT : The kernel will write the contents of a currently unused block of memory to the hard disk so that the memory can be used for another purpose. When the original contents are needed again, they are read back into memory. The part of the hard disk that is used as virtual memory is called the swap space.
+These three fields are related with to memory consumption of the processes. 
 
-RES : 
-
-
-SHR : 
+VIRT (Virtual Memory) : “VIRT” is the total amount of memory consumed by a process. This includes the program’s code, the data stored by the process in memory, as well as any regions of memory that have been swapped to the disk.
 
 
-S :
+The kernel will write the contents of a currently unused block of memory to the hard disk so that the memory can be used for another purpose. When the original contents are needed again, they are read back into memory. The part of the hard disk that is used as virtual memory is called the swap space.
 
-%CPU :
+RES : It is the memory consumed by the process in RAM
 
-%MEM :
+SHR (Shared Memory) : This is a memory shared amoung the different processes. Access to shared memory areas is controlled via keys and access rights checking. Once the memory is being shared, there are no checks on how the processes are using it.
 
-TIME+
 
-COMMAND :
+S (State) : This field shows the process state in the single-letter form. S=sleep R=running Z=zombie
+
+%CPU : It tells how much CPU is utilized by individual processes.
+
+%MEM : It expresses RES value as a percentage of the total RAM available. It tells us how much memory usage is done by that process.
+
+TIME+ : This is the total CPU time used by the process since it started, precise to the hundredths of a second.
+
+COMMAND : This column shows the name of the processes.
 
 
 ### Tricks in top command 
