@@ -101,7 +101,7 @@ and then to display the text it reads the bytes back into characters.
 
 So that the text is saved using one of different types of character encoding.
 
-Types of encoding : 
+## Types of encoding : 
 
 + `ASCII` :
 An encoding for English characters based on 7-bits that are mapped to 128 characters. 
