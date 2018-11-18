@@ -27,7 +27,7 @@ For more info on Load average (https://www.linuxjournal.com/article/9001)
 
 Row 2 :
 
-Total no of tasks : 301.
+Total no of tasks : Total 301 task are three they might be the system level or the user level.
 
 Running: this represents the number of tasks in a runnable state.
 
@@ -59,6 +59,23 @@ your program will take the help of kernal, so here kernal will run it's own prog
 So when CPU is running the kernal program that means process is in kernal mode.
 ```
 
+Row 4 : KiB Mem :  KiB Mem :  7946952 total,  2839680 free,  2611976 used,  2495296 buff/cache
+
+This gives us the information of Memory it means Available, used, free memory. In above line
+Total Memeory : 7.6 GB 
+Total Used : 2.5 GB
+Free : 2.7 GB
+Buffer / cache : 2.4 GB
+Available : 4.3
+
+
+
+Row 5 : KiB Swap:  2097148 total,  2097148 free, 0 used.  4942148 avail Mem
+
+This is same as Memory usage. It tells you information about swap device.
+Total Memeory : 2.0	 GB 
+Total Used : 0 GB
+Free : 2.0 GB
 
 
 
