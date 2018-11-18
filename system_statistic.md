@@ -7,7 +7,9 @@ we will see inbuilt utility present on Linux i.e top command.
 
 `Top` : It is a part of the procps package, a set of Linux utilities that provide system information. Besides top, procps also includes free, vmstat, ps, and many other tools. Top command provides statistics of all the running processes as well as memory usage, CPU usage. 
 
-Let me explain you each and every field in top command :                                                                     
+Let me explain you each and every field in top command :     
+
+---
 
 | top | 09:59:59 | up 55 min |  1 user | load average: 0.44, 0.52, 0.64 |
 
@@ -30,6 +32,7 @@ Let me explain you each and every field in top command :
 | 1716 | user | 20 | 0 | 395152 | 81288 | 56844 | S | 6.9 | 1.0 | 7:59.85 | Xorg |
 | 7651 | user | 20 | 0 | 719984 | 37016 | 27420 | S | 4.9 | 0.5 | 0:00.88 | gnome-terminal |
 
+---
                                                                                                                          
 
 ### | top | 09:59:59 | up 55 min |  1 user | load average: 0.44, 0.52, 0.64 |
@@ -85,8 +88,8 @@ The amount of time CPU runs the code of the any user program is called as user m
 
 `st` : In a virtualized environment, a part of the CPU resources are given to each virtual machine (VM). The OS detects when it has work to do, but it cannot perform them because the CPU is busy on some other VM. The amount of time lost in this way is the “steal” time.
 
- 
- ### | KiB Mem | KiB Mem | 7946952 total | 2839680 free | 2611976 used | 2495296 buff/cache |
+
+### | KiB Mem | KiB Mem | 7946952 total | 2839680 free | 2611976 used | 2495296 buff/cache |
 
 
 It shows us the information of memory like available, used, free memory.
@@ -120,7 +123,7 @@ This is same as Memory usage. It tells you information about swap device.
 `NI` : Nice value only controls CPU time assigned to process and not utilisation of memory and I/O devices.
 It’s value ranges from -20 to 20(on most unix like operating systems).
 
-+ These three fields are related with to memory consumption of the processes. 
+### These three fields are related with to memory consumption of the processes. 
 
 `VIRT (Virtual Memory)` : “VIRT” is the total amount of memory consumed by a process. This includes the program’s code, the data stored by the process in memory, as well as any regions of memory that have been swapped to the disk.
 
