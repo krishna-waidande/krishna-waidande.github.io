@@ -1,14 +1,37 @@
-Top : It is a part of the procps package, a set of Linux utilities that provide system information. Besides top, procps also includes free, vmstat, ps, and many other tools.
-Top command provides statistics of all the running processes as well as memory usage, CPU usage. 
+
+Hello Readers
+
+Today we will see how to monitor performance of the system. there are many utilities present on the linux to do this task.
+we will see inbuilt utility present on Linux i.e top command.
 
 
-```
+Top : It is a part of the procps package, a set of Linux utilities that provide system information. Besides top, procps also includes free, vmstat, ps, and many other tools. Top command provides statistics of all the running processes as well as memory usage, CPU usage. 
+
+Let me explain you each and every field in top command :
+
+top
+
+                                                                                                                           
+                                                                                                                         
+
+
+
+
 top - 09:59:59 up 55 min,  1 user,  load average: 0.44, 0.52, 0.64
+
+
 Tasks: 301 total,   2 running, 251 sleeping,   0 stopped,   0 zombie
+
 %Cpu(s):  2.3 us,  1.4 sy,  0.0 ni, 96.2 id,  0.0 wa,  0.0 hi,  0.1 si,  0.0 st
 KiB Mem :  7946952 total,  3848760 free,  2286788 used,  1811404 buff/cache
 KiB Swap:  2097148 total,  2097148 free,        0 used.  4942148 avail Mem
-```
+
+| PID | USER | PR | NI | VIRT | RES |  SHR | S | %CPU | %MEM |  TIME+ | COMMAND |  
+|---|---|---|---|---|---|---|---|---|---|---|---|
+|1863 | user | 20 |  0 | 3475732 | 208536 | 80224 | S | 7.9 | 2.6 |  10:44.91 | gnome-shell |
+| 1716 | user | 20 | 0 | 395152 | 81288 | 56844 | S | 6.9 | 1.0 | 7:59.85 | Xorg |
+| 7651 | user | 20 | 0 | 719984 | 37016 | 27420 | S | 4.9 | 0.5 | 0:00.88 | gnome-terminal |                                                                                                                         
+
 
 Row 1: 
 
