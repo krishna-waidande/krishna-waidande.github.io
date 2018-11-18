@@ -3,7 +3,7 @@
 
 `Hello Readers`,
 
-Today we will see how to monitor performance of the system. there are many utilities present on the linux to do this task, but we will see inbuilt utility present on Linux i.e `top` command.
+Today we will see `how to monitor performance of the system` also `How to check free available memory on Linux`. there are many utilities present on the linux to do this task, but we will see inbuilt utility present on Linux i.e `top` command.
 
 
 `Top` : It is a part of the procps package, a set of Linux utilities that provide system information. Besides top, procps also includes free, vmstat, ps, and many other tools. Top command provides statistics of all the running processes as well as memory usage, CPU usage. 
@@ -77,7 +77,7 @@ The two left-most fields, us and sy, represent percentage of CPU time spent in u
 ### What is user mode and kernal mode ?
 
 
-`The amount of time CPU runs the code of the any user program is called as user mode, but when our program needs to interact with hardware or I/O operation at that time our code calls the kernal funcationality (System calls). when CPU is executing system calls it is in kernal mode.`
+The amount of time CPU runs the code of the any user program is called as user mode, but when our program needs to interact with hardware or I/O operation at that time our code calls the kernal funcationality (System calls). when CPU is executing system calls it is in kernal mode.
 
 `ni` : Linux uses a “nice” value to determine the priority of a process. A process with a high “nice” value is “nicer” to other processes, and gets a low priority. Similarly, processes with a lower “nice” gets higher priority.
 
@@ -174,7 +174,7 @@ The kernel will write the contents of a currently unused block of memory to the 
 `d` : To change screen refresh interval time. by default value of it is 3 secs
 
 
-# How to check free available memory on Linux : 
+## How to check free available memory on Linux : 
 
 There are 3 ways for it. You have seen one of the way in the blog above. Below are 2 more ways given.
 
@@ -189,7 +189,7 @@ There are 3 ways for it. You have seen one of the way in the blog above. Below a
 2. Run ```cat /proc/meminfo``` command, this command will show you lot many things. Better and easy to use free or top command.
 
 
-## Happy learning :)
+### Happy learning :)
 
  
 
