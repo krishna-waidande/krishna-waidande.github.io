@@ -47,7 +47,7 @@ Let me explain you each and every field in top command :
 From left to right, they represent one-minute, five-minute, and 15-minute load averages.
 Keep in mind that a process in a runnable state doesn't neccessarily mean it's currently executed by the processor.
 It's a mark stating that "I (the task) am ready to be executed, but it's up to the scheduler to decide when to pick me up."
-For more info on Load average (https://www.linuxjournal.com/article/9001)
+For more info on [Load Average](https://www.linuxjournal.com/article/9001)
 
 ---
 
