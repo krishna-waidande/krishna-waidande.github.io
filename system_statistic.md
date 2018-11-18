@@ -78,6 +78,33 @@ Total Used : 0 GB
 Free : 2.0 GB
 
 
+Row 6 : PID		USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND 
+
+PID : This is the process ID, an unique positive integer that identifies a process.
+
+PR : The running instance of program is process, and each process needs space in RAM and CPU time to be executed, each process has its priority in which it is executed. The “PR” field shows the scheduling priority of the process from the perspective of the kernel.
+
+NI : Nice value only controls CPU time assigned to process and not utilisation of memory and I/O devices.
+It’s value ranges from -20 to 20(on most unix like operating systems).
+
+VIRT : The kernel will write the contents of a currently unused block of memory to the hard disk so that the memory can be used for another purpose. When the original contents are needed again, they are read back into memory. The part of the hard disk that is used as virtual memory is called the swap space.
+
+RES : 
+
+
+SHR : 
+
+
+S :
+
+%CPU :
+
+%MEM :
+
+TIME+
+
+COMMAND :
+
 
 ### Tricks in top command 
 
