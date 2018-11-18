@@ -34,13 +34,13 @@ Let me explain you each and every field in top command :
 
 ### | top | 09:59:59 | up 55 min |  1 user | load average: 0.44, 0.52, 0.64 |
 
-Cureent time : `9:59:59` is the current time of the system.
+`Cureent time` : `9:59:59` is the current time of the system.
 
-System uptime : `55 min` is uptime which tells us the time for which the system has been running.
+`System uptime` : `55 min` is uptime which tells us the time for which the system has been running.
 
-Active user sessions : It tells how many users are logged in into the server. In this case only `1 user` is logged in to the system.
+`Active user sessions` : It tells how many users are logged in into the server. In this case only `1 user` is logged in to the system.
 
-Load average : Load average is the representation of the number of processes marked as runnable in the run queue. 
+`Load average` : Load average is the representation of the number of processes marked as runnable in the run queue. 
 From left to right, they represent one-minute, five-minute, and 15-minute load averages.
 Keep in mind that a process in a runnable state doesn't neccessarily mean it's currently executed by the processor.
 It's a mark stating that "I (the task) am ready to be executed, but it's up to the scheduler to decide when to pick me up."
@@ -69,17 +69,8 @@ So if the number of zombies is high, that is a sign that one or more programs ha
 
 The two left-most fields, us and sy, represent percentage of CPU time spent in user mode and kernel mode, respectively.
 
-
 What is user mode and kernal mode ?
-
-```
-To explain this let's take a example as to write a program to sort the 10 input numbers.
-
-Here we wrote a program, compiled it and created executable file. Now you run your program. that program might became the process.
-Now when CPU is runninng the code written by you then process is running in user mode but lets say your program is taking input from user so here to take input and store that input onto disk.
-your program will take the help of kernal, so here kernal will run it's own programs (System calls ) to perform I/O operations.
-So when CPU is running the kernal program that means process is in kernal mode.
-```
+The amount of time CPU runs the code of the any user program is called as user mode, but when our program needs to interact with hardware or I/O operation at that time our code calls the kernal funcationality `(System calls`). when CPU is executing system calls it is in kernal mode.
 
 `ni` : Linux uses a “nice” value to determine the priority of a process. A process with a high “nice” value is “nicer” to other processes, and gets a low priority. Similarly, processes with a lower “nice” gets higher priority.
 
@@ -92,12 +83,13 @@ So when CPU is running the kernal program that means process is in kernal mode.
 
 `si` : software interrupts are generated due to specific instructions executed on the processor
 
-`st` : In a virtualized environment, a part of the CPU resources are given to each virtual machine (VM). The OS detects when it has work to do, but it cannot perform them because the CPU is busy on some other VM. The amount of time lost in this way is the “steal” time, shown as st
+`st` : In a virtualized environment, a part of the CPU resources are given to each virtual machine (VM). The OS detects when it has work to do, but it cannot perform them because the CPU is busy on some other VM. The amount of time lost in this way is the “steal” time.
 
  
  ### | KiB Mem | KiB Mem | 7946952 total | 2839680 free | 2611976 used | 2495296 buff/cache |
 
-This gives us the information of Memory it means Available, used, free memory.
+
+It shows us the information of memory like available, used, free memory.
 
 | Total Memeory | 7.6 GB |
 |---|---|
