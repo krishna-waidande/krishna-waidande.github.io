@@ -2,20 +2,60 @@
 
 Hello Readers,
 
-What is a bit, what is a byte, what is the difference between bit and byte? How many bits make a byte?
-
 This blog is all about some basic concepts in the computer science world which all must be known about it.
+you all are using computers right? do you know how computer stores our humaan readable information that is our english or any other language text within it?
 
-Lets start with bit and bytes first.
+Let's start with bit and bytes first.
 
-You may heard these terms in Internet speed or storing device like HDD, Memory card etc..
+You may heard these terms in internet speed or storing device like HDD, memory card, pendrives etc..
+example : Our internet speed is 1Mbps or 5 Mbps or I have 1TB of HDD.
 
-Bit : 
+### What is Bit? 
 Bit is a smallest unit of data used to store information in computer. A bit has a single binary value, either 0 or 1.
 
+|0|
+---
 
-Bytes : 
 
+### Why 0 and 1?
+
+
+Computer is a electronic digital device madeup by combining different hardwares together.So hardware understands only electronic language that means low or high voltage/current.So to express it we use 0's and 1's.
+0 means low voltage and 1 means high voltage.
+
+
+### What is Bytes? 
+
+The means collection of 8 bits.8 bits form a single byte.
+
+|1|0|0|1|0|0|0|1|
+-----------------
+
+
+What is the difference between Mbps and MBps?
+
+Mbps means megabits per second. Mb is used in reference to download and upload speeds.
+
+MBps stands for megabytes per second. MB is used in reference to file size, or the amount of data transferred.
+
+So, the difference is between bits and bytes. Yes. 
+
+1 Byte = 8 bits 
+
+This means, 
+
+1MBps = 8Mbps 
+
+That is eight times the difference. This is true for all units mentioning bits and bytes like kbps, gbps, tbps etc.
+
+1KBps = 8kbps
+
+1GBps = 8Gbps
+
+1TBps = 8Tbps 
+
+
+Now let's dicuss about how computer stores our textual language into machine.
 
 What is character ?
 
@@ -23,23 +63,36 @@ A character is any letter, number, space, punctuation mark, or symbol that can b
 It takes 1 byte to store a single character. It varies according to the different operating system.
 
 
-Before moving onto char encoding let's see first what does encoding means.
+### Why 1 byte?
+There are 128 character present so to store 128 characters we need 7 bits to store it. `2^7 = 128`.
 
-Encoding : Encoding is the process of converting data from one form to another. 
+So here we need to store the characters on the hardware but machine does not understand character.So for this
+we need to encode the characters into machine understandable code.
+
+
+### What is Encoding ?
+
+Encoding is the process of converting data from one form to another. 
 There are several types of encoding, including image encoding, audio and video encoding, and character encoding.
 
-So what's a character encoding?
+
+### what's a character encoding?
 
 Words and sentences in text are created from characters. 
 Examples of characters include the Latin letter 'á' or the Chinese ideograph '請' or the Devanagari character 'ह'.
 
+
 Characters that are needed for a specific purpose are grouped into a character set.
-To refer to characters in an unambiguous way, each character is associated with a number, called a code point
+To refer to characters in an unambiguous way, each character is associated with a number, called a **code point.**
+
 
 Basically, you can visualise this by assuming that all characters are stored in computers using a special code, 
 like the ciphers used in [espionage](https://en.wikipedia.org/wiki/Espionage) . A character encoding provides a key to unlock (ie. crack) the code.
+
+
 It is a set of mappings between the bytes in the computer and the characters in the character set. 
 Without the key, the data looks like garbage.
+
 
 So, when you input text using a keyboard or in some other way, 
 the character encoding maps characters you choose to specific bytes in computer memory, 
@@ -47,7 +100,6 @@ and then to display the text it reads the bytes back into characters.
 
 
 So that the text is saved using one of different types of character encoding.
-
 
 Types of encoding : 
 
@@ -69,16 +121,9 @@ Unicode is a standard for a character set and not a character set itself.
 
 UTF-8 is a character set that implements Unicode. Despite its name, UTF-8 isn't a static 8-bit encoding but instead is a variable length encoding that uses up to 32 bits. It encodes the most common characters, such as basic numbers and English with 8-bits. This makes it efficient for most data. Another advantage of UTF-8 is that for English, it is identical to ASCII.
 
+4. UTF-16 
 
-4. UTF-16 :
-
-UTF-8 is a character set that implements Unicode. Despite its name, UTF-8 isn't a static 8-bit encoding but instead is a variable length encoding that uses up to 32 bits. It encodes the most common characters, such as basic numbers and English with 8-bits. This makes it efficient for most data. Another advantage of UTF-8 is that for English, it is identical to ASCII.
-
-5. UTF-32 :
-
-UTF-32 is a character set that implements Unicode as a static 32-bit code. Unicode only requires 21-bits to encode its limit of 1,114,112 characters. As such, UTF-32 has a number of leading zeros that pad each code. This is inefficient and all data is smaller in UTF-8 and UTF-16. For English data, UTF-32 is typically about 4 times larger.
-
-
+5. UTF-32 
 
 
 
