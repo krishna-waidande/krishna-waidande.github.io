@@ -10,9 +10,17 @@ we will see inbuilt utility present on Linux i.e top command.
 Let me explain you each and every field in top command :                                                                     
 
 | top | 09:59:59 | up 55 min |  1 user | load average: 0.44, 0.52, 0.64 |
+
+
 | Tasks | 301 total | 2 running | 251 sleeping | 0 stopped | 0 zombie |
+
+
 | %Cpu(s) |  2.3 us |  1.4 sy | 0.0 ni | 96.2 id | 0.0 wa | 0.0 hi | 0.1 si | 0.0 st |
+
+
 | KiB Mem | KiB Mem | 7946952 total | 2839680 free | 2611976 used | 2495296 buff/cache |
+
+
 | KiB Swap |  2097148 total |  2097148 free | 0 used | 4942148 avail Mem |
 
 
@@ -41,17 +49,17 @@ For more info on Load average (https://www.linuxjournal.com/article/9001)
 
 ### | Tasks | 301 total | 2 running | 251 sleeping | 0 stopped | 0 zombie |
 
-Total no of tasks : Total 301 task are three they might be the system level or the user level.
+`Total no of tasks` : Total 301 task are three they might be the system level or the user level.
 
-Running: this represents the number of tasks in a runnable state.
+`Running` : This represents the number of tasks in a runnable state.
 
-Sleeping: processes being blocked due to waiting for an event (e.g., time out or I/O completion). 
+`Sleeping` : Processes being blocked due to waiting for an event (e.g., time out or I/O completion). 
 It accounts for both interruptible (can be awaken earlier by SysV signal) or uninterruptible (completely ignoring SysV signal) processes.
 
-Stopped: the exact meaning here is "paused," not "terminated." 
+`Stopped` : The exact meaning here is "paused," not "terminated." 
 In a terminal, you can stop a program by sending it a SIGSTOP signal or pressing Ctrl-Z if it's a foreground task.
 
-Zombie: "A dead body without soul" might be a good analogy.
+`Zombie` : `"A dead body without soul"` might be a good analogy.
 After a child task is terminated, it is cleaned up and the only thing left is a task descriptor that includes a very important value: exit status. 
 So if the number of zombies is high, that is a sign that one or more programs have a bug properly terminating child tasks.
 
@@ -60,6 +68,7 @@ So if the number of zombies is high, that is a sign that one or more programs ha
 
 
 The two left-most fields, us and sy, represent percentage of CPU time spent in user mode and kernel mode, respectively.
+
 
 What is user mode and kernal mode ?
 
@@ -71,6 +80,19 @@ Now when CPU is runninng the code written by you then process is running in user
 your program will take the help of kernal, so here kernal will run it's own programs (System calls ) to perform I/O operations.
 So when CPU is running the kernal program that means process is in kernal mode.
 ```
+
+`ni` : Linux uses a “nice” value to determine the priority of a process. A process with a high “nice” value is “nicer” to other processes, and gets a low priority. Similarly, processes with a lower “nice” gets higher priority.
+
+`id` : It displays how much % CPU is ideal it means free to use.
+
+`wa` : which is the time the CPU spends waiting for I/O to complete.
+
+`hi`: Hardware interrupts are typically used by peripherals to tell the system about events, such as a keypress on a keyboard
+
+
+`si` : software interrupts are generated due to specific instructions executed on the processor
+
+`st` : In a virtualized environment, a part of the CPU resources are given to each virtual machine (VM). The OS detects when it has work to do, but it cannot perform them because the CPU is busy on some other VM. The amount of time lost in this way is the “steal” time, shown as st
 
  
  ### | KiB Mem | KiB Mem | 7946952 total | 2839680 free | 2611976 used | 2495296 buff/cache |
