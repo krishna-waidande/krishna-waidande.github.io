@@ -3,15 +3,15 @@
 `Hello Readers`,
 
 This blog is all about some basic concepts in the computer science world which all must be known about it.
-you all are using computers right? do you know how computer stores our humaan readable information within it?
+you all are using computers, right? do you know how the computer stores our human-readable information within it?
 
 Let's start with bit and bytes first.
 
-You may heard these terms in internet speed or storing device like HDD, memory card, pendrives etc..
-example : Our internet speed is 1Mbps or 5 Mbps or I have 1TB of HDD.
+You may hear these terms in internet speed or storing device like HDD, memory card, pen drives etc..
+example: Our internet speed is 1Mbps or 5 Mbps or I have 1TB of HDD.
 
 ### What is Bit? 
-Bit is a smallest unit of data used to store information in computer. A bit has a single binary value, either 0 or 1.
+The bit is the smallest unit of data used to store information on the computer. A bit has a single binary value, either 0 or 1.
 
 |0|
 ---
@@ -20,7 +20,7 @@ Bit is a smallest unit of data used to store information in computer. A bit has 
 ### Why 0 and 1?
 
 
-Computer is a electronic digital device madeup by combining different hardwares together.So hardware understands only electronic language that means low or high voltage/current.So to express it we use 0's and 1's.
+The computer is an electronic digital device made up by combining different hardware together. So hardware understands the only electronic language that means low or high voltage/current. So to express it we use 0's and 1's.
 0 means low voltage and 1 means high voltage.
 
 
@@ -46,7 +46,7 @@ This means,
 
 `1MBps` = **8Mbps** 
 
-That is eight times the difference. This is true for all units mentioning bits and bytes like kbps, gbps, tbps etc.
+That is eight times the difference. This is true for all units mentioning bits and bytes like kbps, Gbps, Tbps etc.
 
 `1KBps` = **8kbps**
 
@@ -55,30 +55,30 @@ That is eight times the difference. This is true for all units mentioning bits a
 `1TBps` = **8Tbps** 
 
 
-Now let's dicuss about how computer stores our textual language into machine.
+Now let's discuss how the computer stores our textual language into the machine.
 
-### What is character ?
+### What is a character?
 
 A character is any letter, number, space, punctuation mark, or symbol that can be typed on a computer.
 It takes 1 byte to store a single character. It varies according to the different operating system.
 
 
 ### Why 1 byte?
-There are 128 character present so to store 128 characters we need 7 bits to store it. `2^7 = 128`.
+There is 128 character present so to store 128 characters we need 7 bits to store it. `2^7 = 128`.
 
-So here we need to store the characters on the hardware but machine does not understand character.So for this
+So here we need to store the characters on the hardware but the machine does not understand the character. So for this
 we need to encode the characters into machine understandable code.
 
 
-### What is Encoding ?
+### What is Encoding?
 
 Encoding is the process of converting data from one form to another. 
-There are several types of encoding, including image encoding, audio and video encoding, and character encoding.
+There are several types of encoding, including image encoding, audio, video encoding, and character encoding.
 
 
 ### What's a character encoding?
 
-Words and sentences in text are created from characters. 
+Words and sentences in the text are created from characters. 
 Examples of characters include the Latin letter `á` or the Chinese ideograph `請` or the Devanagari character `ह`.
 
 
@@ -86,8 +86,8 @@ Characters that are needed for a specific purpose are grouped into a character s
 To refer to characters in an unambiguous way, each character is associated with a number, called a `code point.`
 
 
-Basically, you can visualise this by assuming that all characters are stored in computers using a special code, 
-like the ciphers used in [espionage](https://en.wikipedia.org/wiki/Espionage) . A character encoding provides a key to unlock (ie. crack) the code.
+Basically, you can visualize this by assuming that all characters are stored in computers using a special code, 
+like the ciphers used in [espionage](https://en.wikipedia.org/wiki/Espionage). A character encoding provides a key to unlock (ie. crack) the code.
 
 
 It is a set of mappings between the bytes in the computer and the characters in the character set. 
@@ -99,7 +99,7 @@ the character encoding maps characters you choose to specific bytes in computer 
 and then to display the text it reads the bytes back into characters.
 
 
-So that the text is saved using one of different types of character encoding.
+So that the text is saved using one of the different types of character encoding.
 
 ## Types of encoding : 
 
@@ -112,9 +112,9 @@ It is extremely limited, even for English, and led to a number of character sets
 
 + `Unicode` :
 
-Unicode is an international standard first released in the early 1990s to unify 135 modern and historic languages 
-under a common character set. It currently has 128,237 characters that are increased over time. 
-Its current maximum is 1,114,112 characters that represents the hexadecimal numbers 0 to 10FFFF. 
+Unicode is an international standard first released in the early 1990s to unify 135 modern and historic languages under
+a common character set. It currently has 128,237 characters that are increased over time. 
+Its current maximum is 1,114,112 characters that represent the hexadecimal numbers 0 to 10FFFF. 
 Unicode is a standard for a character set and not a character set itself.
 
 + `UTF-8` :
@@ -124,17 +124,3 @@ UTF-8 is a character set that implements Unicode. Despite its name, UTF-8 isn't 
 + `UTF-16` 
 
 + `UTF-32` 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
