@@ -102,12 +102,21 @@ Don't use Emoticons in the email.
 
 + Capitalization :
 
-Mostly we do a mistake like never use the Starting letter as a capital for a nouns or word after full stop. 
-let me give you example
+Mostly we do a mistake like never use the first letter as a capital for a nouns or word after full stop or starting letter
+of every new sentense.
+For example :
 
 Invalid : `redhat and ubuntu are popular flavours of linux operating system.`
 
 Valid : `Redhat and Ubuntu are popular flavours of Linux operating system.`
+
+Here Rehat, Ubuntu and Linux are proper nouns.
+
+Invalid : i will be coming late in the office.
+
+Valid : I will be coming late in the the office.
+
+Here first letter of newline sentense should be capital.
 
 
 I hope now the questioned which we raised earlier in the article are answered.
