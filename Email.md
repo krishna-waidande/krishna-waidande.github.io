@@ -27,29 +27,29 @@ Let's try to find answer of them in the following blog.
 
 ## Email Don'ts
 
-> Make mistakes like spelling, grammer, punctuation, capatalization.
++ Make mistakes like spelling, grammer, punctuation, capatalization.
 
-> Write long emails. It should contain 2-3 paragraphs.
++ Write long emails. It should contain 2-3 paragraphs.
 
-> Complaint or blame in the email.
++ Complaint or blame in the email.
 
-> Address the email until it is written ( It means don't use send button untill it is checked.)
++ Address the email until it is written ( It means don't use send button untill it is checked.)
 
-> Assume that everyone reads email immediately
++ Assume that everyone reads email immediately
 
 
 
 ## Points to remember :
 
-> After writing emails, come back and again read the whole email. Edit the words and try to short them.
++ After writing emails, come back and again read the whole email. Edit the words and try to short them.
 
-> Hava a clear order.
++ Hava a clear order.
 
-> Avoid harsh words.
++ Avoid harsh words.
 
-> Never use passive voice mostly use active voice.
++ Never use passive voice mostly use active voice.
 
-> Never use extra words.Try to eliminate the extra words, we use more adjectives and adverbs. Don't use them.
++ Never use extra words.Try to eliminate the extra words, we use more adjectives and adverbs. Don't use them.
 
 
 While writing email most of us use the punctuations at wrong places and we never come to know about it, if we do not know
@@ -59,24 +59,24 @@ about it in following segment of blog.
 
 ## Puncatualization and Capatalization
 
-+ Apostrophe '
++ Apostrophe **(')**
 
 You can use apostrophe in the context of possession it mean Krishna's laptop, Swapnil's mobile.
 Avoid to use this in words like can't or wouldn't.
 
 
-+ Commas ,
++ Commas **(,)**
 
 If you pause there is where commas should go.
 
 For example :
 
-> 
+> My best friend, Joe, arrived.
 
 > Put commas while list like all geographical words like Paris, France.
 
 
-> In data octomber 10, 1018
+> In date octomber 10, 1018
 
 
 + Semicolan ;
@@ -84,7 +84,7 @@ For example :
 Use semicolan when writing a series like Recent Olympic sites are Pune, India; UK, London; US, America.
 
 
-+ Quotatation marks " "
++ Quotatation marks **(" ")**
 
 > Do not use for emphasis
 
@@ -99,9 +99,11 @@ Use semicolan when writing a series like Recent Olympic sites are Pune, India; U
 
 Don't use Emoticons in the email.
 
++ Capitalization :
 
+Mostly we do a mistake like never use the Starting letter as a capital for a nouns or word after full stop. 
+let me give you example
 
+Invalid : `redhat and ubuntu are popular flavours of linux operating system.`
 
-
-
-
+Valide : `Redhat and Ubuntu are popular flavours of Linux operating system.`
