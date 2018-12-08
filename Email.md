@@ -67,32 +67,33 @@ Avoid to use this in words like can't or wouldn't.
 
 + Commas **(,)**
 
-If you pause there is where commas should go.
+If you pause there is where commas should go or you are listing something there should be comma used.
 
 For example :
 
 > My best friend, Joe, arrived.
 
-> Put commas while list like all geographical words like Paris, France.
-
+> C, C++, Java are my favourite languages.
 
 > In date octomber 10, 1018
 
 
 + Semicolan ;
 
-Use semicolan when writing a series like Recent Olympic sites are Pune, India; UK, London; US, America.
+Use semicolan when writing a series like Recent Olympic sites are `Pune, India; UK, London; US, America`.
 
 
 + Quotatation marks **(" ")**
 
 > Do not use for emphasis
 
-> I would "really" like to meet you. ( Do not use)
+`I would "really" like to meet you. ( Do not use)`
+
 
 > Use for direct speech only 
  
-> He said, "I wil come with you."
+
+`He said, "I wil come with you."`
 
 
 + Emoticons 
