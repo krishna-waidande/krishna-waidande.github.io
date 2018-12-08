@@ -112,9 +112,9 @@ Valid : `Redhat and Ubuntu are popular flavours of Linux operating system.`
 
 Here Rehat, Ubuntu and Linux are proper nouns.
 
-Invalid : i will be coming late in the office.
+Invalid : `i will be coming late to the office.`
 
-Valid : I will be coming late in the the office.
+Valid : `I will be coming late to the office.`
 
 Here first letter of newline sentense should be capital.
 
