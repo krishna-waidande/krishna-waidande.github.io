@@ -107,4 +107,10 @@ let me give you example
 
 Invalid : `redhat and ubuntu are popular flavours of linux operating system.`
 
-Valide : `Redhat and Ubuntu are popular flavours of Linux operating system.`
+Valid : `Redhat and Ubuntu are popular flavours of Linux operating system.`
+
+
+I hope now the questioned which we raised earlier in the article are answered.
+
+
+### Keep reading, Keep learning. :) 
