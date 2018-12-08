@@ -1,4 +1,4 @@
-## Professional Email Basics.
+## Email Basics.
 
 Hello readers, 
 
