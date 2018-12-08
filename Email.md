@@ -2,8 +2,9 @@
 
 Hello readers, 
 
-Many of us face the problem in email writing. How should we organize the email? what things we can avoid while writing
-emails? what are our mistakes in email? these are the most common questions which comes to our mind. 
+
+Many of us face the problem in email writing. How should we organize the email? What things we can avoid while writing
+emails? What are our mistakes in email? These are the most common questions which comes to our mind. 
 Let's try to find the answer of them in the following blog.
 
 ## Email Dos : 
