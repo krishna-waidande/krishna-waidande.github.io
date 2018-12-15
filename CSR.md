@@ -1,6 +1,6 @@
 # CSR
 
-Hello readers,
+`Hello readers`,
 
 In this week one of our clients requested us a CSR file, I was just knowing that we generate CSR file to get the SSL certificates for our website or server, but I didn't explore what does this file contains? How it is used in process of SSL certificate, today's blog is about all about What is CSR? How it is generated? What this file contains in it? etc..
 
@@ -12,24 +12,38 @@ A Certificate Signing Request is a file that contains information a Certificate 
 When generating your CSR you will be asked for input. Below are some common fields with descriptions and examples.
 
 `Common Name (CN)`: The fully qualified domain name (FQDN) of your server.
+
+
 Example test.openspecimen.org
 
 `Organization (O)`: The legal name of your organization. Do not abbreviate and include any suffixes, such as Inc., Corp., or LLC. For EV and OV SSL Certificates, this information is verified by the CA and included in the certificate.
+
+
 Example: Krishagni solutions.
 
 `Organizational Unit (OU)`: The division of your organization handling the certificate.
+
+
 Example: IT
 
 `City/Locality (L)`: The city where your organization is located. This shouldn’t be abbreviated.
+
+
 Example: Pune
 
 `State/County/Region (S)`: The state/region where your organization is located. This shouldn't be abbreviated.
+
+
 Example: Maharashtra
 
-`Country (C)` : The two-letter code for the country where your organization is located.
+`Country (C)`: The two-letter code for the country where your organization is located.
+
+
 Example: IN, US
 
-`Email Address`: An email address used to contact your organization.
+`Email Address`: An email address used to contact your organization. (Optional)
+
+
 Example: john@gmail.com
 
 ### What does it contains?
@@ -82,7 +96,7 @@ current directory.
 
 ### Why do people generate it on the same host as the usage?
 
-When generarting a CSR file, another key file is generated which is key file. This file is not shared with anyone not even with CA. while issuing SSL certificate we just need to provide only CSR file to CA. Private key and resulting public key are a matching pair. We can generate the CSR on which ever machine we want only thing is Private key and public key (CSR) has to be matching pair.
+When generating a CSR file, another key file is generated which is a key file. This file is not shared with anyone not even with CA. while issuing SSL certificate we just need to provide only CSR file to CA. The private key and resulting public key are a matching pair. We can generate the CSR on whichever machine we want only thing is private key and public key (CSR) has to be matching pair.
 
 
 I hope now you have got a better idea about the CSR files.
