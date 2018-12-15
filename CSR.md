@@ -2,8 +2,7 @@
 
 Hello readers,
 
-In this week one of our clients requested us a CSR file, I was having a basic idea of what it is and what it is used for. 
-We generate CSR file to get the SSL certificates for our website or server. Today's blog is about What is CSR? How it is generated? What this file contains in it? etc..
+In this week one of our clients requested us a CSR file, I was just knowing that we generate CSR file to get the SSL certificates for our website or server, but I didn't explore what does this file contains? How it is used in process of SSL certificate, today's blog is about all about What is CSR? How it is generated? What this file contains in it? etc..
 
 
 ### What is CSR ? 
