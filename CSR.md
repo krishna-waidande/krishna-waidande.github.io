@@ -6,17 +6,27 @@
 
 Explore all this and write a blog in it
 
-
-
-
 # CSR
 
 What's in a CSR?
 The CSR contains all the necessary information needed by the CA to authenticate your organization such as your domain name, business name and location.
 
-When generating your CSR you will be asked for input. Below are some common fields with descriptions and examples.
 
 1 . Information about the Company : 
+
+
+2. The public key that will be included in the certificate. SSL uses public-key, or asymmetric, cryptography to encrypt transmitted data during an SSL session. The public key is used to encrypt and the corresponding private key is used to decrypt.
+
+
+3. Information about the key type and length. The most common key size is RSA 2048, but some CAs support larger key sizes (e.g. RSA 4096+) or ECC keys.
+
+
+### What is CSR ? 
+
+A Certificate Signing Request is a file that contains information a Certificate Authority (or CA, the companies who issue SSL certificates) need to create your SSL certificate. The purpose of the CSR is to have a standardized method for providing this information to CAs. A CSR is quite literally a request to have a certificate created and digitally signed by a CA. 
+
+When generating your CSR you will be asked for input. Below are some common fields with descriptions and examples.
+
 Common Name (CN) : The fully qualified domain name (FQDN) of your server.
 example test.openspecimen.org
 
@@ -38,10 +48,24 @@ Example : IN, US
 Email Address : An email address used to contact your organization.
 Example : john@gmail.com
 
-2. The public key that will be included in the certificate. SSL uses public-key, or asymmetric, cryptography to encrypt transmitted data during an SSL session. The public key is used to encrypt and the corresponding private key is used to decrypt.
+### What does it contains ?
+
+There are three important parts to a CSR: 
++ Your public key. 
+
++ The fully-qualified domain name(s) you want your certificate to be used with. 
+
++ Other information about you and your organization/website (including the legally registered name and the city/state/country where its registered). 
+
+Let’s break those parts down. The public key is an encryption key – one-half of the “key pair” that is used with SSL certificates. This is used to encrypt the data sent to your server. When you create a CSR you also create this key pair at the same time. The public key is included in the CSR and the SSL certificate you receive, allowing users connecting to your site to transfer data securely. 
+The other half of the key pair is the private key. Note that while this is also created at the same time as the CSR, it is not a part of the CSR. The private key is a separate file (usually in the .key format). The private key is used to decrypt the data that the public key encrypted. As the name suggests, you keep this key to yourself and do not send it to your CA or anyone else. You will need the private key later in the process when you install your SSL certificate. 
 
 
-3. Information about the key type and length. The most common key size is RSA 2048, but some CAs support larger key sizes (e.g. RSA 4096+) or ECC keys.
+The fully-qualified domain name(s), or FQDNs, are the hostname(s) where you will use your certificate. The FQDN should consist of the subdomain and parent domain, such as “www.example.com” or “mail.example.co.uk.” Do not include the scheme (“http://”). Some SSL certificates allow you to secure multiple FQDNs with one certificate – usually marketed as “SAN certificates” or “multi-domain certificates.” For many providers, you will still include just one FQDN in your CSR and will specify the rest later in their order form. 
+
+
+The final piece of the CSR is “subscriber information” – an email address, legally registered business name, and location. This information may be included in your certificate if you purchased an “OV” or “EV” certificate, which validates your website is operated by a registered company/organization. However, not all certificates include this information and if it does not apply to you, you can leave it blank. Many providers also allow you to update this information later if it is incorrect.
+
 
 
 
