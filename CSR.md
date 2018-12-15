@@ -1,18 +1,9 @@
-1. What is CSR?
-2. What all it contains?
-3. Why is it needed?
-4. How is it used?
-5. Why do people generate it on the same host as the usage?
-
-Explore all this and write a blog in it
-
 # CSR
-
 
 Hello readers,
 
 In this week one of our clients requested us a CSR file, I was having a basic idea of what it is and what it is used for. 
-We generate this file to get the SSL certificates for our website or server. Today I will be sharing What is CSR? How it is generated? What this file contains in it.
+We generate CSR file to get the SSL certificates for our website or server. Today's blog is about What is CSR? How it is generated? What this file contains in it? etc..
 
 
 ### What is CSR ? 
@@ -89,3 +80,12 @@ AQUFAAOBgQAuAxetLzgfjBdWpjpixeVYZXuPZ+6jvZNL/9hOw7Fk5pVVXWdr8csJ
 Fill all the information as mentioned in the above blog. as an output of the above command, you will see 2 files generated in
 current directory.
 
+
+### Why do people generate it on the same host as the usage?
+
+When generarting a CSR file, another key file is generated which is key file. This file is not shared with anyone not even with CA. while issuing SSL certificate we just need to provide only CSR file to CA. Private key and resulting public key are a matching pair. We can generate the CSR on which ever machine we want only thing is Private key and public key (CSR) has to be matching pair.
+
+
+I hope now you have got a better idea about the CSR files.
+
+#### Happy learning :)
