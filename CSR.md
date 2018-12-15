@@ -8,19 +8,6 @@ Explore all this and write a blog in it
 
 # CSR
 
-What's in a CSR?
-The CSR contains all the necessary information needed by the CA to authenticate your organization such as your domain name, business name and location.
-
-
-1 . Information about the Company : 
-
-
-2. The public key that will be included in the certificate. SSL uses public-key, or asymmetric, cryptography to encrypt transmitted data during an SSL session. The public key is used to encrypt and the corresponding private key is used to decrypt.
-
-
-3. Information about the key type and length. The most common key size is RSA 2048, but some CAs support larger key sizes (e.g. RSA 4096+) or ECC keys.
-
-
 ### What is CSR ? 
 
 A Certificate Signing Request is a file that contains information a Certificate Authority (or CA, the companies who issue SSL certificates) need to create your SSL certificate. The purpose of the CSR is to have a standardized method for providing this information to CAs. A CSR is quite literally a request to have a certificate created and digitally signed by a CA. 
@@ -60,7 +47,6 @@ There are three important parts to a CSR:
 Let’s break those parts down. The public key is an encryption key – one-half of the “key pair” that is used with SSL certificates. This is used to encrypt the data sent to your server. When you create a CSR you also create this key pair at the same time. The public key is included in the CSR and the SSL certificate you receive, allowing users connecting to your site to transfer data securely. 
 The other half of the key pair is the private key. Note that while this is also created at the same time as the CSR, it is not a part of the CSR. The private key is a separate file (usually in the .key format). The private key is used to decrypt the data that the public key encrypted. As the name suggests, you keep this key to yourself and do not send it to your CA or anyone else. You will need the private key later in the process when you install your SSL certificate. 
 
-
 The fully-qualified domain name(s), or FQDNs, are the hostname(s) where you will use your certificate. The FQDN should consist of the subdomain and parent domain, such as “www.example.com” or “mail.example.co.uk.” Do not include the scheme (“http://”). Some SSL certificates allow you to secure multiple FQDNs with one certificate – usually marketed as “SAN certificates” or “multi-domain certificates.” For many providers, you will still include just one FQDN in your CSR and will specify the rest later in their order form. 
 
 
@@ -68,9 +54,19 @@ The final piece of the CSR is “subscriber information” – an email address,
 
 
 
+### How does CSR file look ? 
 
+```
+-----BEGIN NEW CERTIFICATE REQUEST-----MIIDVDCCAr0CAQAweTEeMBwGA1UEAxMVd3d3Lmpvc2VwaGNoYXBtYW4uY29tMQ8w DQYDVQQLEwZEZXNpZ24xFjAUBgNVBAoTDUpvc2VwaENoYXBtYW4xEjAQBgNVBAcT CU1haWRzdG9uZTENMAsGA1UECBMES2VudDELMAkGA1UEBhMCR0IwgZ8wDQYJKoZI hvcNAQEBBQADgY0AMIGJAoGBAOEFDpnOKRabQhDa5asDxYPnG0c/neW18e8apjOk 1yuGRk+3GD7YQvuhBVS1x6wkw1D2RnmnZgN1nNUK0cRK7sIvOyCh1+jgD7u46mLk 81j+b4YSEmYZGPLIuclyocPDm0hXayjCUqWt7z6LMIKpLym8gayEZzz9Gn97PsbP kVFBAgMBAAGgggGZMBoGCisGAQQBgjcNAgMxDBYKNS4xLjI2MDAuMjB7BgorBgEE AYI3AgEOMW0wazAOBgNVHQ8BAf8EBAMCBPAwRAYJKoZIhvcNAQkPBDcwNTAOBggq hkiG9w0DAgICAIAwDgYIKoZIhvcNAwQCAgCAMAcGBSsOAwIHMAoGCCqGSIb3DQMH MBMGA1UdJQQMMAoGCCsGAQUFBwMBMIH9BgorBgEEAYI3DQICMYHuMIHrAgEBHloA TQBpAGMAcgBvAHMAbwBmAHQAIABSAFMAQQAgAFMAQwBoAGEAbgBuAGUAbAAgAEMA cgB5AHAAdABvAGcAcgBhAHAAaABpAGMAIABQAHIAbwB2AGkAZABlAHIDgYkAk0kf HSkr4jsEVya3mgUoyaYMO456ECNZr4Cb+WhPgexfjOO5qwOG1oDOTaKycrkc5pG+ IPBQnq+4cotT8hWJQwpc+qGb8xUETpxCokhrhN5079vFXq/5dsHkmtOTwkSqSnz9 yruVoxYeDQ8jI3KG3HTgxwFto8oZnm+E+Y4oshUAAAAAAAAAADANBgkqhkiG9w0B AQUFAAOBgQAuAxetLzgfjBdWpjpixeVYZXuPZ+6jvZNL/9hOw7Fk5pVVXWdr8csJ 6JUW8QdH9KB6ZlM4yg8Df+vat1/DG6GuD2hiIR7fQ0NtPFBQmbrSm+TTBo95lwP+ ZSZTusPFTLKaqValdnS9Uw+6Vq7/I4ouDA8QBIuaTFtPOp+8wEGBHQ==
+-----END NEW CERTIFICATE REQUEST-----
+```
 
+### How to generate CSR file ?
 
+openssl req -out <domain_name>.csr -new -newkey rsa:2048 -nodes -keyout <domain_name>.key
+
+Fill all the information as mentioned in above blog. as a output of above command you will see 2 file generated in
+current directory.
 
 
 
