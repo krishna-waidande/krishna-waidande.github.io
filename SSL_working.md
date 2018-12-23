@@ -30,7 +30,6 @@ Asymmetric cryptography (also known as Asymmetric Encryption or Public Key Crypt
 
 In the asymmetric cryptography, the data can be signed with a private key, which can only be decrypted using the related public key in a pair.
 
-![alt text](images/Asymmetric.png "Asymmetric cryptography") 
 
 SSL uses asymmetric cryptography to initiate the communication which is known as SSL handshake. Most commonly used asymmetric key encryption algorithms include ElGamal, RSA, DSA, Elliptic curve techniques and PKCS.
 
@@ -39,7 +38,6 @@ SSL uses asymmetric cryptography to initiate the communication which is known as
 
 In the symmetric cryptography, there is only one key which encrypts and decrypts the data. Both the sender and receiver should have this key, which is only known to them.
 
-![alt text](images/Symmetric.png "Symmetric cryptography") 
 
 SSL uses symmetric cryptography using the session key after the initial handshake is done. The most widely used symmetric algorithms are AES-128, AES-192, and AES-256.
 
@@ -48,7 +46,6 @@ SSL uses symmetric cryptography using the session key after the initial handshak
 
 The communication over SSL always begins with the `SSL handshake`. The SSL handshake is asymmetric cryptography which allows the browser to verify the web server, get the public key and establish a secure connection before the beginning of the actual data transfer.
 
-![alt text](images/SSL_Handshake.png "SSL handshake")
 
 1. The client sends a "client hello" message. This includes the client's SSL version number, cipher settings, session-specific data and other information that the server needs to communicate with the client using SSL.
 
@@ -69,5 +66,4 @@ Thus, at the end of the SSL handshake, both the client and the server have a val
 The client and the server now use a shared session key to encrypt and decrypt actual data and transfer it. This is done using the same session key at both ends and so, it is asymmetric cryptography. The actual SSL data transfer uses symmetric cryptography because it is easy and takes less CUP consumption compared with the asymmetric cryptography.
 
 
-![alt text](images/Actual_data.png "Data transfer")
 
