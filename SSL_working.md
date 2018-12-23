@@ -30,7 +30,7 @@ SSL uses symmetric cryptography using the session key after the initial handshak
 
 The communication over SSL always begins with the SSL handshake. The SSL handshake is an asymmetric cryptography which allows the browser to verify the web server, get the public key and establish a secure connection before the beginning of the actual data transfer.
 
-Image : SSL handshake
+![alt text](images/SSL_Handshake.png "SSL handshake")
 
 1. The client sends a "client hello" message. This includes the client's SSL version number, cipher settings, session-specific data and other information that the server needs to communicate with the client using SSL.
 
@@ -51,6 +51,6 @@ Thus, at the end of the SSL handshake, both the client and the server have a val
 The client and the server now use a shared session key to encrypt and decrypt actual data and transfer it. This is done using the same session key at both ends and so, it is a symmetric cryptography. The actual SSL data transfer uses symmetric cryptography because it is easy and takes less CUP consumption compared with the asymmetric cryptography.
 
 
-![alt text](images/ssl_working.png "SSL working")
+![alt text](images/Actual_data.png "Data transfer")
 
 
