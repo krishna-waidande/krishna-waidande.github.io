@@ -2,7 +2,7 @@
 
 `Hello readers`,
 
-In the previous article we learn about [what is CSR file](krishna-waidande.github.io/CSR) and we read that it is used to generate SSL certificates,today we will see what is SSL? How it works?
+In the previous article we learn about [what is CSR file](krishna-waidande.github.io/CSR) and we read that it is used to generate SSL certificates. Today we will see what is SSL? How it works?
 
 ### What is SSL?
 
@@ -21,8 +21,8 @@ The SSL protocol is used by millions of online business to protect their custome
 
 SSL fundamentally works with the following concepts:
 
-+ Asymmetric Cryptography
-+ Symmetric Cryptography
++ `Asymmetric Cryptography`
++ `Symmetric Cryptography`
 
 ### Asymmetric Cryptography
 
