@@ -46,7 +46,7 @@ SSL uses symmetric cryptography using the session key after the initial handshak
 
 ### How does SSL creates a secure connection?
 
-The communication over SSL always begins with the SSL handshake. The SSL handshake is asymmetric cryptography which allows the browser to verify the web server, get the public key and establish a secure connection before the beginning of the actual data transfer.
+The communication over SSL always begins with the `SSL handshake`. The SSL handshake is asymmetric cryptography which allows the browser to verify the web server, get the public key and establish a secure connection before the beginning of the actual data transfer.
 
 ![alt text](images/SSL_Handshake.png "SSL handshake")
 
