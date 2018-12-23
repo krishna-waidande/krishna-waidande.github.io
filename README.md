@@ -14,8 +14,10 @@
 ### [Track Your Task](https://krishna-waidande.github.io/trello)
 ### [Basics Of CS](https://krishna-waidande.github.io/cs_basic)
 ### [Why Documentation Is Important?](https://krishna-waidande.github.io/document)
+### [How to track your daily tasks?](https://krishna-waidande.github.io/trello)
 ### [Basics Of Emails](https://krishna-waidande.github.io/Email)
 ### [Debug Server Performance](https://krishna-waidande.github.io/system_statistic)
+### [CSR](https://krishna-waidande.github.io/CSR)
 ### [Know About SSL](https://krishna-waidande.github.io/SSL_working)
 
 
