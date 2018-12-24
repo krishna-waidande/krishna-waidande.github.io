@@ -2,7 +2,7 @@
 
 `Hello readers`,
 
-In the previous article we learn about [what is CSR file](krishna-waidande.github.io/CSR) and we read that it is used to generate SSL certificates. Today we will see what is SSL? How it works?
+In the previous article, we learn about [what is CSR file](krishna-waidande.github.io/CSR) and we read that it is used to generate SSL certificates. Today we will see what is SSL? How does it works?
 
 ### What is SSL?
 
@@ -47,7 +47,7 @@ SSL uses symmetric cryptography using the session key after the initial handshak
 
 ### How does SSL creates a secure connection?
 
-The communication over SSL always begins with the `SSL handshake`. The SSL handshake is asymmetric cryptography which allows the browser to verify the web server, get the public key and establish a secure connection before the beginning of the actual data transfer.
+The communication over SSL always begins with `SSL handshake`. The SSL handshake is asymmetric cryptography which allows the browser to verify the web server, get the public key and establish a secure connection before the beginning of the actual data transfer.
 
 ![alt text](images/ssl_handshake.png "SSL handshake")
 
