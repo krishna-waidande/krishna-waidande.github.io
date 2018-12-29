@@ -1,5 +1,5 @@
 
-### [Assigment 1](https://krishna-waidande.github.io//Assignment1) | [Gradle Installation](https://krishna-waidande.github.io//gradle) | [Apache Tomcat Installation](https://krishna-waidande.github.io//tomcat) | [Java Indentation](https://krishna-waidande.github.io/JavaIndentation)
+### [HOME](https://krishna-waidande.github.io/)
 
 
 # Assignment 2  | [Things learned](https://krishna-waidande.github.io//things_learned2)
