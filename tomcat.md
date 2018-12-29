@@ -1,4 +1,4 @@
-### [Assigment 1](https://krishna-waidande.github.io//Assignment1) | [Assignment 2](https://krishna-waidande.github.io//Assignment2) | [Gradle Installation](https://krishna-waidande.github.io//gradle) | [Java Indentation](https://krishna-waidande.github.io/JavaIndentation)
+### [HOME](https://krishna-waidande.github.io/)
 
 # Tomcat Installation
 

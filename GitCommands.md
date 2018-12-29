@@ -1,8 +1,8 @@
+### [HOME](https://krishna-waidande.github.io/)
+
 # Getting Started With Git
 
 ## Installation
-
-![alt text](https://github.com/krishna-waidande/krishna-waidande.github.io/homepage.png)
 
 First install git on your machine .
 

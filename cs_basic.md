@@ -1,3 +1,5 @@
+### [HOME](https://krishna-waidande.github.io/)
+
 # Basics of computer science 
 
 `Hello Readers`,
