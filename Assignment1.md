@@ -1,4 +1,4 @@
-### [HOME](https://krishna-waidande.github.io/README)
+### [HOME](https://krishna-waidande.github.io/README.md)
 
 # ASSIGNMENT 1 | [Things learned](https://krishna-waidande.github.io//things_learned)
 
