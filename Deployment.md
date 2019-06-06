@@ -1,3 +1,5 @@
+### [HOME](https://krishna-waidande.github.io/)
+
 # Deployment
 
 Hello readers,
@@ -22,6 +24,17 @@ The process of deploying the web app in a running server is called Hot Deploymen
 restart the server. All changes take place on ON-THE-FLY.
 
 ### How we can achieve it into Tomcat server?
+We need to specify the autoDeploy attribute of <Host> tag to "true". For example, refer to below configuration.
+Due to below setting now when we copy new WAR into appBase, new changes will get reflected directly without server restart.
+
+```
+<Host name="localhost" appBase="webapps"
+  unpackWARs="true" autodeploy="true">
+  
+  ....
+  ....
+</Host>
+```
 
 
 #### Advantages:
