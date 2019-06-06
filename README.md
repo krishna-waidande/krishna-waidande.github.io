@@ -19,5 +19,6 @@
 ### [Debug Server Performance](https://krishna-waidande.github.io/system_statistic)
 ### [CSR](https://krishna-waidande.github.io/CSR)
 ### [Know About SSL](https://krishna-waidande.github.io/SSL_working)
+### [Deployment](https://krishna-waidande.github.io/deployment)
 
 
