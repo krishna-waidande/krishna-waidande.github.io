@@ -6,7 +6,6 @@
 
 Before you begin this guide, you should have a regular, non-root user with sudo privileges configured on your server/machine.
 
-
 + Apache is available within Ubuntu's default software repositories, so we will install it using conventional package management tools.We will begin by updating the local package index to reflect the latest upstream changes. Afterwards, we can install the apache2 package:
 
 + Open your terminal and run below commands.
