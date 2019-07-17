@@ -56,4 +56,3 @@ user@user-Lenovo-ideapad-320-15ISK:/$ xhost +si:localuser:root			//solution to e
 localuser:root being added to access control list
 user@user-Lenovo-ideapad-320-15ISK:/$ sudo gedit /etc/environment
 ```
-
