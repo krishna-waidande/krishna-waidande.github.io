@@ -39,7 +39,6 @@ To check whether server has started or not [Click Here](http://localhost:8080/)
 > $CATALINA_HOME/bin/shutdown.sh
 
 
-
 ### While following above steps I got error so belew is a error an solution to that error .
  
  So at step #6
