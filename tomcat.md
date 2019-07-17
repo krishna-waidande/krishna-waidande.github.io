@@ -32,9 +32,6 @@ To change the directory.
 > $CATALINA_HOME/bin/startup.sh
 
 
-
-
-
 To check whether server has started or not [Click Here](http://localhost:8080/)
 
 
