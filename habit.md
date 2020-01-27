@@ -7,7 +7,7 @@ reading your fav comic books/novels, learning something new? but not able to get
 
 I will share a similar kind of experience.
 
-I was planning to start reading blogs on things that are unknown for me like money Investments, stock market, interesting facts about the world and many more. 
+I was planning to start reading blogs on things that are unknown for me like money investments, stock market, interesting facts about the world and many more. 
 Only I was not able to decide when to do it. It was on my to-do list for so many days.
 
 
