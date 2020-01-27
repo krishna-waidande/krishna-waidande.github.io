@@ -2,8 +2,8 @@
 
 Hi Reader,
 
-Have you been in a situation where you wanted to start to do something new from the daily routine like doing exercise, 
-reading your fav comic books/novels, learning something new? but not able to getting started because of "not having enough time".
+Have you been in a situation where you desired to start to do something new from the daily routine like doing exercise, 
+reading your fav comic books/novels, learning something new? but not able to getting started because of `not having enough time`.
 
 I will share a similar kind of experience.
 
