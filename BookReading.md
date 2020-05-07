@@ -2,7 +2,7 @@
 
 Hello Readers,
 
-Most of you might have a hobby of reading books of various types like an autobiography, non-fiction, comic, etc. In my case, I never find a book reading compelling. In college life, I (we all) used to read a theory book and go for an exam. I never learned how I could practically use that theory. Maybe this thing leads me to feel like books are boring. Also, the size of the book, perhaps another reason for me to never like a book.
+Most of you might have a hobby of reading books of various types like an autobiography, non-fiction, comic, etc. In my case, I never find a book reading compelling. In college life, I (we all) used to read a theory book and go for an exam. I never learned how I could practically use that theory. Maybe this thing leads me to feel like books are boring. Also, the size of the book is another reason for me to never like a book.
 
 During my work, I face the problem of not able to communicate my idea to others or feel very under knowledged because sometimes my colleagues understood certain things very quickly, but I could not understand it immediately.
 
